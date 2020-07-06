@@ -1,0 +1,41 @@
+{
+    "tables": {
+        "fact": {
+            "name": "movies",
+            "fields": [
+                {
+                    "field": "IMDB_Rating",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "Production_Budget",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "Release_Date",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "Rotten_Tomatoes_Rating",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "Running_Time_min",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "US_DVD_Sales",
+                    "type": "quantitative"
+                },
+		{
+                    "field": "US_Gross",
+                    "type": "quantitative"
+                },
+		{
+                    "field": "Worldwide_Gross",
+                    "type": "quantitative"
+                }
+            ]
+        }
+    }
+}

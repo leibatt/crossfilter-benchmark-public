@@ -1,0 +1,133 @@
+{
+    "setup": [
+        {
+            "name": "Release_Date",
+            "binning": [
+                {
+                    "dimension": "Release_Date",
+                    "width": 30541006451.612904,
+                    "reference": 315550800000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "IMDB_Rating",
+            "binning": [
+                {
+                    "dimension": "IMDB_Rating",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "binning": [
+                {
+                    "dimension": "Rotten_Tomatoes_Rating",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Production_Budget",
+            "binning": [
+                {
+                    "dimension": "Production_Budget",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Running_Time_min",
+            "binning": [
+                {
+                    "dimension": "Running_Time_min",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_DVD_Sales",
+            "binning": [
+                {
+                    "dimension": "US_DVD_Sales",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_Gross",
+            "binning": [
+                {
+                    "dimension": "US_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and Worldwide_Gross"
+        },
+        {
+            "name": "Worldwide_Gross",
+            "binning": [
+                {
+                    "dimension": "Worldwide_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross"
+        }
+    ],
+    "interactions": []
+}

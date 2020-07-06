@@ -1,0 +1,454 @@
+{
+    "setup": [
+        {
+            "name": "DISTANCE",
+            "binning": [
+                {
+                    "dimension": "DISTANCE",
+                    "width": 200,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "ARR_TIME and DEP_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "ARR_TIME",
+            "binning": [
+                {
+                    "dimension": "ARR_TIME",
+                    "width": 1,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and DEP_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "DEP_TIME",
+            "binning": [
+                {
+                    "dimension": "DEP_TIME",
+                    "width": 1,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "DEP_DELAY",
+            "binning": [
+                {
+                    "dimension": "DEP_DELAY",
+                    "width": 5,
+                    "reference": -20
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "ARR_DELAY",
+            "binning": [
+                {
+                    "dimension": "ARR_DELAY",
+                    "width": 5,
+                    "reference": -20
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and DEP_DELAY and AIR_TIME"
+        },
+        {
+            "name": "AIR_TIME",
+            "binning": [
+                {
+                    "dimension": "AIR_TIME",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and DEP_DELAY and ARR_DELAY"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "AIR_TIME",
+            "time": 0,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 121.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 33,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 122.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 53,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 141.42857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 75,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 181.42857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 91,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 252.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 108,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 320",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 126,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 400",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 144,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 498.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 158,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 175,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 183,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 200,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 217,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 233,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 250,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 267,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 284,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 300,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 317,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 759,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 782,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 855,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 869,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 1063,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "AIR_TIME",
+            "time": 1071,
+            "selection": "AIR_TIME >= 121.42857142857143 AND AIR_TIME < 500",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10679,
+            "selection": "DISTANCE >= 1000 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10698,
+            "selection": "DISTANCE >= 1000 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10715,
+            "selection": "DISTANCE >= 1000 AND DISTANCE < 885.7142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10731,
+            "selection": "DISTANCE >= 1000 AND DISTANCE < 700",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10749,
+            "selection": "DISTANCE >= 1000 AND DISTANCE < 471.42857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10766,
+            "selection": "DISTANCE >= 1000 AND DISTANCE < 85.71428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10783,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10799,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10816,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10832,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10850,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10865,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10882,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10899,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10916,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10933,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10950,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 10967,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DISTANCE",
+            "time": 11046,
+            "selection": "DISTANCE >= 0 AND DISTANCE < 1000",
+            "metadata": {
+                "brush_id": 2
+            }
+        }
+    ]
+}

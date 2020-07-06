@@ -1,0 +1,45 @@
+{
+    "tables": {
+        "fact": {
+            "name": "weather",
+            "fields": [
+                {
+                    "field": "ELEVATION",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "LATITUDE",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "LONGITUDE",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "PRECIPITATION",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "RECORD_DATE",
+                    "type": "quantitative"
+                },
+                {
+                    "field": "SNOW",
+                    "type": "quantitative"
+                },
+		{
+                    "field": "TEMP_MAX",
+                    "type": "quantitative"
+                },
+		{
+                    "field": "TEMP_MIN",
+                    "type": "quantitative"
+                },
+		{
+                    "field": "WIND",
+                    "type": "quantitative"
+                }
+            ]
+        }
+    }
+}

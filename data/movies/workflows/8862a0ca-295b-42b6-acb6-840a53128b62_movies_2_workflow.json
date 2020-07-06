@@ -1,0 +1,2454 @@
+{
+    "setup": [
+        {
+            "name": "Release_Date",
+            "binning": [
+                {
+                    "dimension": "Release_Date",
+                    "width": 30541006451.612904,
+                    "reference": 315550800000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "IMDB_Rating",
+            "binning": [
+                {
+                    "dimension": "IMDB_Rating",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "binning": [
+                {
+                    "dimension": "Rotten_Tomatoes_Rating",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Production_Budget",
+            "binning": [
+                {
+                    "dimension": "Production_Budget",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Running_Time_min",
+            "binning": [
+                {
+                    "dimension": "Running_Time_min",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_DVD_Sales",
+            "binning": [
+                {
+                    "dimension": "US_DVD_Sales",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_Gross",
+            "binning": [
+                {
+                    "dimension": "US_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and Worldwide_Gross"
+        },
+        {
+            "name": "Worldwide_Gross",
+            "binning": [
+                {
+                    "dimension": "Worldwide_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "Release_Date",
+            "time": 0,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 964765337142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 25,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 967470397714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 52,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 967470397714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 76,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 967470397714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 93,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 970175458285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 114,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 972880518857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 132,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 972880518857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 160,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 975585579428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 415,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 975585579428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 439,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 978290640000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 456,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 978290640000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 476,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 978290640000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 494,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 980995700571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 525,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 980995700571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 591,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 980995700571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 623,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 640,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 951,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 1839,
+            "selection": "Release_Date >= 951240034285.7142 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 1858,
+            "selection": "Release_Date >= 951240034285.7142 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 1875,
+            "selection": "Release_Date >= 948534973714.2856 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 1892,
+            "selection": "Release_Date >= 948534973714.2856 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2423,
+            "selection": "Release_Date >= 945829913142.857 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2438,
+            "selection": "Release_Date >= 945829913142.857 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2460,
+            "selection": "Release_Date >= 948534973714.2856 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2476,
+            "selection": "Release_Date >= 948534973714.2856 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2492,
+            "selection": "Release_Date >= 948534973714.2856 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2510,
+            "selection": "Release_Date >= 951240034285.7142 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2687,
+            "selection": "Release_Date >= 951240034285.7142 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2709,
+            "selection": "Release_Date >= 951240034285.7142 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2725,
+            "selection": "Release_Date >= 953945094857.1428 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2855,
+            "selection": "Release_Date >= 953945094857.1428 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2875,
+            "selection": "Release_Date >= 956650155428.5714 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2891,
+            "selection": "Release_Date >= 956650155428.5714 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 2909,
+            "selection": "Release_Date >= 956650155428.5714 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7327,
+            "selection": "Release_Date >= 959355216000 AND Release_Date < 986405821714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7346,
+            "selection": "Release_Date >= 962060276571.4286 AND Release_Date < 989110882285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7362,
+            "selection": "Release_Date >= 964765337142.857 AND Release_Date < 991815942857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7376,
+            "selection": "Release_Date >= 967470397714.2856 AND Release_Date < 994521003428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7392,
+            "selection": "Release_Date >= 970175458285.7142 AND Release_Date < 997226063999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7408,
+            "selection": "Release_Date >= 972880518857.1428 AND Release_Date < 999931124571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7427,
+            "selection": "Release_Date >= 1002636185142.857 AND Release_Date < 975585579428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7442,
+            "selection": "Release_Date >= 1005341245714.2856 AND Release_Date < 978290640000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7474,
+            "selection": "Release_Date >= 1010751366857.1427 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7492,
+            "selection": "Release_Date >= 1013456427428.5713 AND Release_Date < 986405821714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7508,
+            "selection": "Release_Date >= 1016161487999.9999 AND Release_Date < 989110882285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7524,
+            "selection": "Release_Date >= 1021571609142.857 AND Release_Date < 994521003428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7542,
+            "selection": "Release_Date >= 1026981730285.7142 AND Release_Date < 999931124571.4286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7558,
+            "selection": "Release_Date >= 1002636185142.857 AND Release_Date < 1029686790857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7575,
+            "selection": "Release_Date >= 1005341245714.2856 AND Release_Date < 1032391851428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7609,
+            "selection": "Release_Date >= 1010751366857.1428 AND Release_Date < 1037801972571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7625,
+            "selection": "Release_Date >= 1016161488000 AND Release_Date < 1043212093714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7642,
+            "selection": "Release_Date >= 1021571609142.857 AND Release_Date < 1048622214857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7658,
+            "selection": "Release_Date >= 1024276669714.2856 AND Release_Date < 1051327275428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7675,
+            "selection": "Release_Date >= 1029686790857.1428 AND Release_Date < 1056737396571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7709,
+            "selection": "Release_Date >= 1032391851428.5714 AND Release_Date < 1059442457142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7725,
+            "selection": "Release_Date >= 1037801972571.4286 AND Release_Date < 1064852578285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7741,
+            "selection": "Release_Date >= 1043212093714.2856 AND Release_Date < 1070262699428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7759,
+            "selection": "Release_Date >= 1048622214857.1428 AND Release_Date < 1075672820571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7776,
+            "selection": "Release_Date >= 1051327275428.5714 AND Release_Date < 1078377881142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7792,
+            "selection": "Release_Date >= 1056737396571.4286 AND Release_Date < 1083788002285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7809,
+            "selection": "Release_Date >= 1062147517714.2856 AND Release_Date < 1089198123428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7825,
+            "selection": "Release_Date >= 1070262699428.5714 AND Release_Date < 1097313305142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7842,
+            "selection": "Release_Date >= 1081082941714.2856 AND Release_Date < 1108133547428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7859,
+            "selection": "Release_Date >= 1089198123428.5714 AND Release_Date < 1116248729142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7875,
+            "selection": "Release_Date >= 1094608244571.4286 AND Release_Date < 1121658850285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7892,
+            "selection": "Release_Date >= 1097313305142.857 AND Release_Date < 1124363910857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7909,
+            "selection": "Release_Date >= 1100018365714.2856 AND Release_Date < 1127068971428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7942,
+            "selection": "Release_Date >= 1105428486857.143 AND Release_Date < 1132479092571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7958,
+            "selection": "Release_Date >= 1108133547428.5713 AND Release_Date < 1135184153142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7975,
+            "selection": "Release_Date >= 1110838608000 AND Release_Date < 1137889213714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 7991,
+            "selection": "Release_Date >= 1113543668571.4287 AND Release_Date < 1140594274285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8026,
+            "selection": "Release_Date >= 1116248729142.857 AND Release_Date < 1143299334857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8042,
+            "selection": "Release_Date >= 1118953789714.2856 AND Release_Date < 1146004395428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8058,
+            "selection": "Release_Date >= 1124363910857.143 AND Release_Date < 1151414516571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8075,
+            "selection": "Release_Date >= 1129774032000 AND Release_Date < 1156824637714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8091,
+            "selection": "Release_Date >= 1132479092571.4287 AND Release_Date < 1159529698285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8110,
+            "selection": "Release_Date >= 1135184153142.857 AND Release_Date < 1162234758857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8142,
+            "selection": "Release_Date >= 1137889213714.2856 AND Release_Date < 1164939819428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8158,
+            "selection": "Release_Date >= 1140594274285.7144 AND Release_Date < 1167644880000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8175,
+            "selection": "Release_Date >= 1143299334857.143 AND Release_Date < 1170349940571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8192,
+            "selection": "Release_Date >= 1146004395428.5713 AND Release_Date < 1173055001142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8209,
+            "selection": "Release_Date >= 1148709456000 AND Release_Date < 1175760061714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8225,
+            "selection": "Release_Date >= 1154119577142.857 AND Release_Date < 1181170182857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8241,
+            "selection": "Release_Date >= 1159529698285.7144 AND Release_Date < 1186580304000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8259,
+            "selection": "Release_Date >= 1162234758857.143 AND Release_Date < 1189285364571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8280,
+            "selection": "Release_Date >= 1167644880000 AND Release_Date < 1194695485714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8292,
+            "selection": "Release_Date >= 1170349940571.4287 AND Release_Date < 1197400546285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8308,
+            "selection": "Release_Date >= 1175760061714.2854 AND Release_Date < 1202810667428.571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8325,
+            "selection": "Release_Date >= 1186580304000 AND Release_Date < 1213630909714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8343,
+            "selection": "Release_Date >= 1197400546285.7144 AND Release_Date < 1224451152000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8359,
+            "selection": "Release_Date >= 1202810667428.5713 AND Release_Date < 1229861273142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8375,
+            "selection": "Release_Date >= 1208220788571.4287 AND Release_Date < 1235271394285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8392,
+            "selection": "Release_Date >= 1210925849142.857 AND Release_Date < 1237976454857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8409,
+            "selection": "Release_Date >= 1213630909714.2856 AND Release_Date < 1240681515428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8426,
+            "selection": "Release_Date >= 1219041030857.143 AND Release_Date < 1246091636571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8442,
+            "selection": "Release_Date >= 1224451152000 AND Release_Date < 1251501757714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8458,
+            "selection": "Release_Date >= 1229861273142.857 AND Release_Date < 1256911878857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8493,
+            "selection": "Release_Date >= 1232566333714.2856 AND Release_Date < 1259616939428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8541,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8576,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8592,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 8625,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9508,
+            "selection": "Release_Date >= 1219041030857.143 AND Release_Date < 1246091636571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9542,
+            "selection": "Release_Date >= 1151414516571.4287 AND Release_Date < 1178465122285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9558,
+            "selection": "Release_Date >= 1129774032000 AND Release_Date < 1156824637714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9575,
+            "selection": "Release_Date >= 1116248729142.857 AND Release_Date < 1143299334857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9591,
+            "selection": "Release_Date >= 1102723426285.7144 AND Release_Date < 1129774032000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9609,
+            "selection": "Release_Date >= 1094608244571.4286 AND Release_Date < 1121658850285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9624,
+            "selection": "Release_Date >= 1083788002285.7142 AND Release_Date < 1110838608000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9642,
+            "selection": "Release_Date >= 1072967760000 AND Release_Date < 1100018365714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9658,
+            "selection": "Release_Date >= 1056737396571.4286 AND Release_Date < 1083788002285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9675,
+            "selection": "Release_Date >= 1040507033142.857 AND Release_Date < 1067557638857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9691,
+            "selection": "Release_Date >= 1024276669714.2856 AND Release_Date < 1051327275428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9708,
+            "selection": "Release_Date >= 1013456427428.5714 AND Release_Date < 1040507033142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9725,
+            "selection": "Release_Date >= 1005341245714.2856 AND Release_Date < 1032391851428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9741,
+            "selection": "Release_Date >= 1024276669714.2856 AND Release_Date < 997226064000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9758,
+            "selection": "Release_Date >= 1018866548571.4285 AND Release_Date < 991815942857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9775,
+            "selection": "Release_Date >= 1008046306285.7142 AND Release_Date < 980995700571.4286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9792,
+            "selection": "Release_Date >= 972880518857.1428 AND Release_Date < 999931124571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9808,
+            "selection": "Release_Date >= 959355216000 AND Release_Date < 986405821714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9825,
+            "selection": "Release_Date >= 948534973714.2856 AND Release_Date < 975585579428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9841,
+            "selection": "Release_Date >= 935009670857.1428 AND Release_Date < 962060276571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9859,
+            "selection": "Release_Date >= 921484368000 AND Release_Date < 948534973714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9874,
+            "selection": "Release_Date >= 905254004571.4286 AND Release_Date < 932304610285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9892,
+            "selection": "Release_Date >= 889023641142.857 AND Release_Date < 916074246857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9908,
+            "selection": "Release_Date >= 880908459428.5714 AND Release_Date < 907959065142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9925,
+            "selection": "Release_Date >= 872793277714.2856 AND Release_Date < 899843883428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9942,
+            "selection": "Release_Date >= 870088217142.8572 AND Release_Date < 897138822857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9958,
+            "selection": "Release_Date >= 867383156571.4286 AND Release_Date < 894433762285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 9974,
+            "selection": "Release_Date >= 864678096000 AND Release_Date < 891728701714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10008,
+            "selection": "Release_Date >= 861973035428.5714 AND Release_Date < 889023641142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10025,
+            "selection": "Release_Date >= 859267974857.1428 AND Release_Date < 886318580571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10058,
+            "selection": "Release_Date >= 856562914285.7142 AND Release_Date < 883613519999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10176,
+            "selection": "Release_Date >= 853857853714.2856 AND Release_Date < 880908459428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10213,
+            "selection": "Release_Date >= 851152793142.8572 AND Release_Date < 878203398857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10241,
+            "selection": "Release_Date >= 848447732571.4286 AND Release_Date < 875498338285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10309,
+            "selection": "Release_Date >= 845742672000 AND Release_Date < 872793277714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10325,
+            "selection": "Release_Date >= 843037611428.5714 AND Release_Date < 870088217142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10360,
+            "selection": "Release_Date >= 840332550857.1428 AND Release_Date < 867383156571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10607,
+            "selection": "Release_Date >= 837627490285.7142 AND Release_Date < 864678095999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10624,
+            "selection": "Release_Date >= 834922429714.2858 AND Release_Date < 861973035428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10641,
+            "selection": "Release_Date >= 832217369142.857 AND Release_Date < 859267974857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 10783,
+            "selection": "Release_Date >= 829512308571.4286 AND Release_Date < 856562914285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11109,
+            "selection": "Release_Date >= 826807248000 AND Release_Date < 853857853714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11124,
+            "selection": "Release_Date >= 821397126857.1428 AND Release_Date < 848447732571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11142,
+            "selection": "Release_Date >= 802461702857.1428 AND Release_Date < 829512308571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11158,
+            "selection": "Release_Date >= 791641460571.4286 AND Release_Date < 818692066285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11175,
+            "selection": "Release_Date >= 786231339428.5714 AND Release_Date < 813281945142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11191,
+            "selection": "Release_Date >= 783526278857.1428 AND Release_Date < 810576884571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11774,
+            "selection": "Release_Date >= 786231339428.5714 AND Release_Date < 813281945142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11791,
+            "selection": "Release_Date >= 788936400000 AND Release_Date < 815987005714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11808,
+            "selection": "Release_Date >= 791641460571.4286 AND Release_Date < 818692066285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11824,
+            "selection": "Release_Date >= 794346521142.857 AND Release_Date < 821397126857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11842,
+            "selection": "Release_Date >= 797051581714.2858 AND Release_Date < 824102187428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11858,
+            "selection": "Release_Date >= 802461702857.1428 AND Release_Date < 829512308571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11901,
+            "selection": "Release_Date >= 805166763428.5714 AND Release_Date < 832217369142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 11942,
+            "selection": "Release_Date >= 810576884571.4286 AND Release_Date < 837627490285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 12375,
+            "selection": "Release_Date >= 807871824000 AND Release_Date < 834922429714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 12408,
+            "selection": "Release_Date >= 805166763428.5714 AND Release_Date < 832217369142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14358,
+            "selection": "Release_Date >= 807871824000 AND Release_Date < 834922429714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14376,
+            "selection": "Release_Date >= 810576884571.4286 AND Release_Date < 837627490285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14391,
+            "selection": "Release_Date >= 813281945142.857 AND Release_Date < 840332550857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14430,
+            "selection": "Release_Date >= 815987005714.2858 AND Release_Date < 843037611428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14518,
+            "selection": "Release_Date >= 818692066285.7142 AND Release_Date < 845742671999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14559,
+            "selection": "Release_Date >= 821397126857.1428 AND Release_Date < 848447732571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14574,
+            "selection": "Release_Date >= 824102187428.5714 AND Release_Date < 851152793142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14608,
+            "selection": "Release_Date >= 826807248000 AND Release_Date < 853857853714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14642,
+            "selection": "Release_Date >= 832217369142.857 AND Release_Date < 859267974857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 14675,
+            "selection": "Release_Date >= 834922429714.2858 AND Release_Date < 861973035428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16150,
+            "selection": "Release_Date >= 837627490285.7142 AND Release_Date < 864678095999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16174,
+            "selection": "Release_Date >= 840332550857.1428 AND Release_Date < 867383156571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16258,
+            "selection": "Release_Date >= 843037611428.5714 AND Release_Date < 870088217142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16326,
+            "selection": "Release_Date >= 845742672000 AND Release_Date < 872793277714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16392,
+            "selection": "Release_Date >= 848447732571.4286 AND Release_Date < 875498338285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16534,
+            "selection": "Release_Date >= 851152793142.8572 AND Release_Date < 878203398857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16625,
+            "selection": "Release_Date >= 853857853714.2856 AND Release_Date < 880908459428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16870,
+            "selection": "Release_Date >= 856562914285.7142 AND Release_Date < 883613519999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16909,
+            "selection": "Release_Date >= 859267974857.1428 AND Release_Date < 886318580571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 16958,
+            "selection": "Release_Date >= 861973035428.5714 AND Release_Date < 889023641142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 17059,
+            "selection": "Release_Date >= 864678096000 AND Release_Date < 891728701714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 17241,
+            "selection": "Release_Date >= 867383156571.4286 AND Release_Date < 894433762285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18008,
+            "selection": "Release_Date >= 870088217142.8572 AND Release_Date < 897138822857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18092,
+            "selection": "Release_Date >= 872793277714.2856 AND Release_Date < 899843883428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18141,
+            "selection": "Release_Date >= 875498338285.7142 AND Release_Date < 902548943999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18213,
+            "selection": "Release_Date >= 878203398857.1428 AND Release_Date < 905254004571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18301,
+            "selection": "Release_Date >= 880908459428.5714 AND Release_Date < 907959065142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18438,
+            "selection": "Release_Date >= 883613520000 AND Release_Date < 910664125714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18542,
+            "selection": "Release_Date >= 886318580571.4286 AND Release_Date < 913369186285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18592,
+            "selection": "Release_Date >= 889023641142.857 AND Release_Date < 916074246857.1427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18642,
+            "selection": "Release_Date >= 891728701714.2856 AND Release_Date < 918779307428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18775,
+            "selection": "Release_Date >= 894433762285.7142 AND Release_Date < 921484367999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 18825,
+            "selection": "Release_Date >= 897138822857.1428 AND Release_Date < 924189428571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70148,
+            "selection": "Release_Date >= 899843883428.5714 AND Release_Date < 926894489142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70165,
+            "selection": "Release_Date >= 902548944000 AND Release_Date < 929599549714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70187,
+            "selection": "Release_Date >= 907959065142.8572 AND Release_Date < 935009670857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70203,
+            "selection": "Release_Date >= 910664125714.2858 AND Release_Date < 937714731428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70222,
+            "selection": "Release_Date >= 913369186285.7142 AND Release_Date < 940419791999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70238,
+            "selection": "Release_Date >= 916074246857.1428 AND Release_Date < 943124852571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70273,
+            "selection": "Release_Date >= 918779307428.5714 AND Release_Date < 945829913142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70306,
+            "selection": "Release_Date >= 924189428571.4286 AND Release_Date < 951240034285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70340,
+            "selection": "Release_Date >= 932304610285.7142 AND Release_Date < 959355215999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70356,
+            "selection": "Release_Date >= 935009670857.1428 AND Release_Date < 962060276571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70373,
+            "selection": "Release_Date >= 937714731428.5714 AND Release_Date < 964765337142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70388,
+            "selection": "Release_Date >= 940419792000 AND Release_Date < 967470397714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70406,
+            "selection": "Release_Date >= 943124852571.4286 AND Release_Date < 970175458285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70439,
+            "selection": "Release_Date >= 945829913142.8572 AND Release_Date < 972880518857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70456,
+            "selection": "Release_Date >= 951240034285.7142 AND Release_Date < 978290639999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70472,
+            "selection": "Release_Date >= 953945094857.1428 AND Release_Date < 980995700571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70489,
+            "selection": "Release_Date >= 956650155428.5714 AND Release_Date < 983700761142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70539,
+            "selection": "Release_Date >= 959355216000 AND Release_Date < 986405821714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70555,
+            "selection": "Release_Date >= 962060276571.4286 AND Release_Date < 989110882285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70573,
+            "selection": "Release_Date >= 964765337142.8572 AND Release_Date < 991815942857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70588,
+            "selection": "Release_Date >= 967470397714.2858 AND Release_Date < 994521003428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70624,
+            "selection": "Release_Date >= 972880518857.1428 AND Release_Date < 999931124571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70639,
+            "selection": "Release_Date >= 1002636185142.857 AND Release_Date < 975585579428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70673,
+            "selection": "Release_Date >= 1010751366857.1428 AND Release_Date < 983700761142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70689,
+            "selection": "Release_Date >= 1016161487999.9999 AND Release_Date < 989110882285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70706,
+            "selection": "Release_Date >= 1018866548571.4285 AND Release_Date < 991815942857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70722,
+            "selection": "Release_Date >= 1021571609142.857 AND Release_Date < 994521003428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70773,
+            "selection": "Release_Date >= 1024276669714.2856 AND Release_Date < 997226064000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70823,
+            "selection": "Release_Date >= 1026981730285.7142 AND Release_Date < 999931124571.4286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70872,
+            "selection": "Release_Date >= 1002636185142.8572 AND Release_Date < 1029686790857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70889,
+            "selection": "Release_Date >= 1005341245714.2858 AND Release_Date < 1032391851428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70906,
+            "selection": "Release_Date >= 1008046306285.7142 AND Release_Date < 1035096911999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70922,
+            "selection": "Release_Date >= 1013456427428.5714 AND Release_Date < 1040507033142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70938,
+            "selection": "Release_Date >= 1016161488000 AND Release_Date < 1043212093714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 70973,
+            "selection": "Release_Date >= 1018866548571.4286 AND Release_Date < 1045917154285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71007,
+            "selection": "Release_Date >= 1026981730285.7142 AND Release_Date < 1054032335999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71022,
+            "selection": "Release_Date >= 1029686790857.1428 AND Release_Date < 1056737396571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71040,
+            "selection": "Release_Date >= 1032391851428.5714 AND Release_Date < 1059442457142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71056,
+            "selection": "Release_Date >= 1035096912000 AND Release_Date < 1062147517714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71073,
+            "selection": "Release_Date >= 1037801972571.4286 AND Release_Date < 1064852578285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71106,
+            "selection": "Release_Date >= 1045917154285.7142 AND Release_Date < 1072967759999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71122,
+            "selection": "Release_Date >= 1051327275428.5714 AND Release_Date < 1078377881142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71139,
+            "selection": "Release_Date >= 1056737396571.4286 AND Release_Date < 1083788002285.7142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71155,
+            "selection": "Release_Date >= 1059442457142.8572 AND Release_Date < 1086493062857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71172,
+            "selection": "Release_Date >= 1062147517714.2858 AND Release_Date < 1089198123428.5714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71188,
+            "selection": "Release_Date >= 1064852578285.7142 AND Release_Date < 1091903183999.9999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71307,
+            "selection": "Release_Date >= 1067557638857.1428 AND Release_Date < 1094608244571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71339,
+            "selection": "Release_Date >= 1070262699428.5714 AND Release_Date < 1097313305142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71372,
+            "selection": "Release_Date >= 1072967760000 AND Release_Date < 1100018365714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71406,
+            "selection": "Release_Date >= 1075672820571.4286 AND Release_Date < 1102723426285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71439,
+            "selection": "Release_Date >= 1081082941714.2858 AND Release_Date < 1108133547428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71473,
+            "selection": "Release_Date >= 1083788002285.7142 AND Release_Date < 1110838608000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71492,
+            "selection": "Release_Date >= 1086493062857.1428 AND Release_Date < 1113543668571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71523,
+            "selection": "Release_Date >= 1091903184000.0001 AND Release_Date < 1118953789714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71539,
+            "selection": "Release_Date >= 1094608244571.4286 AND Release_Date < 1121658850285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71556,
+            "selection": "Release_Date >= 1100018365714.2856 AND Release_Date < 1127068971428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71572,
+            "selection": "Release_Date >= 1102723426285.7144 AND Release_Date < 1129774032000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71605,
+            "selection": "Release_Date >= 1108133547428.5713 AND Release_Date < 1135184153142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71622,
+            "selection": "Release_Date >= 1110838608000 AND Release_Date < 1137889213714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71639,
+            "selection": "Release_Date >= 1116248729142.857 AND Release_Date < 1143299334857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71656,
+            "selection": "Release_Date >= 1118953789714.2856 AND Release_Date < 1146004395428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71672,
+            "selection": "Release_Date >= 1121658850285.7144 AND Release_Date < 1148709456000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71689,
+            "selection": "Release_Date >= 1124363910857.1426 AND Release_Date < 1151414516571.4282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71706,
+            "selection": "Release_Date >= 1127068971428.5713 AND Release_Date < 1154119577142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71723,
+            "selection": "Release_Date >= 1132479092571.4287 AND Release_Date < 1159529698285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71739,
+            "selection": "Release_Date >= 1135184153142.857 AND Release_Date < 1162234758857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71773,
+            "selection": "Release_Date >= 1140594274285.7144 AND Release_Date < 1167644880000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71789,
+            "selection": "Release_Date >= 1146004395428.5713 AND Release_Date < 1173055001142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71808,
+            "selection": "Release_Date >= 1148709456000 AND Release_Date < 1175760061714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71822,
+            "selection": "Release_Date >= 1151414516571.4287 AND Release_Date < 1178465122285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71839,
+            "selection": "Release_Date >= 1154119577142.857 AND Release_Date < 1181170182857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71873,
+            "selection": "Release_Date >= 1156824637714.2856 AND Release_Date < 1183875243428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71889,
+            "selection": "Release_Date >= 1162234758857.1426 AND Release_Date < 1189285364571.4282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71905,
+            "selection": "Release_Date >= 1167644880000 AND Release_Date < 1194695485714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71923,
+            "selection": "Release_Date >= 1173055001142.857 AND Release_Date < 1200105606857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71939,
+            "selection": "Release_Date >= 1175760061714.2856 AND Release_Date < 1202810667428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71956,
+            "selection": "Release_Date >= 1178465122285.7144 AND Release_Date < 1205515728000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71972,
+            "selection": "Release_Date >= 1183875243428.5713 AND Release_Date < 1210925849142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 71989,
+            "selection": "Release_Date >= 1186580304000 AND Release_Date < 1213630909714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72005,
+            "selection": "Release_Date >= 1191990425142.857 AND Release_Date < 1219041030857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72040,
+            "selection": "Release_Date >= 1194695485714.2856 AND Release_Date < 1221746091428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72072,
+            "selection": "Release_Date >= 1197400546285.7144 AND Release_Date < 1224451152000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72089,
+            "selection": "Release_Date >= 1200105606857.1426 AND Release_Date < 1227156212571.4282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72105,
+            "selection": "Release_Date >= 1202810667428.5713 AND Release_Date < 1229861273142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72122,
+            "selection": "Release_Date >= 1205515728000 AND Release_Date < 1232566333714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72138,
+            "selection": "Release_Date >= 1208220788571.4287 AND Release_Date < 1235271394285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72173,
+            "selection": "Release_Date >= 1213630909714.2856 AND Release_Date < 1240681515428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72189,
+            "selection": "Release_Date >= 1216335970285.7144 AND Release_Date < 1243386576000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72206,
+            "selection": "Release_Date >= 1219041030857.1426 AND Release_Date < 1246091636571.4282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72222,
+            "selection": "Release_Date >= 1221746091428.5713 AND Release_Date < 1248796697142.857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72239,
+            "selection": "Release_Date >= 1224451152000 AND Release_Date < 1251501757714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72256,
+            "selection": "Release_Date >= 1229861273142.857 AND Release_Date < 1256911878857.1426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72272,
+            "selection": "Release_Date >= 1232566333714.2856 AND Release_Date < 1259616939428.5713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72289,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72306,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72322,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Release_Date",
+            "time": 72340,
+            "selection": "Release_Date >= 1235271394285.7144 AND Release_Date < 1262322000000",
+            "metadata": {
+                "brush_id": 1
+            }
+        }
+    ]
+}

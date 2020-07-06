@@ -1,0 +1,9 @@
+{
+  "host":"localhost",
+  "pg_ctl_loc":"pg_ctl",
+  "data_loc":"/usr/local/var/postgres",
+  "psql_loc":"psql",
+  "log_loc":"/usr/local/var/postgres/logfile",
+  "password":"XA*yiTx_8Hko",
+  "port":5432
+}

@@ -1,0 +1,1478 @@
+{
+    "setup": [
+        {
+            "name": "Release_Date",
+            "binning": [
+                {
+                    "dimension": "Release_Date",
+                    "width": 30541006451.612904,
+                    "reference": 315550800000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "IMDB_Rating",
+            "binning": [
+                {
+                    "dimension": "IMDB_Rating",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "binning": [
+                {
+                    "dimension": "Rotten_Tomatoes_Rating",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Production_Budget",
+            "binning": [
+                {
+                    "dimension": "Production_Budget",
+                    "width": 2,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Running_Time_min",
+            "binning": [
+                {
+                    "dimension": "Running_Time_min",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_DVD_Sales",
+            "binning": [
+                {
+                    "dimension": "US_DVD_Sales",
+                    "width": 2,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_Gross",
+            "binning": [
+                {
+                    "dimension": "US_Gross",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and Worldwide_Gross"
+        },
+        {
+            "name": "Worldwide_Gross",
+            "binning": [
+                {
+                    "dimension": "Worldwide_Gross",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "Worldwide_Gross",
+            "time": 0,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 29,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 44,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 58.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 76,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 61.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 101,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 68.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 123,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 78.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 149,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 89.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 169,
+            "selection": "Worldwide_Gross >= 106.28571428571428 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 187,
+            "selection": "Worldwide_Gross >= 130.28571428571428 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 205,
+            "selection": "Worldwide_Gross >= 140.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 226,
+            "selection": "Worldwide_Gross >= 150.85714285714286 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 244,
+            "selection": "Worldwide_Gross >= 157.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 295,
+            "selection": "Worldwide_Gross >= 157.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 312,
+            "selection": "Worldwide_Gross >= 161.14285714285714 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 330,
+            "selection": "Worldwide_Gross >= 168 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 347,
+            "selection": "Worldwide_Gross >= 174.85714285714286 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 362,
+            "selection": "Worldwide_Gross >= 181.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 379,
+            "selection": "Worldwide_Gross >= 192 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 395,
+            "selection": "Worldwide_Gross >= 198.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 412,
+            "selection": "Worldwide_Gross >= 205.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 429,
+            "selection": "Worldwide_Gross >= 209.14285714285714 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 448,
+            "selection": "Worldwide_Gross >= 212.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 462,
+            "selection": "Worldwide_Gross >= 219.42857142857142 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 479,
+            "selection": "Worldwide_Gross >= 222.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 496,
+            "selection": "Worldwide_Gross >= 226.28571428571428 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 519,
+            "selection": "Worldwide_Gross >= 236.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 542,
+            "selection": "Worldwide_Gross >= 250.28571428571428 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 555,
+            "selection": "Worldwide_Gross >= 264 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 567,
+            "selection": "Worldwide_Gross >= 264 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 579,
+            "selection": "Worldwide_Gross >= 270.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 595,
+            "selection": "Worldwide_Gross >= 274.2857142857143 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 612,
+            "selection": "Worldwide_Gross >= 274.2857142857143 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 629,
+            "selection": "Worldwide_Gross >= 277.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 645,
+            "selection": "Worldwide_Gross >= 277.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 662,
+            "selection": "Worldwide_Gross >= 277.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2295,
+            "selection": "Worldwide_Gross >= 281.1428571428571 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2312,
+            "selection": "Worldwide_Gross >= 281.1428571428571 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2328,
+            "selection": "Worldwide_Gross >= 284.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2363,
+            "selection": "Worldwide_Gross >= 284.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2379,
+            "selection": "Worldwide_Gross >= 288 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2394,
+            "selection": "Worldwide_Gross >= 291.4285714285714 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2412,
+            "selection": "Worldwide_Gross >= 301.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2428,
+            "selection": "Worldwide_Gross >= 308.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2444,
+            "selection": "Worldwide_Gross >= 318.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2461,
+            "selection": "Worldwide_Gross >= 329.1428571428571 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2479,
+            "selection": "Worldwide_Gross >= 336 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2495,
+            "selection": "Worldwide_Gross >= 339.4285714285714 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2511,
+            "selection": "Worldwide_Gross >= 349.7142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2529,
+            "selection": "Worldwide_Gross >= 356.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2544,
+            "selection": "Worldwide_Gross >= 360 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2561,
+            "selection": "Worldwide_Gross >= 366.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2578,
+            "selection": "Worldwide_Gross >= 373.71428571428567 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2595,
+            "selection": "Worldwide_Gross >= 387.4285714285714 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2611,
+            "selection": "Worldwide_Gross >= 397.71428571428567 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2628,
+            "selection": "Worldwide_Gross >= 414.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2644,
+            "selection": "Worldwide_Gross >= 428.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2662,
+            "selection": "Worldwide_Gross >= 449.1428571428571 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2678,
+            "selection": "Worldwide_Gross >= 462.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2694,
+            "selection": "Worldwide_Gross >= 476.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2711,
+            "selection": "Worldwide_Gross >= 490.2857142857143 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2728,
+            "selection": "Worldwide_Gross >= 500.57142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2744,
+            "selection": "Worldwide_Gross >= 510.85714285714283 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2762,
+            "selection": "Worldwide_Gross >= 524.5714285714286 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2778,
+            "selection": "Worldwide_Gross >= 534.8571428571428 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2795,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 548.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2811,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 562.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2828,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 572.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2845,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 579.4285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2862,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 586.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2878,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 589.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2895,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 589.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2913,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 589.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2929,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 593.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2945,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 596.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2963,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 596.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2979,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 603.4285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 2996,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 610.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3012,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 620.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3028,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 630.8571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3046,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 641.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3062,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 658.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3079,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 668.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3094,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 675.4285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3111,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 685.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3129,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 689.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3145,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 696",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3179,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 702.8571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3194,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 709.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3211,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 709.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3230,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 713.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3244,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 713.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3263,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 720",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3295,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 723.4285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3311,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 730.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3328,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 737.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3362,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 744",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3378,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 764.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3396,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 771.4285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3429,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 778.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3445,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 785.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3461,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 788.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3478,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 788.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3496,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 788.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3512,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 792",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3527,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 795.4285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3545,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 798.8571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3562,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 805.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3579,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 812.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3595,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 816",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3611,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 822.8571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3629,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 826.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3648,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 826.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3661,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 833.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3678,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 836.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3696,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 843.4285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3711,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 853.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3727,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 860.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3744,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 860.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3761,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 864",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3779,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 867.4285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3795,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 870.8571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3811,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 874.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3828,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 874.2857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3845,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 877.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3861,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 881.1428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3877,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 884.5714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3895,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 891.4285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3912,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 901.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3929,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 912",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3944,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 925.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3962,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 939.4285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3979,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 960",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 3995,
+            "selection": "Worldwide_Gross >= 54.857142857142854 AND Worldwide_Gross < 984",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4012,
+            "selection": "Worldwide_Gross >= 1008 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4028,
+            "selection": "Worldwide_Gross >= 1032 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4046,
+            "selection": "Worldwide_Gross >= 1052.5714285714284 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4062,
+            "selection": "Worldwide_Gross >= 1083.4285714285713 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4078,
+            "selection": "Worldwide_Gross >= 1100.5714285714284 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4094,
+            "selection": "Worldwide_Gross >= 1114.2857142857142 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4112,
+            "selection": "Worldwide_Gross >= 1124.5714285714284 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4127,
+            "selection": "Worldwide_Gross >= 1131.4285714285713 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4145,
+            "selection": "Worldwide_Gross >= 1138.2857142857142 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4162,
+            "selection": "Worldwide_Gross >= 1145.142857142857 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4178,
+            "selection": "Worldwide_Gross >= 1148.5714285714284 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4195,
+            "selection": "Worldwide_Gross >= 1158.857142857143 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4212,
+            "selection": "Worldwide_Gross >= 1165.7142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4228,
+            "selection": "Worldwide_Gross >= 1176 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4245,
+            "selection": "Worldwide_Gross >= 1189.7142857142856 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4261,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4279,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4295,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4312,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4329,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4398,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4686,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 4703,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 54.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 5750,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 5812,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 5828,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6334,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 37.714285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6446,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6478,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6542,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6566,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 44.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6595,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 44.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6686,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 44.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6728,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 48",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Worldwide_Gross",
+            "time": 6761,
+            "selection": "Worldwide_Gross >= 1200 AND Worldwide_Gross < 48",
+            "metadata": {
+                "brush_id": 1
+            }
+        }
+    ]
+}

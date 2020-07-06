@@ -1,0 +1,5262 @@
+{
+    "setup": [
+        {
+            "name": "RECORD_DATE",
+            "binning": [
+                {
+                    "dimension": "RECORD_DATE",
+                    "width": 163725000,
+                    "reference": 1325307600000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "ELEVATION",
+            "binning": [
+                {
+                    "dimension": "ELEVATION",
+                    "width": 200,
+                    "reference": -200
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "LONGITUDE",
+            "binning": [
+                {
+                    "dimension": "LONGITUDE",
+                    "width": 20,
+                    "reference": -160
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "TEMP_MIN",
+            "binning": [
+                {
+                    "dimension": "TEMP_MIN",
+                    "width": 5,
+                    "reference": -10
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "TEMP_MAX",
+            "binning": [
+                {
+                    "dimension": "TEMP_MAX",
+                    "width": 5,
+                    "reference": -10
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "SNOW",
+            "binning": [
+                {
+                    "dimension": "SNOW",
+                    "width": 50,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and PRECIPITATION and WIND"
+        },
+        {
+            "name": "PRECIPITATION",
+            "binning": [
+                {
+                    "dimension": "PRECIPITATION",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and WIND"
+        },
+        {
+            "name": "WIND",
+            "binning": [
+                {
+                    "dimension": "WIND",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "RECORD_DATE",
+            "time": 0,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325374961142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 30,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325397414857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 56,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325397414857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 77,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325397414857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 93,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325419868571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 112,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325442322285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 131,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325442322285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 175,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325464776000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 193,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325464776000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 210,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325487229714.2856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 244,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325509683428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 576,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325532137142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 594,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325532137142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 611,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325532137142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 626,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325554590857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 671,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325554590857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 678,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325554590857.1428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 747,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325577044571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 763,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325577044571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 776,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325577044571.4285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 793,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325599498285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 1095,
+            "selection": "RECORD_DATE >= 1325374961142.8572 AND RECORD_DATE < 1325599498285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2310,
+            "selection": "RECORD_DATE >= 1325397414857.143 AND RECORD_DATE < 1325621952000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2394,
+            "selection": "RECORD_DATE >= 1325419868571.4287 AND RECORD_DATE < 1325644405714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2410,
+            "selection": "RECORD_DATE >= 1325464776000 AND RECORD_DATE < 1325689313142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2426,
+            "selection": "RECORD_DATE >= 1325487229714.286 AND RECORD_DATE < 1325711766857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2460,
+            "selection": "RECORD_DATE >= 1325509683428.5715 AND RECORD_DATE < 1325734220571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2496,
+            "selection": "RECORD_DATE >= 1325532137142.8572 AND RECORD_DATE < 1325756674285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2512,
+            "selection": "RECORD_DATE >= 1325554590857.143 AND RECORD_DATE < 1325779128000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2529,
+            "selection": "RECORD_DATE >= 1325577044571.4287 AND RECORD_DATE < 1325801581714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2544,
+            "selection": "RECORD_DATE >= 1325621952000 AND RECORD_DATE < 1325846489142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2583,
+            "selection": "RECORD_DATE >= 1325644405714.286 AND RECORD_DATE < 1325868942857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2609,
+            "selection": "RECORD_DATE >= 1325666859428.5715 AND RECORD_DATE < 1325891396571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2626,
+            "selection": "RECORD_DATE >= 1325689313142.8572 AND RECORD_DATE < 1325913850285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2643,
+            "selection": "RECORD_DATE >= 1325734220571.4287 AND RECORD_DATE < 1325958757714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2660,
+            "selection": "RECORD_DATE >= 1325801581714.286 AND RECORD_DATE < 1326026118857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2676,
+            "selection": "RECORD_DATE >= 1325824035428.5715 AND RECORD_DATE < 1326048572571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2693,
+            "selection": "RECORD_DATE >= 1325846489142.8572 AND RECORD_DATE < 1326071026285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2709,
+            "selection": "RECORD_DATE >= 1325868942857.143 AND RECORD_DATE < 1326093480000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2743,
+            "selection": "RECORD_DATE >= 1325891396571.4287 AND RECORD_DATE < 1326115933714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2760,
+            "selection": "RECORD_DATE >= 1325913850285.7144 AND RECORD_DATE < 1326138387428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2793,
+            "selection": "RECORD_DATE >= 1325936304000 AND RECORD_DATE < 1326160841142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2809,
+            "selection": "RECORD_DATE >= 1325958757714.286 AND RECORD_DATE < 1326183294857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2827,
+            "selection": "RECORD_DATE >= 1325981211428.5715 AND RECORD_DATE < 1326205748571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2842,
+            "selection": "RECORD_DATE >= 1326003665142.8572 AND RECORD_DATE < 1326228202285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2859,
+            "selection": "RECORD_DATE >= 1326026118857.143 AND RECORD_DATE < 1326250656000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2877,
+            "selection": "RECORD_DATE >= 1326048572571.4287 AND RECORD_DATE < 1326273109714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2893,
+            "selection": "RECORD_DATE >= 1326071026285.7144 AND RECORD_DATE < 1326295563428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2910,
+            "selection": "RECORD_DATE >= 1326093480000 AND RECORD_DATE < 1326318017142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2943,
+            "selection": "RECORD_DATE >= 1326115933714.286 AND RECORD_DATE < 1326340470857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2959,
+            "selection": "RECORD_DATE >= 1326160841142.8572 AND RECORD_DATE < 1326385378285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2976,
+            "selection": "RECORD_DATE >= 1326183294857.143 AND RECORD_DATE < 1326407832000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 2993,
+            "selection": "RECORD_DATE >= 1326205748571.4287 AND RECORD_DATE < 1326430285714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3009,
+            "selection": "RECORD_DATE >= 1326250656000 AND RECORD_DATE < 1326475193142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3026,
+            "selection": "RECORD_DATE >= 1326273109714.286 AND RECORD_DATE < 1326497646857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3042,
+            "selection": "RECORD_DATE >= 1326295563428.5715 AND RECORD_DATE < 1326520100571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3059,
+            "selection": "RECORD_DATE >= 1326318017142.8572 AND RECORD_DATE < 1326542554285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3094,
+            "selection": "RECORD_DATE >= 1326340470857.143 AND RECORD_DATE < 1326565008000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3112,
+            "selection": "RECORD_DATE >= 1326362924571.4287 AND RECORD_DATE < 1326587461714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3144,
+            "selection": "RECORD_DATE >= 1326385378285.7144 AND RECORD_DATE < 1326609915428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3159,
+            "selection": "RECORD_DATE >= 1326430285714.286 AND RECORD_DATE < 1326654822857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3194,
+            "selection": "RECORD_DATE >= 1326452739428.5715 AND RECORD_DATE < 1326677276571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3227,
+            "selection": "RECORD_DATE >= 1326475193142.8572 AND RECORD_DATE < 1326699730285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3242,
+            "selection": "RECORD_DATE >= 1326497646857.143 AND RECORD_DATE < 1326722184000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3259,
+            "selection": "RECORD_DATE >= 1326520100571.4287 AND RECORD_DATE < 1326744637714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3275,
+            "selection": "RECORD_DATE >= 1326542554285.7144 AND RECORD_DATE < 1326767091428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3309,
+            "selection": "RECORD_DATE >= 1326565008000 AND RECORD_DATE < 1326789545142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3326,
+            "selection": "RECORD_DATE >= 1326609915428.5715 AND RECORD_DATE < 1326834452571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3342,
+            "selection": "RECORD_DATE >= 1326654822857.143 AND RECORD_DATE < 1326879360000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3359,
+            "selection": "RECORD_DATE >= 1326767091428.5715 AND RECORD_DATE < 1326991628571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3376,
+            "selection": "RECORD_DATE >= 1326879360000 AND RECORD_DATE < 1327103897142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3393,
+            "selection": "RECORD_DATE >= 1326946721142.8572 AND RECORD_DATE < 1327171258285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3409,
+            "selection": "RECORD_DATE >= 1326991628571.4287 AND RECORD_DATE < 1327216165714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3426,
+            "selection": "RECORD_DATE >= 1327014082285.7144 AND RECORD_DATE < 1327238619428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3443,
+            "selection": "RECORD_DATE >= 1327036536000 AND RECORD_DATE < 1327261073142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3477,
+            "selection": "RECORD_DATE >= 1327058989714.286 AND RECORD_DATE < 1327283526857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3493,
+            "selection": "RECORD_DATE >= 1327081443428.5715 AND RECORD_DATE < 1327305980571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3509,
+            "selection": "RECORD_DATE >= 1327103897142.8572 AND RECORD_DATE < 1327328434285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3526,
+            "selection": "RECORD_DATE >= 1327148804571.4287 AND RECORD_DATE < 1327373341714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3543,
+            "selection": "RECORD_DATE >= 1327171258285.7144 AND RECORD_DATE < 1327395795428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3577,
+            "selection": "RECORD_DATE >= 1327193712000 AND RECORD_DATE < 1327418249142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3609,
+            "selection": "RECORD_DATE >= 1327216165714.286 AND RECORD_DATE < 1327440702857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3643,
+            "selection": "RECORD_DATE >= 1327261073142.8572 AND RECORD_DATE < 1327485610285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3677,
+            "selection": "RECORD_DATE >= 1327305980571.4287 AND RECORD_DATE < 1327530517714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3694,
+            "selection": "RECORD_DATE >= 1327373341714.286 AND RECORD_DATE < 1327597878857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3710,
+            "selection": "RECORD_DATE >= 1327395795428.5715 AND RECORD_DATE < 1327620332571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3726,
+            "selection": "RECORD_DATE >= 1327418249142.8572 AND RECORD_DATE < 1327642786285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3759,
+            "selection": "RECORD_DATE >= 1327463156571.4287 AND RECORD_DATE < 1327687693714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3776,
+            "selection": "RECORD_DATE >= 1327485610285.7144 AND RECORD_DATE < 1327710147428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3792,
+            "selection": "RECORD_DATE >= 1327508064000 AND RECORD_DATE < 1327732601142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3809,
+            "selection": "RECORD_DATE >= 1327530517714.286 AND RECORD_DATE < 1327755054857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3826,
+            "selection": "RECORD_DATE >= 1327552971428.5715 AND RECORD_DATE < 1327777508571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3843,
+            "selection": "RECORD_DATE >= 1327575425142.8572 AND RECORD_DATE < 1327799962285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3859,
+            "selection": "RECORD_DATE >= 1327597878857.143 AND RECORD_DATE < 1327822416000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3876,
+            "selection": "RECORD_DATE >= 1327665240000 AND RECORD_DATE < 1327889777142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3893,
+            "selection": "RECORD_DATE >= 1327710147428.5715 AND RECORD_DATE < 1327934684571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3909,
+            "selection": "RECORD_DATE >= 1327732601142.8572 AND RECORD_DATE < 1327957138285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3926,
+            "selection": "RECORD_DATE >= 1327755054857.143 AND RECORD_DATE < 1327979592000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3942,
+            "selection": "RECORD_DATE >= 1327799962285.7144 AND RECORD_DATE < 1328024499428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3959,
+            "selection": "RECORD_DATE >= 1327822416000 AND RECORD_DATE < 1328046953142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3976,
+            "selection": "RECORD_DATE >= 1327844869714.286 AND RECORD_DATE < 1328069406857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 3993,
+            "selection": "RECORD_DATE >= 1327912230857.143 AND RECORD_DATE < 1328136768000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4009,
+            "selection": "RECORD_DATE >= 1328002045714.286 AND RECORD_DATE < 1328226582857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4026,
+            "selection": "RECORD_DATE >= 1328091860571.4287 AND RECORD_DATE < 1328316397714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4042,
+            "selection": "RECORD_DATE >= 1328204129142.8572 AND RECORD_DATE < 1328428666285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4059,
+            "selection": "RECORD_DATE >= 1328361305142.8572 AND RECORD_DATE < 1328585842285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4076,
+            "selection": "RECORD_DATE >= 1328428666285.7144 AND RECORD_DATE < 1328653203428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4092,
+            "selection": "RECORD_DATE >= 1328473573714.286 AND RECORD_DATE < 1328698110857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4112,
+            "selection": "RECORD_DATE >= 1328496027428.5715 AND RECORD_DATE < 1328720564571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4126,
+            "selection": "RECORD_DATE >= 1328518481142.8572 AND RECORD_DATE < 1328743018285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4160,
+            "selection": "RECORD_DATE >= 1328563388571.4287 AND RECORD_DATE < 1328787925714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4176,
+            "selection": "RECORD_DATE >= 1328585842285.7144 AND RECORD_DATE < 1328810379428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4193,
+            "selection": "RECORD_DATE >= 1328608296000 AND RECORD_DATE < 1328832833142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4209,
+            "selection": "RECORD_DATE >= 1328630749714.286 AND RECORD_DATE < 1328855286857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4243,
+            "selection": "RECORD_DATE >= 1328653203428.5715 AND RECORD_DATE < 1328877740571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4277,
+            "selection": "RECORD_DATE >= 1328675657142.8572 AND RECORD_DATE < 1328900194285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4292,
+            "selection": "RECORD_DATE >= 1328698110857.143 AND RECORD_DATE < 1328922648000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4327,
+            "selection": "RECORD_DATE >= 1328720564571.4287 AND RECORD_DATE < 1328945101714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4343,
+            "selection": "RECORD_DATE >= 1328743018285.7144 AND RECORD_DATE < 1328967555428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4359,
+            "selection": "RECORD_DATE >= 1328765472000 AND RECORD_DATE < 1328990009142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4376,
+            "selection": "RECORD_DATE >= 1328787925714.286 AND RECORD_DATE < 1329012462857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4410,
+            "selection": "RECORD_DATE >= 1328832833142.8572 AND RECORD_DATE < 1329057370285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4426,
+            "selection": "RECORD_DATE >= 1328877740571.4287 AND RECORD_DATE < 1329102277714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4443,
+            "selection": "RECORD_DATE >= 1328922648000 AND RECORD_DATE < 1329147185142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4459,
+            "selection": "RECORD_DATE >= 1328967555428.5715 AND RECORD_DATE < 1329192092571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4477,
+            "selection": "RECORD_DATE >= 1329012462857.143 AND RECORD_DATE < 1329237000000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4493,
+            "selection": "RECORD_DATE >= 1329079824000 AND RECORD_DATE < 1329304361142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4509,
+            "selection": "RECORD_DATE >= 1329169638857.143 AND RECORD_DATE < 1329394176000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4526,
+            "selection": "RECORD_DATE >= 1329237000000 AND RECORD_DATE < 1329461537142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4543,
+            "selection": "RECORD_DATE >= 1329326814857.143 AND RECORD_DATE < 1329551352000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4560,
+            "selection": "RECORD_DATE >= 1329416629714.286 AND RECORD_DATE < 1329641166857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4575,
+            "selection": "RECORD_DATE >= 1329461537142.8572 AND RECORD_DATE < 1329686074285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4592,
+            "selection": "RECORD_DATE >= 1329528898285.7144 AND RECORD_DATE < 1329753435428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4609,
+            "selection": "RECORD_DATE >= 1329596259428.5715 AND RECORD_DATE < 1329820796571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4626,
+            "selection": "RECORD_DATE >= 1329708528000 AND RECORD_DATE < 1329933065142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4643,
+            "selection": "RECORD_DATE >= 1329843250285.7144 AND RECORD_DATE < 1330067787428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4659,
+            "selection": "RECORD_DATE >= 1329955518857.143 AND RECORD_DATE < 1330180056000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4676,
+            "selection": "RECORD_DATE >= 1330045333714.286 AND RECORD_DATE < 1330269870857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4692,
+            "selection": "RECORD_DATE >= 1330090241142.8572 AND RECORD_DATE < 1330314778285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4710,
+            "selection": "RECORD_DATE >= 1330157602285.7144 AND RECORD_DATE < 1330382139428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4725,
+            "selection": "RECORD_DATE >= 1330202509714.286 AND RECORD_DATE < 1330427046857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4742,
+            "selection": "RECORD_DATE >= 1330247417142.8572 AND RECORD_DATE < 1330471954285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4759,
+            "selection": "RECORD_DATE >= 1330292324571.4287 AND RECORD_DATE < 1330516861714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4776,
+            "selection": "RECORD_DATE >= 1330314778285.7144 AND RECORD_DATE < 1330539315428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4792,
+            "selection": "RECORD_DATE >= 1330337232000 AND RECORD_DATE < 1330561769142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4809,
+            "selection": "RECORD_DATE >= 1330382139428.5715 AND RECORD_DATE < 1330606676571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4826,
+            "selection": "RECORD_DATE >= 1330404593142.8572 AND RECORD_DATE < 1330629130285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4842,
+            "selection": "RECORD_DATE >= 1330449500571.4287 AND RECORD_DATE < 1330674037714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4859,
+            "selection": "RECORD_DATE >= 1330516861714.286 AND RECORD_DATE < 1330741398857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4875,
+            "selection": "RECORD_DATE >= 1330561769142.8572 AND RECORD_DATE < 1330786306285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4893,
+            "selection": "RECORD_DATE >= 1330629130285.7144 AND RECORD_DATE < 1330853667428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4909,
+            "selection": "RECORD_DATE >= 1330696491428.5715 AND RECORD_DATE < 1330921028571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4926,
+            "selection": "RECORD_DATE >= 1330763852571.4287 AND RECORD_DATE < 1330988389714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4942,
+            "selection": "RECORD_DATE >= 1330831213714.286 AND RECORD_DATE < 1331055750857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4959,
+            "selection": "RECORD_DATE >= 1330876121142.8572 AND RECORD_DATE < 1331100658285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4976,
+            "selection": "RECORD_DATE >= 1330921028571.4287 AND RECORD_DATE < 1331145565714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 4992,
+            "selection": "RECORD_DATE >= 1330988389714.286 AND RECORD_DATE < 1331212926857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5009,
+            "selection": "RECORD_DATE >= 1331055750857.143 AND RECORD_DATE < 1331280288000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5026,
+            "selection": "RECORD_DATE >= 1331100658285.7144 AND RECORD_DATE < 1331325195428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5042,
+            "selection": "RECORD_DATE >= 1331145565714.286 AND RECORD_DATE < 1331370102857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5059,
+            "selection": "RECORD_DATE >= 1331168019428.5715 AND RECORD_DATE < 1331392556571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5076,
+            "selection": "RECORD_DATE >= 1331212926857.143 AND RECORD_DATE < 1331437464000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5093,
+            "selection": "RECORD_DATE >= 1331257834285.7144 AND RECORD_DATE < 1331482371428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5109,
+            "selection": "RECORD_DATE >= 1331347649142.8572 AND RECORD_DATE < 1331572186285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5127,
+            "selection": "RECORD_DATE >= 1331459917714.286 AND RECORD_DATE < 1331684454857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5143,
+            "selection": "RECORD_DATE >= 1331662001142.8572 AND RECORD_DATE < 1331886538285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5160,
+            "selection": "RECORD_DATE >= 1332043714285.7144 AND RECORD_DATE < 1332268251428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5176,
+            "selection": "RECORD_DATE >= 1332178436571.4287 AND RECORD_DATE < 1332402973714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5193,
+            "selection": "RECORD_DATE >= 1332245797714.286 AND RECORD_DATE < 1332470334857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5209,
+            "selection": "RECORD_DATE >= 1332313158857.143 AND RECORD_DATE < 1332537696000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5226,
+            "selection": "RECORD_DATE >= 1332358066285.7144 AND RECORD_DATE < 1332582603428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5243,
+            "selection": "RECORD_DATE >= 1332380520000 AND RECORD_DATE < 1332605057142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5261,
+            "selection": "RECORD_DATE >= 1332402973714.286 AND RECORD_DATE < 1332627510857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5615,
+            "selection": "RECORD_DATE >= 1332425427428.5715 AND RECORD_DATE < 1332649964571.4287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5644,
+            "selection": "RECORD_DATE >= 1332470334857.143 AND RECORD_DATE < 1332694872000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5677,
+            "selection": "RECORD_DATE >= 1332492788571.4287 AND RECORD_DATE < 1332717325714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5744,
+            "selection": "RECORD_DATE >= 1332537696000 AND RECORD_DATE < 1332762233142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5759,
+            "selection": "RECORD_DATE >= 1332560149714.286 AND RECORD_DATE < 1332784686857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5777,
+            "selection": "RECORD_DATE >= 1332605057142.8572 AND RECORD_DATE < 1332829594285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5793,
+            "selection": "RECORD_DATE >= 1332649964571.4287 AND RECORD_DATE < 1332874501714.286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5828,
+            "selection": "RECORD_DATE >= 1332672418285.7144 AND RECORD_DATE < 1332896955428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5843,
+            "selection": "RECORD_DATE >= 1332694872000 AND RECORD_DATE < 1332919409142.8572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5860,
+            "selection": "RECORD_DATE >= 1332717325714.286 AND RECORD_DATE < 1332941862857.143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5876,
+            "selection": "RECORD_DATE >= 1332762233142.8572 AND RECORD_DATE < 1332986770285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5892,
+            "selection": "RECORD_DATE >= 1332784686857.143 AND RECORD_DATE < 1333009224000.0002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5927,
+            "selection": "RECORD_DATE >= 1332829594285.7144 AND RECORD_DATE < 1333054131428.5715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5961,
+            "selection": "RECORD_DATE >= 1332919409142.8572 AND RECORD_DATE < 1333143946285.7144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5976,
+            "selection": "RECORD_DATE >= 1332941862857.1428 AND RECORD_DATE < 1333166400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 5993,
+            "selection": "RECORD_DATE >= 1332941862857.1428 AND RECORD_DATE < 1333166400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 6010,
+            "selection": "RECORD_DATE >= 1332941862857.1428 AND RECORD_DATE < 1333166400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 6027,
+            "selection": "RECORD_DATE >= 1332941862857.1428 AND RECORD_DATE < 1333166400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12792,
+            "selection": "ELEVATION >= 19.428571428571416 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12809,
+            "selection": "ELEVATION >= 19.428571428571416 AND ELEVATION < 28.571428571428555",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12825,
+            "selection": "ELEVATION >= 19.428571428571416 AND ELEVATION < 46.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12843,
+            "selection": "ELEVATION >= 19.428571428571416 AND ELEVATION < 65.14285714285711",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12858,
+            "selection": "ELEVATION >= 19.428571428571416 AND ELEVATION < 65.14285714285711",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12876,
+            "selection": "ELEVATION >= 19.428571428571416 AND ELEVATION < 83.42857142857139",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12893,
+            "selection": "ELEVATION >= 101.71428571428572 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12909,
+            "selection": "ELEVATION >= 129.1428571428571 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12926,
+            "selection": "ELEVATION >= 138.28571428571428 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12942,
+            "selection": "ELEVATION >= 138.28571428571428 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12959,
+            "selection": "ELEVATION >= 138.28571428571428 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 12977,
+            "selection": "ELEVATION >= 147.4285714285714 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 13632,
+            "selection": "ELEVATION >= 147.4285714285714 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 13743,
+            "selection": "ELEVATION >= 147.4285714285714 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 13824,
+            "selection": "ELEVATION >= 138.28571428571428 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 13859,
+            "selection": "ELEVATION >= 138.28571428571428 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 13877,
+            "selection": "ELEVATION >= 129.1428571428571 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 13909,
+            "selection": "ELEVATION >= 129.1428571428571 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14091,
+            "selection": "ELEVATION >= 129.1428571428571 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14719,
+            "selection": "ELEVATION >= 138.28571428571422 AND ELEVATION < 28.571428571428527",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14743,
+            "selection": "ELEVATION >= 156.57142857142856 AND ELEVATION < 46.85714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14759,
+            "selection": "ELEVATION >= 165.71428571428567 AND ELEVATION < 55.99999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14775,
+            "selection": "ELEVATION >= 174.85714285714283 AND ELEVATION < 65.14285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14792,
+            "selection": "ELEVATION >= 183.99999999999994 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14808,
+            "selection": "ELEVATION >= 202.28571428571422 AND ELEVATION < 92.57142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14826,
+            "selection": "ELEVATION >= 101.7142857142857 AND ELEVATION < 211.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14842,
+            "selection": "ELEVATION >= 110.8571428571428 AND ELEVATION < 220.5714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14859,
+            "selection": "ELEVATION >= 119.99999999999997 AND ELEVATION < 229.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14875,
+            "selection": "ELEVATION >= 129.14285714285714 AND ELEVATION < 238.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14893,
+            "selection": "ELEVATION >= 138.28571428571425 AND ELEVATION < 247.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14909,
+            "selection": "ELEVATION >= 147.42857142857142 AND ELEVATION < 257.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14925,
+            "selection": "ELEVATION >= 165.7142857142857 AND ELEVATION < 275.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14942,
+            "selection": "ELEVATION >= 183.99999999999997 AND ELEVATION < 293.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14959,
+            "selection": "ELEVATION >= 193.14285714285714 AND ELEVATION < 302.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14976,
+            "selection": "ELEVATION >= 202.28571428571425 AND ELEVATION < 311.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 14992,
+            "selection": "ELEVATION >= 211.42857142857142 AND ELEVATION < 321.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15009,
+            "selection": "ELEVATION >= 229.7142857142857 AND ELEVATION < 339.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15026,
+            "selection": "ELEVATION >= 247.99999999999997 AND ELEVATION < 357.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15042,
+            "selection": "ELEVATION >= 266.2857142857142 AND ELEVATION < 375.9999999999999",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15059,
+            "selection": "ELEVATION >= 275.42857142857133 AND ELEVATION < 385.142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15075,
+            "selection": "ELEVATION >= 284.57142857142856 AND ELEVATION < 394.2857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15092,
+            "selection": "ELEVATION >= 293.71428571428567 AND ELEVATION < 403.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15109,
+            "selection": "ELEVATION >= 311.9999999999999 AND ELEVATION < 421.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15125,
+            "selection": "ELEVATION >= 339.42857142857133 AND ELEVATION < 449.14285714285705",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15143,
+            "selection": "ELEVATION >= 366.8571428571428 AND ELEVATION < 476.5714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15160,
+            "selection": "ELEVATION >= 385.1428571428571 AND ELEVATION < 494.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15194,
+            "selection": "ELEVATION >= 394.2857142857142 AND ELEVATION < 503.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15209,
+            "selection": "ELEVATION >= 403.42857142857133 AND ELEVATION < 513.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15226,
+            "selection": "ELEVATION >= 421.71428571428567 AND ELEVATION < 531.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15243,
+            "selection": "ELEVATION >= 430.8571428571428 AND ELEVATION < 540.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15259,
+            "selection": "ELEVATION >= 449.1428571428571 AND ELEVATION < 558.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15275,
+            "selection": "ELEVATION >= 458.28571428571433 AND ELEVATION < 568",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15293,
+            "selection": "ELEVATION >= 467.42857142857144 AND ELEVATION < 577.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15310,
+            "selection": "ELEVATION >= 476.57142857142856 AND ELEVATION < 586.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15326,
+            "selection": "ELEVATION >= 522.2857142857142 AND ELEVATION < 632",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15343,
+            "selection": "ELEVATION >= 558.8571428571428 AND ELEVATION < 668.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15359,
+            "selection": "ELEVATION >= 586.2857142857143 AND ELEVATION < 696",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15376,
+            "selection": "ELEVATION >= 604.5714285714286 AND ELEVATION < 714.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15393,
+            "selection": "ELEVATION >= 613.7142857142857 AND ELEVATION < 723.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15409,
+            "selection": "ELEVATION >= 622.8571428571428 AND ELEVATION < 732.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15427,
+            "selection": "ELEVATION >= 641.1428571428572 AND ELEVATION < 750.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15443,
+            "selection": "ELEVATION >= 659.4285714285714 AND ELEVATION < 769.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15459,
+            "selection": "ELEVATION >= 686.8571428571428 AND ELEVATION < 796.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15476,
+            "selection": "ELEVATION >= 714.2857142857143 AND ELEVATION < 824",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15493,
+            "selection": "ELEVATION >= 732.5714285714286 AND ELEVATION < 842.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15509,
+            "selection": "ELEVATION >= 741.7142857142857 AND ELEVATION < 851.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15526,
+            "selection": "ELEVATION >= 778.2857142857143 AND ELEVATION < 888",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15542,
+            "selection": "ELEVATION >= 814.8571428571428 AND ELEVATION < 924.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15559,
+            "selection": "ELEVATION >= 851.4285714285714 AND ELEVATION < 961.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15576,
+            "selection": "ELEVATION >= 878.8571428571428 AND ELEVATION < 988.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15593,
+            "selection": "ELEVATION >= 1016.0000000000001 AND ELEVATION < 906.2857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15609,
+            "selection": "ELEVATION >= 1034.2857142857142 AND ELEVATION < 924.5714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15625,
+            "selection": "ELEVATION >= 1043.4285714285713 AND ELEVATION < 933.7142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15643,
+            "selection": "ELEVATION >= 1061.7142857142858 AND ELEVATION < 952",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15659,
+            "selection": "ELEVATION >= 1080 AND ELEVATION < 970.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15676,
+            "selection": "ELEVATION >= 1107.4285714285713 AND ELEVATION < 997.7142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15692,
+            "selection": "ELEVATION >= 1025.1428571428573 AND ELEVATION < 1134.8571428571431",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15709,
+            "selection": "ELEVATION >= 1061.7142857142856 AND ELEVATION < 1171.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15726,
+            "selection": "ELEVATION >= 1125.7142857142856 AND ELEVATION < 1235.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15742,
+            "selection": "ELEVATION >= 1162.2857142857142 AND ELEVATION < 1272",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15759,
+            "selection": "ELEVATION >= 1189.7142857142856 AND ELEVATION < 1299.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15776,
+            "selection": "ELEVATION >= 1226.2857142857142 AND ELEVATION < 1336",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15792,
+            "selection": "ELEVATION >= 1253.7142857142856 AND ELEVATION < 1363.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15809,
+            "selection": "ELEVATION >= 1281.142857142857 AND ELEVATION < 1390.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15826,
+            "selection": "ELEVATION >= 1290.2857142857142 AND ELEVATION < 1400",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15860,
+            "selection": "ELEVATION >= 1308.5714285714284 AND ELEVATION < 1418.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15875,
+            "selection": "ELEVATION >= 1326.8571428571427 AND ELEVATION < 1436.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15893,
+            "selection": "ELEVATION >= 1345.142857142857 AND ELEVATION < 1454.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15910,
+            "selection": "ELEVATION >= 1372.5714285714284 AND ELEVATION < 1482.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15926,
+            "selection": "ELEVATION >= 1409.142857142857 AND ELEVATION < 1518.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15943,
+            "selection": "ELEVATION >= 1445.7142857142856 AND ELEVATION < 1555.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15959,
+            "selection": "ELEVATION >= 1482.2857142857142 AND ELEVATION < 1592",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15976,
+            "selection": "ELEVATION >= 1555.4285714285713 AND ELEVATION < 1665.142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 15993,
+            "selection": "ELEVATION >= 1610.2857142857142 AND ELEVATION < 1720",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16008,
+            "selection": "ELEVATION >= 1665.142857142857 AND ELEVATION < 1774.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16026,
+            "selection": "ELEVATION >= 1701.7142857142856 AND ELEVATION < 1811.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16043,
+            "selection": "ELEVATION >= 1729.142857142857 AND ELEVATION < 1838.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16059,
+            "selection": "ELEVATION >= 1765.7142857142856 AND ELEVATION < 1875.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16076,
+            "selection": "ELEVATION >= 1802.2857142857138 AND ELEVATION < 1911.9999999999995",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16092,
+            "selection": "ELEVATION >= 1847.9999999999998 AND ELEVATION < 1957.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16109,
+            "selection": "ELEVATION >= 1884.5714285714282 AND ELEVATION < 1994.285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16126,
+            "selection": "ELEVATION >= 1948.5714285714284 AND ELEVATION < 2058.285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16143,
+            "selection": "ELEVATION >= 1975.9999999999998 AND ELEVATION < 2085.7142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16160,
+            "selection": "ELEVATION >= 2003.4285714285713 AND ELEVATION < 2113.142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16176,
+            "selection": "ELEVATION >= 2021.7142857142856 AND ELEVATION < 2131.4285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16210,
+            "selection": "ELEVATION >= 2039.9999999999995 AND ELEVATION < 2149.7142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16225,
+            "selection": "ELEVATION >= 2049.1428571428573 AND ELEVATION < 2158.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16243,
+            "selection": "ELEVATION >= 2076.5714285714284 AND ELEVATION < 2186.2857142857138",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16259,
+            "selection": "ELEVATION >= 2094.857142857143 AND ELEVATION < 2204.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16276,
+            "selection": "ELEVATION >= 2113.1428571428573 AND ELEVATION < 2222.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16294,
+            "selection": "ELEVATION >= 2122.285714285714 AND ELEVATION < 2232",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16327,
+            "selection": "ELEVATION >= 2140.5714285714284 AND ELEVATION < 2250.2857142857138",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16343,
+            "selection": "ELEVATION >= 2149.714285714286 AND ELEVATION < 2259.4285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16496,
+            "selection": "ELEVATION >= 2140.5714285714284 AND ELEVATION < 2250.2857142857138",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16528,
+            "selection": "ELEVATION >= 2104 AND ELEVATION < 2213.7142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16560,
+            "selection": "ELEVATION >= 2067.4285714285716 AND ELEVATION < 2177.142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16576,
+            "selection": "ELEVATION >= 2039.9999999999995 AND ELEVATION < 2149.7142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16592,
+            "selection": "ELEVATION >= 2003.4285714285713 AND ELEVATION < 2113.142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16610,
+            "selection": "ELEVATION >= 1930.285714285714 AND ELEVATION < 2039.9999999999998",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16626,
+            "selection": "ELEVATION >= 1866.285714285714 AND ELEVATION < 1975.9999999999998",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16643,
+            "selection": "ELEVATION >= 1783.9999999999998 AND ELEVATION < 1893.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16659,
+            "selection": "ELEVATION >= 1738.2857142857142 AND ELEVATION < 1848",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16676,
+            "selection": "ELEVATION >= 1683.4285714285713 AND ELEVATION < 1793.142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16692,
+            "selection": "ELEVATION >= 1637.7142857142856 AND ELEVATION < 1747.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16709,
+            "selection": "ELEVATION >= 1582.8571428571427 AND ELEVATION < 1692.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16727,
+            "selection": "ELEVATION >= 1473.142857142857 AND ELEVATION < 1582.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16743,
+            "selection": "ELEVATION >= 1418.2857142857142 AND ELEVATION < 1528",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16759,
+            "selection": "ELEVATION >= 1372.5714285714284 AND ELEVATION < 1482.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16776,
+            "selection": "ELEVATION >= 1335.9999999999998 AND ELEVATION < 1445.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16793,
+            "selection": "ELEVATION >= 1308.5714285714284 AND ELEVATION < 1418.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16809,
+            "selection": "ELEVATION >= 1281.142857142857 AND ELEVATION < 1390.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16826,
+            "selection": "ELEVATION >= 1244.5714285714284 AND ELEVATION < 1354.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16842,
+            "selection": "ELEVATION >= 1217.142857142857 AND ELEVATION < 1326.857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16860,
+            "selection": "ELEVATION >= 1189.7142857142856 AND ELEVATION < 1299.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16876,
+            "selection": "ELEVATION >= 1144 AND ELEVATION < 1253.7142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16892,
+            "selection": "ELEVATION >= 1080 AND ELEVATION < 1189.7142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16910,
+            "selection": "ELEVATION >= 1016.0000000000001 AND ELEVATION < 1125.7142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16926,
+            "selection": "ELEVATION >= 1052.5714285714284 AND ELEVATION < 942.8571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16943,
+            "selection": "ELEVATION >= 1016.0000000000001 AND ELEVATION < 906.2857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16959,
+            "selection": "ELEVATION >= 878.8571428571428 AND ELEVATION < 988.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16975,
+            "selection": "ELEVATION >= 851.4285714285714 AND ELEVATION < 961.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 16992,
+            "selection": "ELEVATION >= 833.1428571428572 AND ELEVATION < 942.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17009,
+            "selection": "ELEVATION >= 814.8571428571428 AND ELEVATION < 924.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17026,
+            "selection": "ELEVATION >= 796.5714285714286 AND ELEVATION < 906.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17042,
+            "selection": "ELEVATION >= 787.4285714285714 AND ELEVATION < 897.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17059,
+            "selection": "ELEVATION >= 769.1428571428572 AND ELEVATION < 878.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17075,
+            "selection": "ELEVATION >= 750.8571428571428 AND ELEVATION < 860.5714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17093,
+            "selection": "ELEVATION >= 723.4285714285714 AND ELEVATION < 833.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17109,
+            "selection": "ELEVATION >= 695.9999999999999 AND ELEVATION < 805.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17126,
+            "selection": "ELEVATION >= 677.7142857142857 AND ELEVATION < 787.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17142,
+            "selection": "ELEVATION >= 668.5714285714286 AND ELEVATION < 778.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17159,
+            "selection": "ELEVATION >= 659.4285714285714 AND ELEVATION < 769.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17176,
+            "selection": "ELEVATION >= 641.1428571428572 AND ELEVATION < 750.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17193,
+            "selection": "ELEVATION >= 613.7142857142857 AND ELEVATION < 723.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17209,
+            "selection": "ELEVATION >= 586.2857142857143 AND ELEVATION < 696",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17226,
+            "selection": "ELEVATION >= 567.9999999999999 AND ELEVATION < 677.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17243,
+            "selection": "ELEVATION >= 549.7142857142857 AND ELEVATION < 659.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17259,
+            "selection": "ELEVATION >= 531.4285714285713 AND ELEVATION < 641.1428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17276,
+            "selection": "ELEVATION >= 513.1428571428571 AND ELEVATION < 622.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17292,
+            "selection": "ELEVATION >= 503.9999999999999 AND ELEVATION < 613.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17309,
+            "selection": "ELEVATION >= 476.57142857142856 AND ELEVATION < 586.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17326,
+            "selection": "ELEVATION >= 458.28571428571433 AND ELEVATION < 568",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17342,
+            "selection": "ELEVATION >= 449.1428571428571 AND ELEVATION < 558.8571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17359,
+            "selection": "ELEVATION >= 439.9999999999999 AND ELEVATION < 549.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17376,
+            "selection": "ELEVATION >= 421.71428571428567 AND ELEVATION < 531.4285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17392,
+            "selection": "ELEVATION >= 412.57142857142856 AND ELEVATION < 522.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17409,
+            "selection": "ELEVATION >= 394.2857142857142 AND ELEVATION < 503.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17426,
+            "selection": "ELEVATION >= 375.9999999999999 AND ELEVATION < 485.7142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17443,
+            "selection": "ELEVATION >= 357.71428571428567 AND ELEVATION < 467.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17461,
+            "selection": "ELEVATION >= 348.57142857142856 AND ELEVATION < 458.2857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17476,
+            "selection": "ELEVATION >= 339.42857142857133 AND ELEVATION < 449.14285714285705",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17493,
+            "selection": "ELEVATION >= 330.2857142857142 AND ELEVATION < 439.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17509,
+            "selection": "ELEVATION >= 321.1428571428571 AND ELEVATION < 430.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17525,
+            "selection": "ELEVATION >= 293.71428571428567 AND ELEVATION < 403.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17543,
+            "selection": "ELEVATION >= 284.57142857142856 AND ELEVATION < 394.2857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17560,
+            "selection": "ELEVATION >= 266.2857142857142 AND ELEVATION < 375.9999999999999",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17576,
+            "selection": "ELEVATION >= 257.1428571428571 AND ELEVATION < 366.8571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17610,
+            "selection": "ELEVATION >= 247.99999999999997 AND ELEVATION < 357.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17625,
+            "selection": "ELEVATION >= 229.7142857142857 AND ELEVATION < 339.4285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17642,
+            "selection": "ELEVATION >= 220.57142857142853 AND ELEVATION < 330.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17659,
+            "selection": "ELEVATION >= 202.28571428571425 AND ELEVATION < 311.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17676,
+            "selection": "ELEVATION >= 193.14285714285714 AND ELEVATION < 302.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17692,
+            "selection": "ELEVATION >= 183.99999999999997 AND ELEVATION < 293.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17709,
+            "selection": "ELEVATION >= 174.8571428571428 AND ELEVATION < 284.5714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17743,
+            "selection": "ELEVATION >= 156.57142857142853 AND ELEVATION < 266.2857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17760,
+            "selection": "ELEVATION >= 138.28571428571425 AND ELEVATION < 247.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17776,
+            "selection": "ELEVATION >= 119.99999999999997 AND ELEVATION < 229.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17793,
+            "selection": "ELEVATION >= 110.8571428571428 AND ELEVATION < 220.5714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17826,
+            "selection": "ELEVATION >= 202.28571428571422 AND ELEVATION < 92.57142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17842,
+            "selection": "ELEVATION >= 193.1428571428571 AND ELEVATION < 83.42857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17859,
+            "selection": "ELEVATION >= 183.99999999999994 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17875,
+            "selection": "ELEVATION >= 174.85714285714283 AND ELEVATION < 65.14285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17892,
+            "selection": "ELEVATION >= 165.71428571428567 AND ELEVATION < 55.99999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17926,
+            "selection": "ELEVATION >= 147.4285714285714 AND ELEVATION < 37.714285714285694",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17942,
+            "selection": "ELEVATION >= 129.1428571428571 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17959,
+            "selection": "ELEVATION >= 10.28571428571425 AND ELEVATION < 119.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 17976,
+            "selection": "ELEVATION >= 1.1428571428571388 AND ELEVATION < 110.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18009,
+            "selection": "ELEVATION >= -8.000000000000032 AND ELEVATION < 101.71428571428567",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18026,
+            "selection": "ELEVATION >= -17.142857142857167 AND ELEVATION < 92.57142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18043,
+            "selection": "ELEVATION >= -26.285714285714306 AND ELEVATION < 83.42857142857139",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18076,
+            "selection": "ELEVATION >= -35.428571428571445 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18093,
+            "selection": "ELEVATION >= -44.571428571428584 AND ELEVATION < 65.14285714285711",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18126,
+            "selection": "ELEVATION >= -53.71428571428572 AND ELEVATION < 55.99999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18142,
+            "selection": "ELEVATION >= -62.85714285714286 AND ELEVATION < 46.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18159,
+            "selection": "ELEVATION >= -72.00000000000003 AND ELEVATION < 37.714285714285666",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18175,
+            "selection": "ELEVATION >= -81.14285714285717 AND ELEVATION < 28.571428571428527",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18192,
+            "selection": "ELEVATION >= -90.2857142857143 AND ELEVATION < 19.428571428571388",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18210,
+            "selection": "ELEVATION >= -99.42857142857143 AND ELEVATION < 10.285714285714263",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18226,
+            "selection": "ELEVATION >= -117.71428571428572 AND ELEVATION < -8.000000000000028",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18243,
+            "selection": "ELEVATION >= -126.85714285714286 AND ELEVATION < -17.142857142857167",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18258,
+            "selection": "ELEVATION >= -136.00000000000003 AND ELEVATION < -26.285714285714334",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18293,
+            "selection": "ELEVATION >= -145.14285714285714 AND ELEVATION < -35.428571428571445",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18328,
+            "selection": "ELEVATION >= -163.42857142857144 AND ELEVATION < -53.71428571428575",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18361,
+            "selection": "ELEVATION >= -172.57142857142858 AND ELEVATION < -62.85714285714289",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18423,
+            "selection": "ELEVATION >= -181.71428571428572 AND ELEVATION < -72.00000000000003",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18631,
+            "selection": "ELEVATION >= -172.57142857142858 AND ELEVATION < -62.85714285714289",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18660,
+            "selection": "ELEVATION >= -163.42857142857144 AND ELEVATION < -53.71428571428575",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18675,
+            "selection": "ELEVATION >= -136.00000000000003 AND ELEVATION < -26.285714285714334",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18692,
+            "selection": "ELEVATION >= -108.57142857142858 AND ELEVATION < 1.1428571428571104",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18709,
+            "selection": "ELEVATION >= -99.42857142857143 AND ELEVATION < 10.285714285714263",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18725,
+            "selection": "ELEVATION >= -81.14285714285717 AND ELEVATION < 28.571428571428527",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18846,
+            "selection": "ELEVATION >= -72.00000000000003 AND ELEVATION < 37.714285714285666",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 18878,
+            "selection": "ELEVATION >= -62.85714285714286 AND ELEVATION < 46.85714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19367,
+            "selection": "ELEVATION >= -53.71428571428572 AND ELEVATION < 55.99999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19393,
+            "selection": "ELEVATION >= -35.428571428571445 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19409,
+            "selection": "ELEVATION >= -17.142857142857167 AND ELEVATION < 92.57142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19426,
+            "selection": "ELEVATION >= 10.28571428571425 AND ELEVATION < 119.99999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19442,
+            "selection": "ELEVATION >= 129.1428571428571 AND ELEVATION < 19.428571428571416",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19459,
+            "selection": "ELEVATION >= 138.28571428571422 AND ELEVATION < 28.571428571428527",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19475,
+            "selection": "ELEVATION >= 147.4285714285714 AND ELEVATION < 37.714285714285694",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19510,
+            "selection": "ELEVATION >= 156.57142857142856 AND ELEVATION < 46.85714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19525,
+            "selection": "ELEVATION >= 165.71428571428567 AND ELEVATION < 55.99999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19542,
+            "selection": "ELEVATION >= 174.85714285714283 AND ELEVATION < 65.14285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19560,
+            "selection": "ELEVATION >= 183.99999999999994 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19593,
+            "selection": "ELEVATION >= 193.1428571428571 AND ELEVATION < 83.42857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 19993,
+            "selection": "ELEVATION >= 183.99999999999994 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 20103,
+            "selection": "ELEVATION >= 174.85714285714283 AND ELEVATION < 65.14285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 20144,
+            "selection": "ELEVATION >= 165.71428571428567 AND ELEVATION < 55.99999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20863,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1326991628571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20893,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1326991628571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20909,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327014082285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20925,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327014082285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20959,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327014082285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20975,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327014082285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 20993,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327036536000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21008,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327058989714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21026,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327081443428.5715",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21042,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327081443428.5715",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21060,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327103897142.8572",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21075,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327103897142.8572",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21093,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327126350857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21108,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327148804571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21125,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327171258285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21327,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327171258285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21343,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21455,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21519,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 21615,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 22086,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24063,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327148804571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24092,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327171258285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24108,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327171258285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24127,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327171258285.7144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24143,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24158,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327193712000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 24176,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327216165714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25183,
+            "selection": "RECORD_DATE >= 1326991628571.4285 AND RECORD_DATE < 1327216165714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25209,
+            "selection": "RECORD_DATE >= 1327014082285.714 AND RECORD_DATE < 1327238619428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25225,
+            "selection": "RECORD_DATE >= 1327036535999.9998 AND RECORD_DATE < 1327261073142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25242,
+            "selection": "RECORD_DATE >= 1327058989714.2856 AND RECORD_DATE < 1327283526857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25259,
+            "selection": "RECORD_DATE >= 1327103897142.857 AND RECORD_DATE < 1327328434285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25277,
+            "selection": "RECORD_DATE >= 1327148804571.4285 AND RECORD_DATE < 1327373341714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25309,
+            "selection": "RECORD_DATE >= 1327193711999.9998 AND RECORD_DATE < 1327418249142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25326,
+            "selection": "RECORD_DATE >= 1327238619428.5713 AND RECORD_DATE < 1327463156571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25342,
+            "selection": "RECORD_DATE >= 1327261073142.857 AND RECORD_DATE < 1327485610285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25376,
+            "selection": "RECORD_DATE >= 1327305980571.4285 AND RECORD_DATE < 1327530517714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25392,
+            "selection": "RECORD_DATE >= 1327350887999.9998 AND RECORD_DATE < 1327575425142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25409,
+            "selection": "RECORD_DATE >= 1327395795428.5713 AND RECORD_DATE < 1327620332571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25426,
+            "selection": "RECORD_DATE >= 1327440702857.1428 AND RECORD_DATE < 1327665240000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25443,
+            "selection": "RECORD_DATE >= 1327485610285.714 AND RECORD_DATE < 1327710147428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25458,
+            "selection": "RECORD_DATE >= 1327530517714.2856 AND RECORD_DATE < 1327755054857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25476,
+            "selection": "RECORD_DATE >= 1327597878857.1428 AND RECORD_DATE < 1327822416000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25492,
+            "selection": "RECORD_DATE >= 1327642786285.714 AND RECORD_DATE < 1327867323428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25508,
+            "selection": "RECORD_DATE >= 1327710147428.5713 AND RECORD_DATE < 1327934684571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25525,
+            "selection": "RECORD_DATE >= 1327777508571.4285 AND RECORD_DATE < 1328002045714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25542,
+            "selection": "RECORD_DATE >= 1327822415999.9998 AND RECORD_DATE < 1328046953142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25559,
+            "selection": "RECORD_DATE >= 1327912230857.1428 AND RECORD_DATE < 1328136768000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25576,
+            "selection": "RECORD_DATE >= 1328002045714.2856 AND RECORD_DATE < 1328226582857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25593,
+            "selection": "RECORD_DATE >= 1328069406857.1428 AND RECORD_DATE < 1328293944000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25609,
+            "selection": "RECORD_DATE >= 1328159221714.2856 AND RECORD_DATE < 1328383758857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25626,
+            "selection": "RECORD_DATE >= 1328226582857.1428 AND RECORD_DATE < 1328451120000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25642,
+            "selection": "RECORD_DATE >= 1328338851428.5713 AND RECORD_DATE < 1328563388571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25659,
+            "selection": "RECORD_DATE >= 1328406212571.4285 AND RECORD_DATE < 1328630749714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25675,
+            "selection": "RECORD_DATE >= 1328496027428.5713 AND RECORD_DATE < 1328720564571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25692,
+            "selection": "RECORD_DATE >= 1328608295999.9998 AND RECORD_DATE < 1328832833142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25709,
+            "selection": "RECORD_DATE >= 1328765471999.9998 AND RECORD_DATE < 1328990009142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25725,
+            "selection": "RECORD_DATE >= 1328922647999.9998 AND RECORD_DATE < 1329147185142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25742,
+            "selection": "RECORD_DATE >= 1329079823999.9998 AND RECORD_DATE < 1329304361142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25759,
+            "selection": "RECORD_DATE >= 1329147185142.857 AND RECORD_DATE < 1329371722285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25775,
+            "selection": "RECORD_DATE >= 1329236999999.9998 AND RECORD_DATE < 1329461537142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25793,
+            "selection": "RECORD_DATE >= 1329326814857.1428 AND RECORD_DATE < 1329551352000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25809,
+            "selection": "RECORD_DATE >= 1329461537142.857 AND RECORD_DATE < 1329686074285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25826,
+            "selection": "RECORD_DATE >= 1329641166857.1428 AND RECORD_DATE < 1329865704000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25842,
+            "selection": "RECORD_DATE >= 1329775889142.857 AND RECORD_DATE < 1330000426285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25859,
+            "selection": "RECORD_DATE >= 1329888157714.2856 AND RECORD_DATE < 1330112694857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25875,
+            "selection": "RECORD_DATE >= 1330000426285.714 AND RECORD_DATE < 1330224963428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25892,
+            "selection": "RECORD_DATE >= 1330135148571.4285 AND RECORD_DATE < 1330359685714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25909,
+            "selection": "RECORD_DATE >= 1330292324571.4285 AND RECORD_DATE < 1330516861714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25925,
+            "selection": "RECORD_DATE >= 1330471954285.714 AND RECORD_DATE < 1330696491428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25943,
+            "selection": "RECORD_DATE >= 1330674037714.2856 AND RECORD_DATE < 1330898574857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25959,
+            "selection": "RECORD_DATE >= 1330786306285.714 AND RECORD_DATE < 1331010843428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25975,
+            "selection": "RECORD_DATE >= 1330831213714.2856 AND RECORD_DATE < 1331055750857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 25992,
+            "selection": "RECORD_DATE >= 1330898574857.1428 AND RECORD_DATE < 1331123112000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26010,
+            "selection": "RECORD_DATE >= 1330965935999.9998 AND RECORD_DATE < 1331190473142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26026,
+            "selection": "RECORD_DATE >= 1331055750857.1428 AND RECORD_DATE < 1331280288000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26042,
+            "selection": "RECORD_DATE >= 1331145565714.2856 AND RECORD_DATE < 1331370102857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26058,
+            "selection": "RECORD_DATE >= 1331212926857.1428 AND RECORD_DATE < 1331437464000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26075,
+            "selection": "RECORD_DATE >= 1331302741714.2856 AND RECORD_DATE < 1331527278857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26092,
+            "selection": "RECORD_DATE >= 1331392556571.4285 AND RECORD_DATE < 1331617093714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26109,
+            "selection": "RECORD_DATE >= 1331459917714.2856 AND RECORD_DATE < 1331684454857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26126,
+            "selection": "RECORD_DATE >= 1331594639999.9998 AND RECORD_DATE < 1331819177142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26142,
+            "selection": "RECORD_DATE >= 1331662001142.857 AND RECORD_DATE < 1331886538285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26159,
+            "selection": "RECORD_DATE >= 1331751815999.9998 AND RECORD_DATE < 1331976353142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26175,
+            "selection": "RECORD_DATE >= 1331819177142.857 AND RECORD_DATE < 1332043714285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26193,
+            "selection": "RECORD_DATE >= 1331864084571.4285 AND RECORD_DATE < 1332088621714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26209,
+            "selection": "RECORD_DATE >= 1331931445714.2856 AND RECORD_DATE < 1332155982857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26225,
+            "selection": "RECORD_DATE >= 1331976353142.857 AND RECORD_DATE < 1332200890285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26242,
+            "selection": "RECORD_DATE >= 1331998806857.1428 AND RECORD_DATE < 1332223344000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26259,
+            "selection": "RECORD_DATE >= 1332043714285.714 AND RECORD_DATE < 1332268251428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26276,
+            "selection": "RECORD_DATE >= 1332088621714.2856 AND RECORD_DATE < 1332313158857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26291,
+            "selection": "RECORD_DATE >= 1332111075428.5713 AND RECORD_DATE < 1332335612571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26309,
+            "selection": "RECORD_DATE >= 1332133529142.857 AND RECORD_DATE < 1332358066285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26325,
+            "selection": "RECORD_DATE >= 1332155982857.1428 AND RECORD_DATE < 1332380520000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26342,
+            "selection": "RECORD_DATE >= 1332178436571.4285 AND RECORD_DATE < 1332402973714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26359,
+            "selection": "RECORD_DATE >= 1332200890285.714 AND RECORD_DATE < 1332425427428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26375,
+            "selection": "RECORD_DATE >= 1332245797714.2856 AND RECORD_DATE < 1332470334857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26393,
+            "selection": "RECORD_DATE >= 1332268251428.5713 AND RECORD_DATE < 1332492788571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26598,
+            "selection": "RECORD_DATE >= 1332223343999.9998 AND RECORD_DATE < 1332447881142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26627,
+            "selection": "RECORD_DATE >= 1332111075428.5713 AND RECORD_DATE < 1332335612571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26660,
+            "selection": "RECORD_DATE >= 1331796723428.5713 AND RECORD_DATE < 1332021260571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26692,
+            "selection": "RECORD_DATE >= 1331549732571.4285 AND RECORD_DATE < 1331774269714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26709,
+            "selection": "RECORD_DATE >= 1331459917714.2856 AND RECORD_DATE < 1331684454857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26725,
+            "selection": "RECORD_DATE >= 1331347649142.857 AND RECORD_DATE < 1331572186285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26742,
+            "selection": "RECORD_DATE >= 1331168019428.5713 AND RECORD_DATE < 1331392556571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26759,
+            "selection": "RECORD_DATE >= 1330965935999.9998 AND RECORD_DATE < 1331190473142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26775,
+            "selection": "RECORD_DATE >= 1330741398857.1428 AND RECORD_DATE < 1330965936000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26792,
+            "selection": "RECORD_DATE >= 1330606676571.4285 AND RECORD_DATE < 1330831213714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26812,
+            "selection": "RECORD_DATE >= 1330539315428.5713 AND RECORD_DATE < 1330763852571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26827,
+            "selection": "RECORD_DATE >= 1330471954285.714 AND RECORD_DATE < 1330696491428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26863,
+            "selection": "RECORD_DATE >= 1330269870857.1428 AND RECORD_DATE < 1330494408000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26892,
+            "selection": "RECORD_DATE >= 1329933065142.857 AND RECORD_DATE < 1330157602285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26925,
+            "selection": "RECORD_DATE >= 1329641166857.1428 AND RECORD_DATE < 1329865704000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26942,
+            "selection": "RECORD_DATE >= 1329349268571.4285 AND RECORD_DATE < 1329573805714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26959,
+            "selection": "RECORD_DATE >= 1329102277714.2856 AND RECORD_DATE < 1329326814857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26976,
+            "selection": "RECORD_DATE >= 1328787925714.2856 AND RECORD_DATE < 1329012462857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 26993,
+            "selection": "RECORD_DATE >= 1328608295999.9998 AND RECORD_DATE < 1328832833142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27009,
+            "selection": "RECORD_DATE >= 1328428666285.714 AND RECORD_DATE < 1328653203428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27026,
+            "selection": "RECORD_DATE >= 1328361305142.857 AND RECORD_DATE < 1328585842285.714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27042,
+            "selection": "RECORD_DATE >= 1328293943999.9998 AND RECORD_DATE < 1328518481142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27059,
+            "selection": "RECORD_DATE >= 1328226582857.1428 AND RECORD_DATE < 1328451120000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27075,
+            "selection": "RECORD_DATE >= 1328136767999.9998 AND RECORD_DATE < 1328361305142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27093,
+            "selection": "RECORD_DATE >= 1327979591999.9998 AND RECORD_DATE < 1328204129142.857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27108,
+            "selection": "RECORD_DATE >= 1327867323428.5713 AND RECORD_DATE < 1328091860571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27126,
+            "selection": "RECORD_DATE >= 1327799962285.714 AND RECORD_DATE < 1328024499428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27142,
+            "selection": "RECORD_DATE >= 1327777508571.4285 AND RECORD_DATE < 1328002045714.2856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27159,
+            "selection": "RECORD_DATE >= 1327755054857.1428 AND RECORD_DATE < 1327979592000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27177,
+            "selection": "RECORD_DATE >= 1327710147428.5713 AND RECORD_DATE < 1327934684571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27192,
+            "selection": "RECORD_DATE >= 1327642786285.714 AND RECORD_DATE < 1327867323428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27209,
+            "selection": "RECORD_DATE >= 1327552971428.5713 AND RECORD_DATE < 1327777508571.4285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27225,
+            "selection": "RECORD_DATE >= 1327440702857.1428 AND RECORD_DATE < 1327665240000",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27242,
+            "selection": "RECORD_DATE >= 1327373341714.2856 AND RECORD_DATE < 1327597878857.1428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "RECORD_DATE",
+            "time": 27259,
+            "selection": "RECORD_DATE >= 1327328434285.714 AND RECORD_DATE < 1327552971428.5713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28743,
+            "selection": "ELEVATION >= 165.71428571428567 AND ELEVATION < 56",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28759,
+            "selection": "ELEVATION >= 183.99999999999994 AND ELEVATION < 74.28571428571428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28775,
+            "selection": "ELEVATION >= 202.28571428571422 AND ELEVATION < 92.57142857142856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28792,
+            "selection": "ELEVATION >= 101.71428571428572 AND ELEVATION < 211.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28808,
+            "selection": "ELEVATION >= 120 AND ELEVATION < 229.71428571428567",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28825,
+            "selection": "ELEVATION >= 147.42857142857144 AND ELEVATION < 257.1428571428571",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28843,
+            "selection": "ELEVATION >= 184 AND ELEVATION < 293.71428571428567",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28859,
+            "selection": "ELEVATION >= 211.42857142857144 AND ELEVATION < 321.1428571428571",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28875,
+            "selection": "ELEVATION >= 229.71428571428572 AND ELEVATION < 339.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28892,
+            "selection": "ELEVATION >= 248 AND ELEVATION < 357.71428571428567",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28909,
+            "selection": "ELEVATION >= 275.4285714285714 AND ELEVATION < 385.14285714285705",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28925,
+            "selection": "ELEVATION >= 311.99999999999994 AND ELEVATION < 421.7142857142856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28942,
+            "selection": "ELEVATION >= 348.5714285714286 AND ELEVATION < 458.2857142857143",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28959,
+            "selection": "ELEVATION >= 366.85714285714283 AND ELEVATION < 476.5714285714285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28975,
+            "selection": "ELEVATION >= 394.2857142857143 AND ELEVATION < 503.99999999999994",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 28992,
+            "selection": "ELEVATION >= 430.85714285714283 AND ELEVATION < 540.5714285714284",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29008,
+            "selection": "ELEVATION >= 467.4285714285714 AND ELEVATION < 577.1428571428571",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29025,
+            "selection": "ELEVATION >= 485.7142857142857 AND ELEVATION < 595.4285714285713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29042,
+            "selection": "ELEVATION >= 503.99999999999994 AND ELEVATION < 613.7142857142856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29058,
+            "selection": "ELEVATION >= 513.1428571428571 AND ELEVATION < 622.8571428571429",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29076,
+            "selection": "ELEVATION >= 531.4285714285713 AND ELEVATION < 641.1428571428571",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29092,
+            "selection": "ELEVATION >= 540.5714285714284 AND ELEVATION < 650.2857142857142",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29109,
+            "selection": "ELEVATION >= 558.8571428571428 AND ELEVATION < 668.5714285714284",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29125,
+            "selection": "ELEVATION >= 586.2857142857142 AND ELEVATION < 695.9999999999999",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29142,
+            "selection": "ELEVATION >= 613.7142857142858 AND ELEVATION < 723.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29158,
+            "selection": "ELEVATION >= 632 AND ELEVATION < 741.7142857142857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29175,
+            "selection": "ELEVATION >= 650.2857142857142 AND ELEVATION < 759.9999999999999",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29192,
+            "selection": "ELEVATION >= 677.7142857142858 AND ELEVATION < 787.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29209,
+            "selection": "ELEVATION >= 705.1428571428571 AND ELEVATION < 814.8571428571428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29226,
+            "selection": "ELEVATION >= 732.5714285714284 AND ELEVATION < 842.2857142857141",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29241,
+            "selection": "ELEVATION >= 778.2857142857142 AND ELEVATION < 887.9999999999999",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29258,
+            "selection": "ELEVATION >= 833.1428571428571 AND ELEVATION < 942.8571428571428",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29276,
+            "selection": "ELEVATION >= 869.7142857142856 AND ELEVATION < 979.4285714285712",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29292,
+            "selection": "ELEVATION >= 1025.1428571428569 AND ELEVATION < 915.4285714285713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29309,
+            "selection": "ELEVATION >= 1061.7142857142856 AND ELEVATION < 951.9999999999999",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29326,
+            "selection": "ELEVATION >= 1006.8571428571428 AND ELEVATION < 1116.5714285714284",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29342,
+            "selection": "ELEVATION >= 1052.5714285714284 AND ELEVATION < 1162.2857142857142",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29359,
+            "selection": "ELEVATION >= 1080 AND ELEVATION < 1189.7142857142858",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29375,
+            "selection": "ELEVATION >= 1098.2857142857142 AND ELEVATION < 1208",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29392,
+            "selection": "ELEVATION >= 1107.4285714285713 AND ELEVATION < 1217.1428571428569",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29409,
+            "selection": "ELEVATION >= 1116.5714285714284 AND ELEVATION < 1226.2857142857142",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29509,
+            "selection": "ELEVATION >= 1098.2857142857142 AND ELEVATION < 1208",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29526,
+            "selection": "ELEVATION >= 1016 AND ELEVATION < 1125.7142857142858",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29541,
+            "selection": "ELEVATION >= 1034.2857142857142 AND ELEVATION < 924.5714285714284",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29558,
+            "selection": "ELEVATION >= 869.7142857142856 AND ELEVATION < 979.4285714285712",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29575,
+            "selection": "ELEVATION >= 824 AND ELEVATION < 933.7142857142857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29592,
+            "selection": "ELEVATION >= 805.7142857142856 AND ELEVATION < 915.4285714285712",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29608,
+            "selection": "ELEVATION >= 778.2857142857142 AND ELEVATION < 887.9999999999999",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29625,
+            "selection": "ELEVATION >= 741.7142857142858 AND ELEVATION < 851.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29642,
+            "selection": "ELEVATION >= 677.7142857142858 AND ELEVATION < 787.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29659,
+            "selection": "ELEVATION >= 595.4285714285713 AND ELEVATION < 705.142857142857",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29675,
+            "selection": "ELEVATION >= 549.7142857142857 AND ELEVATION < 659.4285714285713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29692,
+            "selection": "ELEVATION >= 522.2857142857142 AND ELEVATION < 632",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29708,
+            "selection": "ELEVATION >= 513.1428571428571 AND ELEVATION < 622.8571428571429",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29725,
+            "selection": "ELEVATION >= 485.7142857142857 AND ELEVATION < 595.4285714285713",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29742,
+            "selection": "ELEVATION >= 439.99999999999994 AND ELEVATION < 549.7142857142856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29758,
+            "selection": "ELEVATION >= 394.2857142857143 AND ELEVATION < 503.99999999999994",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29776,
+            "selection": "ELEVATION >= 348.5714285714286 AND ELEVATION < 458.2857142857143",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29792,
+            "selection": "ELEVATION >= 330.2857142857143 AND ELEVATION < 439.99999999999994",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29808,
+            "selection": "ELEVATION >= 321.14285714285717 AND ELEVATION < 430.85714285714283",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29825,
+            "selection": "ELEVATION >= 311.99999999999994 AND ELEVATION < 421.7142857142856",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29859,
+            "selection": "ELEVATION >= 302.85714285714283 AND ELEVATION < 412.5714285714285",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29875,
+            "selection": "ELEVATION >= 275.4285714285714 AND ELEVATION < 385.14285714285705",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29892,
+            "selection": "ELEVATION >= 229.71428571428572 AND ELEVATION < 339.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29909,
+            "selection": "ELEVATION >= 202.28571428571428 AND ELEVATION < 311.99999999999994",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29925,
+            "selection": "ELEVATION >= 184 AND ELEVATION < 293.71428571428567",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29942,
+            "selection": "ELEVATION >= 165.71428571428572 AND ELEVATION < 275.4285714285714",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29959,
+            "selection": "ELEVATION >= 156.57142857142856 AND ELEVATION < 266.2857142857142",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29975,
+            "selection": "ELEVATION >= 129.14285714285717 AND ELEVATION < 238.85714285714283",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 29992,
+            "selection": "ELEVATION >= 193.1428571428571 AND ELEVATION < 83.42857142857144",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30009,
+            "selection": "ELEVATION >= 165.71428571428567 AND ELEVATION < 56",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30025,
+            "selection": "ELEVATION >= 147.4285714285714 AND ELEVATION < 37.71428571428572",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30059,
+            "selection": "ELEVATION >= 138.28571428571422 AND ELEVATION < 28.57142857142855",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30093,
+            "selection": "ELEVATION >= 10.285714285714278 AND ELEVATION < 119.99999999999994",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30108,
+            "selection": "ELEVATION >= 1.1428571428571672 AND ELEVATION < 110.85714285714283",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30125,
+            "selection": "ELEVATION >= -17.14285714285714 AND ELEVATION < 92.57142857142853",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30142,
+            "selection": "ELEVATION >= -26.285714285714278 AND ELEVATION < 83.42857142857139",
+            "metadata": {
+                "brush_id": 3
+            }
+        },
+        {
+            "name": "ELEVATION",
+            "time": 30193,
+            "selection": "ELEVATION >= -35.428571428571416 AND ELEVATION < 74.28571428571425",
+            "metadata": {
+                "brush_id": 3
+            }
+        }
+    ]
+}

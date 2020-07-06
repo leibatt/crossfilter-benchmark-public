@@ -1,0 +1,5806 @@
+{
+    "setup": [
+        {
+            "name": "Release_Date",
+            "binning": [
+                {
+                    "dimension": "Release_Date",
+                    "width": 30541006451.612904,
+                    "reference": 315550800000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "IMDB_Rating",
+            "binning": [
+                {
+                    "dimension": "IMDB_Rating",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "binning": [
+                {
+                    "dimension": "Rotten_Tomatoes_Rating",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Production_Budget",
+            "binning": [
+                {
+                    "dimension": "Production_Budget",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Running_Time_min",
+            "binning": [
+                {
+                    "dimension": "Running_Time_min",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_DVD_Sales",
+            "binning": [
+                {
+                    "dimension": "US_DVD_Sales",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_Gross",
+            "binning": [
+                {
+                    "dimension": "US_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and Worldwide_Gross"
+        },
+        {
+            "name": "Worldwide_Gross",
+            "binning": [
+                {
+                    "dimension": "Worldwide_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "US_DVD_Sales",
+            "time": 0,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 29,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 49,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 3428.5714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 79,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 6857.142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 103,
+            "selection": "US_DVD_Sales >= 13714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 122,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 147,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 26285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 169,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 35428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 184,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 45714.28571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 200,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 52571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 217,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 58285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 232,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 62857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 248,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 68571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 265,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 75428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 282,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 86857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 298,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 97142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 315,
+            "selection": "US_DVD_Sales >= 105142.85714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 332,
+            "selection": "US_DVD_Sales >= 113142.85714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 348,
+            "selection": "US_DVD_Sales >= 118857.14285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 365,
+            "selection": "US_DVD_Sales >= 126857.14285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 382,
+            "selection": "US_DVD_Sales >= 134857.14285714287 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 399,
+            "selection": "US_DVD_Sales >= 153142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 415,
+            "selection": "US_DVD_Sales >= 164571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 431,
+            "selection": "US_DVD_Sales >= 173714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 448,
+            "selection": "US_DVD_Sales >= 180571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 465,
+            "selection": "US_DVD_Sales >= 187428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 482,
+            "selection": "US_DVD_Sales >= 193142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 497,
+            "selection": "US_DVD_Sales >= 200000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 516,
+            "selection": "US_DVD_Sales >= 208000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 532,
+            "selection": "US_DVD_Sales >= 213714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 548,
+            "selection": "US_DVD_Sales >= 219428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 565,
+            "selection": "US_DVD_Sales >= 225142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 581,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 230857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 598,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 235428.57142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 614,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 241142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 632,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 245714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 647,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 249142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 666,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 254857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 682,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 259428.57142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 698,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 262857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 715,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 268571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 732,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 273142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 748,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 280000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 765,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 288000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 782,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 299428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 799,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 310857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 815,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 318857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 831,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 325714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 848,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 330285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 865,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 336000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 882,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 338285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 982,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 339428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 997,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 338285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1014,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 334857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1031,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 329142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1048,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 322285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1064,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 313142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1082,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 301714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1098,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 289142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1114,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 276571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1131,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 264000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1148,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 254857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1165,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 249142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1181,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 244571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1197,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 240000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1215,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 237714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1231,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 234285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1248,
+            "selection": "US_DVD_Sales >= 227428.57142857145 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1264,
+            "selection": "US_DVD_Sales >= 219428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1281,
+            "selection": "US_DVD_Sales >= 212571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1298,
+            "selection": "US_DVD_Sales >= 205714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1314,
+            "selection": "US_DVD_Sales >= 198857.14285714287 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1331,
+            "selection": "US_DVD_Sales >= 192000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1348,
+            "selection": "US_DVD_Sales >= 184000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1365,
+            "selection": "US_DVD_Sales >= 177142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1381,
+            "selection": "US_DVD_Sales >= 170285.7142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1399,
+            "selection": "US_DVD_Sales >= 165714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1414,
+            "selection": "US_DVD_Sales >= 160000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1432,
+            "selection": "US_DVD_Sales >= 157714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1448,
+            "selection": "US_DVD_Sales >= 156571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1465,
+            "selection": "US_DVD_Sales >= 156571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1687,
+            "selection": "US_DVD_Sales >= 155428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1701,
+            "selection": "US_DVD_Sales >= 155428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1715,
+            "selection": "US_DVD_Sales >= 154285.7142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1732,
+            "selection": "US_DVD_Sales >= 154285.7142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1749,
+            "selection": "US_DVD_Sales >= 154285.7142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1781,
+            "selection": "US_DVD_Sales >= 153142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1798,
+            "selection": "US_DVD_Sales >= 150857.14285714287 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1815,
+            "selection": "US_DVD_Sales >= 148571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1831,
+            "selection": "US_DVD_Sales >= 147428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1848,
+            "selection": "US_DVD_Sales >= 145142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1864,
+            "selection": "US_DVD_Sales >= 142857.14285714287 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1882,
+            "selection": "US_DVD_Sales >= 141714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1897,
+            "selection": "US_DVD_Sales >= 139428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1915,
+            "selection": "US_DVD_Sales >= 138285.7142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1932,
+            "selection": "US_DVD_Sales >= 137142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1948,
+            "selection": "US_DVD_Sales >= 137142.85714285716 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1965,
+            "selection": "US_DVD_Sales >= 136000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1981,
+            "selection": "US_DVD_Sales >= 136000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 1999,
+            "selection": "US_DVD_Sales >= 133714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2014,
+            "selection": "US_DVD_Sales >= 133714.2857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2031,
+            "selection": "US_DVD_Sales >= 131428.57142857142 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2048,
+            "selection": "US_DVD_Sales >= 130285.71428571429 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2065,
+            "selection": "US_DVD_Sales >= 129142.85714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2081,
+            "selection": "US_DVD_Sales >= 126857.14285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2098,
+            "selection": "US_DVD_Sales >= 126857.14285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2115,
+            "selection": "US_DVD_Sales >= 125714.28571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2131,
+            "selection": "US_DVD_Sales >= 124571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2148,
+            "selection": "US_DVD_Sales >= 123428.57142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2165,
+            "selection": "US_DVD_Sales >= 122285.71428571429 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2181,
+            "selection": "US_DVD_Sales >= 121142.85714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2198,
+            "selection": "US_DVD_Sales >= 120000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2215,
+            "selection": "US_DVD_Sales >= 118857.14285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2231,
+            "selection": "US_DVD_Sales >= 117714.28571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2248,
+            "selection": "US_DVD_Sales >= 116571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2265,
+            "selection": "US_DVD_Sales >= 115428.57142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2281,
+            "selection": "US_DVD_Sales >= 114285.71428571429 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2297,
+            "selection": "US_DVD_Sales >= 113142.85714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2315,
+            "selection": "US_DVD_Sales >= 112000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2331,
+            "selection": "US_DVD_Sales >= 109714.28571428571 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2348,
+            "selection": "US_DVD_Sales >= 109714.28571428571 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2366,
+            "selection": "US_DVD_Sales >= 108571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2381,
+            "selection": "US_DVD_Sales >= 107428.57142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2398,
+            "selection": "US_DVD_Sales >= 107428.57142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2415,
+            "selection": "US_DVD_Sales >= 106285.71428571429 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2432,
+            "selection": "US_DVD_Sales >= 105142.85714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2447,
+            "selection": "US_DVD_Sales >= 104000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2464,
+            "selection": "US_DVD_Sales >= 102857.14285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2481,
+            "selection": "US_DVD_Sales >= 100571.42857142858 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2498,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 99428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2514,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 97142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2532,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 96000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2548,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 93714.28571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2566,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 92571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2583,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 89142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2598,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 88000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2615,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 85714.28571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2631,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 83428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2648,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 81142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2664,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 78857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2681,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 76571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2698,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 75428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2714,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 73142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2731,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 73142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2749,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 72000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2781,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 70857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2797,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 67428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2815,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 62857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2831,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 60571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2848,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 58285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2865,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 56000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2881,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 53714.28571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2898,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 51428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2914,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 50285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2932,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 48000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2965,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 44571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2981,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 38857.142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 2998,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 34285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3015,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 32000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3030,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 30857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3047,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 29714.285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3065,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 27428.571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3081,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 26285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3098,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3115,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3131,
+            "selection": "US_DVD_Sales >= 18285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3148,
+            "selection": "US_DVD_Sales >= 16000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3165,
+            "selection": "US_DVD_Sales >= 14857.142857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3181,
+            "selection": "US_DVD_Sales >= 13714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3197,
+            "selection": "US_DVD_Sales >= 11428.57142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3214,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3231,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3248,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 9142.857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3679,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 6857.142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3782,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 6857.142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3799,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 6857.142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3822,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 8000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3848,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 8000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3865,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 8000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3882,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 9142.857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 3898,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 9142.857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4079,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 9142.857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4099,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4131,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4158,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4167,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4181,
+            "selection": "US_DVD_Sales >= 10285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4198,
+            "selection": "US_DVD_Sales >= 11428.57142857143 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4214,
+            "selection": "US_DVD_Sales >= 13714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4231,
+            "selection": "US_DVD_Sales >= 14857.142857142857 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4248,
+            "selection": "US_DVD_Sales >= 16000 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4264,
+            "selection": "US_DVD_Sales >= 17142.857142857145 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4281,
+            "selection": "US_DVD_Sales >= 18285.714285714286 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4298,
+            "selection": "US_DVD_Sales >= 19428.571428571428 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4332,
+            "selection": "US_DVD_Sales >= 19428.571428571428 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4348,
+            "selection": "US_DVD_Sales >= 19428.571428571428 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4365,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4381,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4398,
+            "selection": "US_DVD_Sales >= 21714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4414,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4432,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4449,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4465,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4718,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4782,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4798,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4848,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4901,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4916,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 4982,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5062,
+            "selection": "US_DVD_Sales >= 2285.714285714286 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5086,
+            "selection": "US_DVD_Sales >= 21714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5115,
+            "selection": "US_DVD_Sales >= 21714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5134,
+            "selection": "US_DVD_Sales >= 21714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5221,
+            "selection": "US_DVD_Sales >= 21714.285714285714 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5245,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5405,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5462,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 5879,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 2285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6687,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6716,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6732,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6747,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6765,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6781,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6798,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6814,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6832,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6895,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 6914,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9247,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 26285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9264,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 27428.571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9281,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 32000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9297,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 37714.28571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9314,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 46857.142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9332,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 58285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9347,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 68571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9364,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 81142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9381,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 94857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9398,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 109714.28571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9414,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 133714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 148571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 162285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9464,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 170285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9481,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 178285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9498,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 182857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9514,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 185142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9614,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 185142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9630,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 186285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9647,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 186285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9665,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 187428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9680,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 189714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9697,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 193142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9714,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 196571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9730,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 202285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9749,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 209142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9764,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 216000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9780,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 228571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9797,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 233142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9814,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 246857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9831,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 254857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9848,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 261714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9864,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 267428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9880,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 269714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9917,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 269714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9941,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 270857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9965,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 270857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9981,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 270857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 9999,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 272000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10174,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 272000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 272000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10350,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 273142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10381,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 269714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10397,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 258285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10414,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 240000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 226285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 212571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10465,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 201142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10481,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 192000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10498,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 186285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10514,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 181714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10532,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 178285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10548,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 176000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10564,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 173714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10580,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 170285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10597,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 166857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10614,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 163428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10631,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 161142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10647,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 161142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10665,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 160000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10681,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 160000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10698,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 158857.14285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10714,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 157714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 10731,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 156571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11110,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 156571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11132,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 157714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11147,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 163428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11164,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 173714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11180,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 187428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11198,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 209142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11214,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 245714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11231,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 276571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11248,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 301714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11265,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 326857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11281,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 342857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11298,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 350857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11316,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 355428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11336,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 357714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11365,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 358857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11399,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 358857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11415,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 361142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 361142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11453,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11481,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11498,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 363428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11514,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 363428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11531,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 363428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11548,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 364571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11581,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 365714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11597,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 369142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11614,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 372571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11631,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 374857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11647,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 376000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11663,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 378285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11681,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 379428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11697,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 381714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11715,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 384000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11731,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 386285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11747,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 389714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11764,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 392000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11780,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 394285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11798,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 396571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11814,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11830,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 11849,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12143,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12149,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12164,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12181,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 397714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 390857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12214,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 385142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12231,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 380571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12247,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 374857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12264,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 370285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12281,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 365714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12297,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 361142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12315,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 355428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12331,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 349714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12347,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 344000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12364,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 336000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12381,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 328000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12398,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 315428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12413,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 306285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12432,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 300571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12448,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 294857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12464,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 290285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12481,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 285714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12498,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 282285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12514,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 276571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12532,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 270857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12548,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 266285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12564,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 262857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12580,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 259428.57142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12718,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 259428.57142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12731,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 259428.57142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12748,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 260571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12764,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 261714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12781,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 262857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12797,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 264000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12815,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 266285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12830,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 268571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12848,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 270857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12865,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 274285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12880,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 278857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12909,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 282285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12932,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 290285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12964,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 293714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12981,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 297142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 12997,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 299428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13015,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 300571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13031,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 301714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13048,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 302857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13063,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 302857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13082,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 304000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13114,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 304000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13131,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 305142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13165,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 305142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13180,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 306285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13198,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 306285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13215,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 307428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13248,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 308571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13264,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 309714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13281,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 309714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13297,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 309714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13314,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 310857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13331,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 310857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13349,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 312000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13381,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 312000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13398,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 313142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13414,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 314285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 315428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 315428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13477,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 315428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13501,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 316571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13549,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 316571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13598,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 317714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13926,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 317714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13944,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 317714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13964,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 318857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13981,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 318857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 13998,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 320000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14031,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 321142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14048,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 321142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14065,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 322285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14080,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 322285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14098,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 322285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14114,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 323428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14131,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 323428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14153,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 324571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14182,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 324571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14574,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 324571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14654,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 324571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14670,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 325714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14698,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 325714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14715,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 326857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14730,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 326857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14748,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 328000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14764,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 329142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14780,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 330285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14798,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 332571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14814,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 333714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14831,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 336000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14848,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 337142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14864,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 338285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14881,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 340571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14897,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 341714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14914,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 345142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14931,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 347428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14948,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 348571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14964,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 350857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14980,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 354285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 14997,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 356571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15014,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15030,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 366857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15048,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 370285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15064,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 373714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15080,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 377142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15097,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 379428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15114,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 381714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15130,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 382857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15147,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 384000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15164,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 386285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15181,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 387428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 388571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15231,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 388571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15358,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 388571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15367,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 388571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15382,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 387428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15397,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 385142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15414,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 384000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 381714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 380571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15463,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 379428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15480,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 378285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15497,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 377142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15513,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 376000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15531,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 374857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15547,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 373714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15564,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 372571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15581,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 370285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15613,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 369142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15632,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 366857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15647,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 364571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15682,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 364571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15732,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 363428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15764,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15780,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15798,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 361142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15814,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 360000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15832,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 360000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15848,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 360000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 15898,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 360000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16022,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 358857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16070,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 358857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16086,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 357714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16115,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 357714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16131,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 357714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16182,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 356571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 356571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16248,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 356571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16265,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 355428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16280,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 355428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16297,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 355428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16315,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 354285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16330,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 353142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16348,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 353142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16364,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 352000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16397,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 350857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16414,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 348571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 347428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 346285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16464,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 344000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16480,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 344000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16497,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 341714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16514,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 340571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16531,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 338285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16547,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 336000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16564,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 333714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16581,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 332571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16598,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 329142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16613,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 326857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16630,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 324571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16647,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 323428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16664,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 322285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16680,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 321142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16697,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 320000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16714,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 320000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16730,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 320000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16748,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 318857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16764,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 318857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16781,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 318857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16798,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 317714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16814,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 316571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16830,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 316571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16848,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 315428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16864,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 314285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16880,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 312000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16898,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 310857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16913,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 309714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16930,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 308571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16947,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 307428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 16981,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 307428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 17005,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 307428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 18958,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 306285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 18980,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 307428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 18997,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 310857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19014,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 315428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19031,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 324571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19047,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 336000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19064,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 348571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19081,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19097,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 376000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19114,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 387428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19130,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 396571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19147,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19163,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19181,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19247,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19297,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19317,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19333,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19349,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19364,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19380,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19397,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19414,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19431,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 19465,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 22942,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 22950,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 22964,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 22980,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 396571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 22996,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 389714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23014,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 376000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23031,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 369142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23047,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 362285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23063,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 356571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23080,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 352000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23097,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 345142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23114,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 339428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23131,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 334857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23147,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 329142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23163,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 325714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23181,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 321142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 310857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23214,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 304000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23231,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 296000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23247,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 291428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23263,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 288000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23281,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 285714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23298,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 283428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23314,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 282285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23331,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 282285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23399,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 282285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23424,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 281142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 281142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23464,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 280000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23480,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 278857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23498,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 277714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23514,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 277714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23532,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 276571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 23546,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 276571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24077,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 275428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24097,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 275428.5714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24115,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 277714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24130,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 281142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24147,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 288000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24164,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 298285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24181,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 309714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 325714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24214,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 336000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24231,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 345142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24247,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 352000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24264,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 357714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24280,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 358857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24822,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 360000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24848,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 360000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24865,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 364571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24880,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 370285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24897,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 380571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24914,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 389714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24931,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 396571.4285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24947,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24963,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 24982,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38741,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38748,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38763,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38780,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38796,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38815,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 400000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38831,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 398857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38847,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 397714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38864,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 394285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38880,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 390857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38896,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 385142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38914,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 377142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38930,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 366857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38947,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 353142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38963,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 337142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38981,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 321142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 38996,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 293714.28571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39014,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 278857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39029,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 262857.14285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39047,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 248000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39063,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 234285.7142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39081,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 217142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39097,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 201142.85714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39114,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 187428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39130,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 173714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39147,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 163428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39163,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 155428.57142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39179,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 148571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39197,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 141714.2857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39214,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 136000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39230,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 132571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39247,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 129142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39264,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 126857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39280,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 123428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39297,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 121142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39314,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 116571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39330,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 112000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39346,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 106285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39363,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 100571.42857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39379,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 94857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39397,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 89142.85714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39413,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 78857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39430,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 72000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39447,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 65142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39464,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 60571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39480,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 56000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39496,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 51428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39513,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 49142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39530,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 46857.142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39546,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 45714.28571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39563,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 45714.28571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39580,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 44571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39597,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 41142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39614,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 40000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39630,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 36571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39647,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 34285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39663,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 32000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39680,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 29714.285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39697,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 28571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39713,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 28571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39776,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 27428.571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39808,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 26285.714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39831,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 25142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39864,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 24000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39880,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39897,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 21714.285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 39914,
+            "selection": "US_DVD_Sales >= 0 AND US_DVD_Sales < 20571.428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58452,
+            "selection": "US_DVD_Sales >= 1142.8571428571431 AND US_DVD_Sales < 21714.285714285717",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58480,
+            "selection": "US_DVD_Sales >= 2285.7142857142862 AND US_DVD_Sales < 22857.14285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58513,
+            "selection": "US_DVD_Sales >= 24000 AND US_DVD_Sales < 3428.5714285714294",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58547,
+            "selection": "US_DVD_Sales >= 25142.857142857145 AND US_DVD_Sales < 4571.428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58581,
+            "selection": "US_DVD_Sales >= 26285.714285714286 AND US_DVD_Sales < 5714.285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58615,
+            "selection": "US_DVD_Sales >= 27428.571428571428 AND US_DVD_Sales < 6857.142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58649,
+            "selection": "US_DVD_Sales >= 29714.285714285717 AND US_DVD_Sales < 9142.857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58697,
+            "selection": "US_DVD_Sales >= 10285.714285714284 AND US_DVD_Sales < 30857.142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58731,
+            "selection": "US_DVD_Sales >= 11428.57142857143 AND US_DVD_Sales < 32000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58747,
+            "selection": "US_DVD_Sales >= 12571.42857142857 AND US_DVD_Sales < 33142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58763,
+            "selection": "US_DVD_Sales >= 13714.285714285717 AND US_DVD_Sales < 34285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58780,
+            "selection": "US_DVD_Sales >= 14857.142857142857 AND US_DVD_Sales < 35428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58797,
+            "selection": "US_DVD_Sales >= 16000.000000000002 AND US_DVD_Sales < 36571.42857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58813,
+            "selection": "US_DVD_Sales >= 17142.857142857145 AND US_DVD_Sales < 37714.28571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58830,
+            "selection": "US_DVD_Sales >= 18285.714285714283 AND US_DVD_Sales < 38857.142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58846,
+            "selection": "US_DVD_Sales >= 19428.571428571428 AND US_DVD_Sales < 40000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58880,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 41142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58930,
+            "selection": "US_DVD_Sales >= 21714.285714285717 AND US_DVD_Sales < 42285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58963,
+            "selection": "US_DVD_Sales >= 22857.142857142855 AND US_DVD_Sales < 43428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 58979,
+            "selection": "US_DVD_Sales >= 23999.999999999996 AND US_DVD_Sales < 44571.428571428565",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 59380,
+            "selection": "US_DVD_Sales >= 22857.142857142855 AND US_DVD_Sales < 43428.57142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 59447,
+            "selection": "US_DVD_Sales >= 21714.285714285717 AND US_DVD_Sales < 42285.71428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 59480,
+            "selection": "US_DVD_Sales >= 20571.428571428572 AND US_DVD_Sales < 41142.857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 59547,
+            "selection": "US_DVD_Sales >= 19428.571428571428 AND US_DVD_Sales < 40000",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "US_DVD_Sales",
+            "time": 59596,
+            "selection": "US_DVD_Sales >= 18285.714285714283 AND US_DVD_Sales < 38857.142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        }
+    ]
+}

@@ -1,0 +1,4310 @@
+{
+    "setup": [
+        {
+            "name": "DISTANCE",
+            "binning": [
+                {
+                    "dimension": "DISTANCE",
+                    "width": 200,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "ARR_TIME and DEP_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "ARR_TIME",
+            "binning": [
+                {
+                    "dimension": "ARR_TIME",
+                    "width": 1,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and DEP_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "DEP_TIME",
+            "binning": [
+                {
+                    "dimension": "DEP_TIME",
+                    "width": 1,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "DEP_DELAY",
+            "binning": [
+                {
+                    "dimension": "DEP_DELAY",
+                    "width": 5,
+                    "reference": -20
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "ARR_DELAY",
+            "binning": [
+                {
+                    "dimension": "ARR_DELAY",
+                    "width": 5,
+                    "reference": -20
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and DEP_DELAY and AIR_TIME"
+        },
+        {
+            "name": "AIR_TIME",
+            "binning": [
+                {
+                    "dimension": "AIR_TIME",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and DEP_DELAY and ARR_DELAY"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "DEP_DELAY",
+            "time": 0,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 41,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 58,
+            "selection": "DEP_DELAY >= -15.2 AND DEP_DELAY < -17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 78,
+            "selection": "DEP_DELAY >= -13.371428571428572 AND DEP_DELAY < -17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 98,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 115,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -5.142857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 131,
+            "selection": "DEP_DELAY >= -0.11428571428571388 AND DEP_DELAY < -17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 150,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 166,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 184,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 197,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 22.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 211,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 23.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 229,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 25.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 244,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 26.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 470,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 26.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 477,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 26.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 494,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 27.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 511,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 28.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 527,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 30.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 544,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 31.428571428571423",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 561,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 33.48571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 578,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 35.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 595,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 37.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 610,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 38.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 627,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 40.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 644,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 42.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 660,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 45.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 677,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 47.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 694,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 50.39999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 711,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 51.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 728,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 871,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 877,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 894,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 914,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 930,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 53.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 944,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 54.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 962,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 55.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 980,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 55.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 994,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 56.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1012,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 56.8",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1029,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 57.48571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1044,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 58.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1061,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 58.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1078,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 59.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1095,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 59.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1111,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1128,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1161,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1189,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1822,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1829,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1845,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1861,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 59.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1877,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 59.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1894,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 57.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1911,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 55.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1928,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 54.971428571428575",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1945,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 54.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1961,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 53.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1977,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 1993,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2011,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2027,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2044,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2061,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 52",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2078,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 51.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2094,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 50.62857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2111,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 49.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2127,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 49.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2143,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 47.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2161,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 46.74285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2178,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 45.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2193,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 43.08571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2212,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 40.8",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2246,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 38.05714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2277,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 33.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2294,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 29.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2310,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 28.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2328,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 27.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2344,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 26.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2361,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 25.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2377,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 23.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2395,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 22.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2428,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 21.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2444,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2461,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2477,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2494,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2511,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2528,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2544,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2561,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.714285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2577,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.257142857142853",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2594,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2611,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 16.799999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2627,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 16.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2643,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 16.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2660,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 16.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2677,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 15.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2694,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 15.657142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2711,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 15.199999999999996",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2728,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2744,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2761,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.514285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2778,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2794,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2810,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 13.82857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2828,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 13.600000000000001",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2844,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 13.142857142857139",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2861,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2877,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2893,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2910,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2928,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.771428571428569",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2944,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2961,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 2978,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.314285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 3012,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.085714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 3044,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 3061,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 3078,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 3093,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 5535,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 5590,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6734,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.714285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6748,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.714285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6762,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6777,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6811,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6845,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.399999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6860,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.399999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6877,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6894,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6911,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6928,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.857142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6943,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.857142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6960,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 10.857142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6978,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.085714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 6994,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.085714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7011,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.314285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7027,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.314285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7045,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.314285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7060,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7076,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7270,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7285,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.771428571428569",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7311,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 11.771428571428569",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7329,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7343,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7361,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7378,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7412,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 12.914285714285711",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7444,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 13.600000000000001",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7460,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.514285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7477,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 14.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7494,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 15.657142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7510,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 16.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7528,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7544,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7562,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.257142857142853",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7595,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.485714285714288",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7610,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7627,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7643,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 17.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7660,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7676,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7693,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7710,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7728,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 18.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7743,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7761,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7777,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7795,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7811,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 19.771428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7827,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 20.228571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7844,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 20.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7861,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 20.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7877,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 20.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7894,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 21.371428571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7910,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 21.82857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7927,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 22.514285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7943,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 22.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7960,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 23.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7977,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 23.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 7995,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 24.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 8028,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 24.799999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 8118,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < 24.799999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16030,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16060,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16077,
+            "selection": "DEP_DELAY >= -16.8 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16093,
+            "selection": "DEP_DELAY >= -16.114285714285714 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16110,
+            "selection": "DEP_DELAY >= -14.514285714285714 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16127,
+            "selection": "DEP_DELAY >= -13.371428571428572 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16144,
+            "selection": "DEP_DELAY >= -11.771428571428572 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16160,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.485714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16177,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16194,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -4.2285714285714295",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16214,
+            "selection": "DEP_DELAY >= -1.942857142857143 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16227,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16243,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 1.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16260,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 2.8571428571428577",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16277,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 4.685714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16293,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16311,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 12.685714285714283",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16327,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 16.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16344,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 19.085714285714282",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16360,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 22.285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16377,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 25.257142857142853",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16394,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 28.228571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16410,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 31.428571428571423",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16426,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 34.17142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16443,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 36",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16460,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 37.6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16478,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 38.97142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16494,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 40.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16511,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 40.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16528,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 41.25714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16544,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 41.94285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16561,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 42.4",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16577,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 42.857142857142854",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16594,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.31428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16611,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.54285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16627,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.77142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16644,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 44",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16661,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 44.457142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16678,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 45.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16694,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 45.599999999999994",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16710,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 45.82857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16727,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 46.05714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16894,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 46.05714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16911,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 45.82857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16927,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 45.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16944,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 44.91428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16960,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 44.22857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16977,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.77142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 16994,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.54285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17010,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.31428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17027,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.08571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17262,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.08571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17326,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 43.08571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17344,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 42.857142857142854",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17360,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 42.857142857142854",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17377,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 42.4",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17393,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 41.94285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17410,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 41.48571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17427,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 40.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17443,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 39.65714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17460,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 37.6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17477,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 34.857142857142854",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17494,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 30.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17510,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 26.17142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17527,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 21.14285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17543,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 15.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17560,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17576,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < 2.8571428571428577",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17594,
+            "selection": "DEP_DELAY >= -1.4857142857142875 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17610,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -3.7714285714285722",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17626,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -4.914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17643,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17660,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -6.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17677,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -6.742857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17694,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -7.200000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17710,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -7.657142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17726,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17743,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -8.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17760,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17777,
+            "selection": "DEP_DELAY >= -10.171428571428573 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17794,
+            "selection": "DEP_DELAY >= -10.628571428571428 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17902,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 17927,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18053,
+            "selection": "DEP_DELAY >= -11.314285714285715 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18109,
+            "selection": "DEP_DELAY >= -11.314285714285715 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18141,
+            "selection": "DEP_DELAY >= -11.314285714285715 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18165,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18229,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18269,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18285,
+            "selection": "DEP_DELAY >= -10.857142857142858 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18310,
+            "selection": "DEP_DELAY >= -10.857142857142858 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18327,
+            "selection": "DEP_DELAY >= -10.628571428571428 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18344,
+            "selection": "DEP_DELAY >= -10.628571428571428 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18360,
+            "selection": "DEP_DELAY >= -10.628571428571428 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18377,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18422,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18462,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18485,
+            "selection": "DEP_DELAY >= -10.171428571428573 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18511,
+            "selection": "DEP_DELAY >= -10.171428571428573 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18541,
+            "selection": "DEP_DELAY >= -10.171428571428573 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18702,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18727,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18757,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 18966,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 19062,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 19926,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 20014,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 20094,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 20149,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 20229,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 20742,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22094,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22127,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22177,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22228,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22245,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22260,
+            "selection": "DEP_DELAY >= -17.942857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22278,
+            "selection": "DEP_DELAY >= -17.714285714285715 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22293,
+            "selection": "DEP_DELAY >= -17.714285714285715 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22310,
+            "selection": "DEP_DELAY >= -17.485714285714288 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22327,
+            "selection": "DEP_DELAY >= -17.257142857142856 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22343,
+            "selection": "DEP_DELAY >= -17.257142857142856 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22360,
+            "selection": "DEP_DELAY >= -17.02857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22376,
+            "selection": "DEP_DELAY >= -17.02857142857143 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22393,
+            "selection": "DEP_DELAY >= -16.8 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22410,
+            "selection": "DEP_DELAY >= -16.571428571428573 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22429,
+            "selection": "DEP_DELAY >= -16.34285714285714 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22444,
+            "selection": "DEP_DELAY >= -16.34285714285714 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22460,
+            "selection": "DEP_DELAY >= -16.114285714285714 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22476,
+            "selection": "DEP_DELAY >= -15.885714285714286 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22638,
+            "selection": "DEP_DELAY >= -15.885714285714286 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22677,
+            "selection": "DEP_DELAY >= -15.657142857142858 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22711,
+            "selection": "DEP_DELAY >= -15.657142857142858 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22760,
+            "selection": "DEP_DELAY >= -15.428571428571429 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22776,
+            "selection": "DEP_DELAY >= -15.428571428571429 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22797,
+            "selection": "DEP_DELAY >= -15.2 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22861,
+            "selection": "DEP_DELAY >= -15.2 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22877,
+            "selection": "DEP_DELAY >= -15.2 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 22901,
+            "selection": "DEP_DELAY >= -14.971428571428572 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24269,
+            "selection": "DEP_DELAY >= -14.742857142857144 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24293,
+            "selection": "DEP_DELAY >= -14.514285714285714 AND DEP_DELAY < -9.485714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24310,
+            "selection": "DEP_DELAY >= -14.285714285714285 AND DEP_DELAY < -9.257142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24326,
+            "selection": "DEP_DELAY >= -14.057142857142857 AND DEP_DELAY < -9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24359,
+            "selection": "DEP_DELAY >= -13.82857142857143 AND DEP_DELAY < -8.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24377,
+            "selection": "DEP_DELAY >= -13.6 AND DEP_DELAY < -8.571428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24410,
+            "selection": "DEP_DELAY >= -13.371428571428572 AND DEP_DELAY < -8.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24459,
+            "selection": "DEP_DELAY >= -13.142857142857142 AND DEP_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24493,
+            "selection": "DEP_DELAY >= -12.914285714285715 AND DEP_DELAY < -7.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24526,
+            "selection": "DEP_DELAY >= -12.685714285714285 AND DEP_DELAY < -7.657142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24559,
+            "selection": "DEP_DELAY >= -12.457142857142857 AND DEP_DELAY < -7.428571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24597,
+            "selection": "DEP_DELAY >= -12.22857142857143 AND DEP_DELAY < -7.200000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24757,
+            "selection": "DEP_DELAY >= -12 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24810,
+            "selection": "DEP_DELAY >= -11.771428571428572 AND DEP_DELAY < -6.742857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24860,
+            "selection": "DEP_DELAY >= -11.542857142857143 AND DEP_DELAY < -6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24910,
+            "selection": "DEP_DELAY >= -11.314285714285715 AND DEP_DELAY < -6.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 24944,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25029,
+            "selection": "DEP_DELAY >= -10.857142857142858 AND DEP_DELAY < -5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25161,
+            "selection": "DEP_DELAY >= -10.628571428571428 AND DEP_DELAY < -5.6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25210,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -5.371428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25349,
+            "selection": "DEP_DELAY >= -10.17142857142857 AND DEP_DELAY < -5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25410,
+            "selection": "DEP_DELAY >= -4.914285714285715 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25493,
+            "selection": "DEP_DELAY >= -4.685714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25676,
+            "selection": "DEP_DELAY >= -4.457142857142856 AND DEP_DELAY < -9.485714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25813,
+            "selection": "DEP_DELAY >= -4.2285714285714295 AND DEP_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25877,
+            "selection": "DEP_DELAY >= -4 AND DEP_DELAY < -9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 25977,
+            "selection": "DEP_DELAY >= -3.771428571428573 AND DEP_DELAY < -8.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26076,
+            "selection": "DEP_DELAY >= -3.542857142857142 AND DEP_DELAY < -8.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26181,
+            "selection": "DEP_DELAY >= -3.314285714285715 AND DEP_DELAY < -8.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26228,
+            "selection": "DEP_DELAY >= -3.0857142857142854 AND DEP_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26276,
+            "selection": "DEP_DELAY >= -2.8571428571428585 AND DEP_DELAY < -7.885714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26293,
+            "selection": "DEP_DELAY >= -2.6285714285714272 AND DEP_DELAY < -7.657142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26328,
+            "selection": "DEP_DELAY >= -2.4000000000000004 AND DEP_DELAY < -7.428571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26393,
+            "selection": "DEP_DELAY >= -2.1714285714285735 AND DEP_DELAY < -7.200000000000002",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26453,
+            "selection": "DEP_DELAY >= -1.942857142857143 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26544,
+            "selection": "DEP_DELAY >= -1.7142857142857153 AND DEP_DELAY < -6.742857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26593,
+            "selection": "DEP_DELAY >= -1.4857142857142858 AND DEP_DELAY < -6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26757,
+            "selection": "DEP_DELAY >= -1.257142857142858 AND DEP_DELAY < -6.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26862,
+            "selection": "DEP_DELAY >= -1.0285714285714285 AND DEP_DELAY < -6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 26965,
+            "selection": "DEP_DELAY >= -0.8000000000000007 AND DEP_DELAY < -5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 27060,
+            "selection": "DEP_DELAY >= -0.571428571428573 AND DEP_DELAY < -5.600000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 27109,
+            "selection": "DEP_DELAY >= -0.34285714285714164 AND DEP_DELAY < -5.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 27243,
+            "selection": "DEP_DELAY >= -0.11428571428571388 AND DEP_DELAY < -5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 28843,
+            "selection": "DEP_DELAY >= -0.34285714285714164 AND DEP_DELAY < -5.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 28917,
+            "selection": "DEP_DELAY >= -0.571428571428573 AND DEP_DELAY < -5.600000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29011,
+            "selection": "DEP_DELAY >= -0.8000000000000007 AND DEP_DELAY < -5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29043,
+            "selection": "DEP_DELAY >= -1.0285714285714285 AND DEP_DELAY < -6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29111,
+            "selection": "DEP_DELAY >= -1.257142857142858 AND DEP_DELAY < -6.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29160,
+            "selection": "DEP_DELAY >= -1.4857142857142858 AND DEP_DELAY < -6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29176,
+            "selection": "DEP_DELAY >= -1.7142857142857153 AND DEP_DELAY < -6.742857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29210,
+            "selection": "DEP_DELAY >= -1.942857142857143 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29243,
+            "selection": "DEP_DELAY >= -2.1714285714285735 AND DEP_DELAY < -7.200000000000002",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29259,
+            "selection": "DEP_DELAY >= -2.6285714285714272 AND DEP_DELAY < -7.657142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29276,
+            "selection": "DEP_DELAY >= -3.0857142857142854 AND DEP_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29294,
+            "selection": "DEP_DELAY >= -3.542857142857142 AND DEP_DELAY < -8.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29310,
+            "selection": "DEP_DELAY >= -4 AND DEP_DELAY < -9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29326,
+            "selection": "DEP_DELAY >= -4.457142857142856 AND DEP_DELAY < -9.485714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29343,
+            "selection": "DEP_DELAY >= -4.914285714285715 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29359,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -5.371428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29377,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29393,
+            "selection": "DEP_DELAY >= -11.542857142857143 AND DEP_DELAY < -6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29410,
+            "selection": "DEP_DELAY >= -12 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29426,
+            "selection": "DEP_DELAY >= -12.914285714285715 AND DEP_DELAY < -7.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29443,
+            "selection": "DEP_DELAY >= -13.6 AND DEP_DELAY < -8.571428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29459,
+            "selection": "DEP_DELAY >= -14.285714285714285 AND DEP_DELAY < -9.257142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29477,
+            "selection": "DEP_DELAY >= -14.971428571428572 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29494,
+            "selection": "DEP_DELAY >= -10.17142857142857 AND DEP_DELAY < -15.2",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29509,
+            "selection": "DEP_DELAY >= -10.62857142857143 AND DEP_DELAY < -15.657142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29527,
+            "selection": "DEP_DELAY >= -11.314285714285713 AND DEP_DELAY < -16.34285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29543,
+            "selection": "DEP_DELAY >= -11.771428571428572 AND DEP_DELAY < -16.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29560,
+            "selection": "DEP_DELAY >= -12.457142857142857 AND DEP_DELAY < -17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29577,
+            "selection": "DEP_DELAY >= -12.914285714285715 AND DEP_DELAY < -17.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29593,
+            "selection": "DEP_DELAY >= -13.37142857142857 AND DEP_DELAY < -18.4",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29610,
+            "selection": "DEP_DELAY >= -14.057142857142857 AND DEP_DELAY < -19.085714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29627,
+            "selection": "DEP_DELAY >= -14.285714285714285 AND DEP_DELAY < -19.314285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29643,
+            "selection": "DEP_DELAY >= -14.514285714285716 AND DEP_DELAY < -19.542857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29976,
+            "selection": "DEP_DELAY >= -14.285714285714285 AND DEP_DELAY < -19.314285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 29993,
+            "selection": "DEP_DELAY >= -14.057142857142857 AND DEP_DELAY < -19.085714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30010,
+            "selection": "DEP_DELAY >= -13.82857142857143 AND DEP_DELAY < -18.857142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30026,
+            "selection": "DEP_DELAY >= -13.600000000000001 AND DEP_DELAY < -18.62857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30043,
+            "selection": "DEP_DELAY >= -13.37142857142857 AND DEP_DELAY < -18.4",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30059,
+            "selection": "DEP_DELAY >= -12.685714285714287 AND DEP_DELAY < -17.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30076,
+            "selection": "DEP_DELAY >= -11.542857142857143 AND DEP_DELAY < -16.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30092,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -16.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30110,
+            "selection": "DEP_DELAY >= -10.857142857142858 AND DEP_DELAY < -15.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30127,
+            "selection": "DEP_DELAY >= -10.62857142857143 AND DEP_DELAY < -15.657142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30143,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -15.428571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30160,
+            "selection": "DEP_DELAY >= -14.971428571428572 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30177,
+            "selection": "DEP_DELAY >= -14.514285714285714 AND DEP_DELAY < -9.485714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30193,
+            "selection": "DEP_DELAY >= -14.057142857142857 AND DEP_DELAY < -9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30210,
+            "selection": "DEP_DELAY >= -13.82857142857143 AND DEP_DELAY < -8.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30226,
+            "selection": "DEP_DELAY >= -13.371428571428572 AND DEP_DELAY < -8.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30244,
+            "selection": "DEP_DELAY >= -13.142857142857142 AND DEP_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30260,
+            "selection": "DEP_DELAY >= -12.914285714285715 AND DEP_DELAY < -7.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30276,
+            "selection": "DEP_DELAY >= -12.685714285714285 AND DEP_DELAY < -7.657142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30293,
+            "selection": "DEP_DELAY >= -12.457142857142857 AND DEP_DELAY < -7.428571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30328,
+            "selection": "DEP_DELAY >= -12.22857142857143 AND DEP_DELAY < -7.200000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30360,
+            "selection": "DEP_DELAY >= -12 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30377,
+            "selection": "DEP_DELAY >= -11.542857142857143 AND DEP_DELAY < -6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30393,
+            "selection": "DEP_DELAY >= -11.314285714285715 AND DEP_DELAY < -6.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30410,
+            "selection": "DEP_DELAY >= -11.085714285714285 AND DEP_DELAY < -6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30427,
+            "selection": "DEP_DELAY >= -10.857142857142858 AND DEP_DELAY < -5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30443,
+            "selection": "DEP_DELAY >= -10.628571428571428 AND DEP_DELAY < -5.6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30494,
+            "selection": "DEP_DELAY >= -10.4 AND DEP_DELAY < -5.371428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30526,
+            "selection": "DEP_DELAY >= -10.17142857142857 AND DEP_DELAY < -5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30560,
+            "selection": "DEP_DELAY >= -4.914285714285715 AND DEP_DELAY < -9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30593,
+            "selection": "DEP_DELAY >= -4.685714285714288 AND DEP_DELAY < -9.714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30609,
+            "selection": "DEP_DELAY >= -4.457142857142856 AND DEP_DELAY < -9.485714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30678,
+            "selection": "DEP_DELAY >= -4.2285714285714295 AND DEP_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30726,
+            "selection": "DEP_DELAY >= -4 AND DEP_DELAY < -9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30761,
+            "selection": "DEP_DELAY >= -3.771428571428573 AND DEP_DELAY < -8.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30811,
+            "selection": "DEP_DELAY >= -3.542857142857142 AND DEP_DELAY < -8.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30860,
+            "selection": "DEP_DELAY >= -3.314285714285715 AND DEP_DELAY < -8.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30894,
+            "selection": "DEP_DELAY >= -3.0857142857142854 AND DEP_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30926,
+            "selection": "DEP_DELAY >= -2.8571428571428585 AND DEP_DELAY < -7.885714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 30977,
+            "selection": "DEP_DELAY >= -2.6285714285714272 AND DEP_DELAY < -7.657142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 34910,
+            "selection": "DEP_DELAY >= -2.4000000000000004 AND DEP_DELAY < -7.428571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 34942,
+            "selection": "DEP_DELAY >= -2.1714285714285735 AND DEP_DELAY < -7.200000000000002",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35004,
+            "selection": "DEP_DELAY >= -1.942857142857143 AND DEP_DELAY < -6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35069,
+            "selection": "DEP_DELAY >= -1.7142857142857153 AND DEP_DELAY < -6.742857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35093,
+            "selection": "DEP_DELAY >= -1.4857142857142858 AND DEP_DELAY < -6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35143,
+            "selection": "DEP_DELAY >= -1.257142857142858 AND DEP_DELAY < -6.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35197,
+            "selection": "DEP_DELAY >= -1.0285714285714285 AND DEP_DELAY < -6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35260,
+            "selection": "DEP_DELAY >= -0.8000000000000007 AND DEP_DELAY < -5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35365,
+            "selection": "DEP_DELAY >= -0.571428571428573 AND DEP_DELAY < -5.600000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35409,
+            "selection": "DEP_DELAY >= -0.34285714285714164 AND DEP_DELAY < -5.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35444,
+            "selection": "DEP_DELAY >= -0.11428571428571388 AND DEP_DELAY < -5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 35733,
+            "selection": "DEP_DELAY >= -4.914285714285715 AND DEP_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 42493,
+            "selection": "DEP_DELAY >= -4.685714285714287 AND DEP_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43021,
+            "selection": "DEP_DELAY >= -4.457142857142861 AND DEP_DELAY < 0.5714285714285676",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43212,
+            "selection": "DEP_DELAY >= -4.228571428571428 AND DEP_DELAY < 0.8000000000000007",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43343,
+            "selection": "DEP_DELAY >= -3.9999999999999982 AND DEP_DELAY < 1.0285714285714302",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43459,
+            "selection": "DEP_DELAY >= -3.7714285714285722 AND DEP_DELAY < 1.2571428571428562",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43493,
+            "selection": "DEP_DELAY >= -3.5428571428571445 AND DEP_DELAY < 1.485714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43527,
+            "selection": "DEP_DELAY >= -3.314285714285713 AND DEP_DELAY < 1.7142857142857153",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43626,
+            "selection": "DEP_DELAY >= -3.0857142857142854 AND DEP_DELAY < 1.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43660,
+            "selection": "DEP_DELAY >= -2.8571428571428577 AND DEP_DELAY < 2.171428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43710,
+            "selection": "DEP_DELAY >= -2.6285714285714317 AND DEP_DELAY < 2.399999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43743,
+            "selection": "DEP_DELAY >= -2.400000000000002 AND DEP_DELAY < 2.6285714285714263",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43759,
+            "selection": "DEP_DELAY >= -2.171428571428569 AND DEP_DELAY < 2.8571428571428594",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43794,
+            "selection": "DEP_DELAY >= -1.942857142857143 AND DEP_DELAY < 3.0857142857142854",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43809,
+            "selection": "DEP_DELAY >= -1.7142857142857153 AND DEP_DELAY < 3.314285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43842,
+            "selection": "DEP_DELAY >= -1.4857142857142875 AND DEP_DELAY < 3.542857142857141",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43859,
+            "selection": "DEP_DELAY >= -1.2571428571428562 AND DEP_DELAY < 3.7714285714285722",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43893,
+            "selection": "DEP_DELAY >= -1.0285714285714285 AND DEP_DELAY < 4",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43926,
+            "selection": "DEP_DELAY >= -0.8000000000000025 AND DEP_DELAY < 4.228571428571426",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43961,
+            "selection": "DEP_DELAY >= -0.571428571428573 AND DEP_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43976,
+            "selection": "DEP_DELAY >= -0.34285714285713986 AND DEP_DELAY < 4.685714285714289",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 43992,
+            "selection": "DEP_DELAY >= -0.11428571428571388 AND DEP_DELAY < 4.914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 44027,
+            "selection": "DEP_DELAY >= 0.11428571428571388 AND DEP_DELAY < 5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 44060,
+            "selection": "DEP_DELAY >= 0.34285714285714164 AND DEP_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 44700,
+            "selection": "DEP_DELAY >= 0.11428571428571388 AND DEP_DELAY < 5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 45477,
+            "selection": "DEP_DELAY >= 0.34285714285714164 AND DEP_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 45509,
+            "selection": "DEP_DELAY >= 0.8000000000000007 AND DEP_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 45525,
+            "selection": "DEP_DELAY >= 1.0285714285714285 AND DEP_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 45610,
+            "selection": "DEP_DELAY >= 1.2571428571428562 AND DEP_DELAY < 6.285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46043,
+            "selection": "DEP_DELAY >= 1.0285714285714285 AND DEP_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46317,
+            "selection": "DEP_DELAY >= 0.8000000000000007 AND DEP_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46343,
+            "selection": "DEP_DELAY >= 0.5714285714285676 AND DEP_DELAY < 5.599999999999996",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46612,
+            "selection": "DEP_DELAY >= 0.8000000000000007 AND DEP_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46643,
+            "selection": "DEP_DELAY >= 1.0285714285714285 AND DEP_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46659,
+            "selection": "DEP_DELAY >= 1.2571428571428562 AND DEP_DELAY < 6.285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46710,
+            "selection": "DEP_DELAY >= 1.485714285714284 AND DEP_DELAY < 6.5142857142857125",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46743,
+            "selection": "DEP_DELAY >= 1.7142857142857153 AND DEP_DELAY < 6.742857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46759,
+            "selection": "DEP_DELAY >= 1.942857142857143 AND DEP_DELAY < 6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46776,
+            "selection": "DEP_DELAY >= 2.171428571428571 AND DEP_DELAY < 7.199999999999999",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46792,
+            "selection": "DEP_DELAY >= 2.3999999999999986 AND DEP_DELAY < 7.428571428571427",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46810,
+            "selection": "DEP_DELAY >= 2.6285714285714263 AND DEP_DELAY < 7.657142857142855",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46826,
+            "selection": "DEP_DELAY >= 3.0857142857142854 AND DEP_DELAY < 8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46842,
+            "selection": "DEP_DELAY >= 3.542857142857141 AND DEP_DELAY < 8.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46859,
+            "selection": "DEP_DELAY >= 4 AND DEP_DELAY < 9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 46875,
+            "selection": "DEP_DELAY >= 4.4571428571428555 AND DEP_DELAY < 9.485714285714284",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47093,
+            "selection": "DEP_DELAY >= 3.7714285714285722 AND DEP_DELAY < 8.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47109,
+            "selection": "DEP_DELAY >= 3.542857142857141 AND DEP_DELAY < 8.57142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47126,
+            "selection": "DEP_DELAY >= 3.0857142857142854 AND DEP_DELAY < 8.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47142,
+            "selection": "DEP_DELAY >= 2.3999999999999986 AND DEP_DELAY < 7.428571428571427",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47158,
+            "selection": "DEP_DELAY >= 1.942857142857143 AND DEP_DELAY < 6.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47177,
+            "selection": "DEP_DELAY >= 1.485714285714284 AND DEP_DELAY < 6.5142857142857125",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47192,
+            "selection": "DEP_DELAY >= 1.0285714285714285 AND DEP_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47209,
+            "selection": "DEP_DELAY >= 0.5714285714285676 AND DEP_DELAY < 5.599999999999996",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47226,
+            "selection": "DEP_DELAY >= 0.34285714285714164 AND DEP_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47242,
+            "selection": "DEP_DELAY >= 0.11428571428571388 AND DEP_DELAY < 5.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47260,
+            "selection": "DEP_DELAY >= -0.11428571428571388 AND DEP_DELAY < 4.914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47276,
+            "selection": "DEP_DELAY >= -0.571428571428573 AND DEP_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47293,
+            "selection": "DEP_DELAY >= -0.8000000000000025 AND DEP_DELAY < 4.228571428571426",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47309,
+            "selection": "DEP_DELAY >= -1.2571428571428562 AND DEP_DELAY < 3.7714285714285722",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47326,
+            "selection": "DEP_DELAY >= -1.7142857142857153 AND DEP_DELAY < 3.314285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47342,
+            "selection": "DEP_DELAY >= -1.942857142857143 AND DEP_DELAY < 3.0857142857142854",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47359,
+            "selection": "DEP_DELAY >= -2.171428571428569 AND DEP_DELAY < 2.8571428571428594",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47375,
+            "selection": "DEP_DELAY >= -2.400000000000002 AND DEP_DELAY < 2.6285714285714263",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47393,
+            "selection": "DEP_DELAY >= -2.6285714285714317 AND DEP_DELAY < 2.399999999999997",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47426,
+            "selection": "DEP_DELAY >= -2.8571428571428577 AND DEP_DELAY < 2.171428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47443,
+            "selection": "DEP_DELAY >= -3.0857142857142854 AND DEP_DELAY < 1.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47459,
+            "selection": "DEP_DELAY >= -3.314285714285713 AND DEP_DELAY < 1.7142857142857153",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47475,
+            "selection": "DEP_DELAY >= -3.7714285714285722 AND DEP_DELAY < 1.2571428571428562",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47589,
+            "selection": "DEP_DELAY >= -3.9999999999999982 AND DEP_DELAY < 1.0285714285714302",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47644,
+            "selection": "DEP_DELAY >= -4.228571428571428 AND DEP_DELAY < 0.8000000000000007",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47727,
+            "selection": "DEP_DELAY >= -4.457142857142861 AND DEP_DELAY < 0.5714285714285676",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "DEP_DELAY",
+            "time": 47759,
+            "selection": "DEP_DELAY >= -4.685714285714287 AND DEP_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 2
+            }
+        }
+    ]
+}

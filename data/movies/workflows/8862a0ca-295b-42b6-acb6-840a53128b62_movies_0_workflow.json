@@ -1,0 +1,1198 @@
+{
+    "setup": [
+        {
+            "name": "Release_Date",
+            "binning": [
+                {
+                    "dimension": "Release_Date",
+                    "width": 30541006451.612904,
+                    "reference": 315550800000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "IMDB_Rating",
+            "binning": [
+                {
+                    "dimension": "IMDB_Rating",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "binning": [
+                {
+                    "dimension": "Rotten_Tomatoes_Rating",
+                    "width": 5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Production_Budget",
+            "binning": [
+                {
+                    "dimension": "Production_Budget",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Running_Time_min and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "Running_Time_min",
+            "binning": [
+                {
+                    "dimension": "Running_Time_min",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and US_DVD_Sales and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_DVD_Sales",
+            "binning": [
+                {
+                    "dimension": "US_DVD_Sales",
+                    "width": 20000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_Gross and Worldwide_Gross"
+        },
+        {
+            "name": "US_Gross",
+            "binning": [
+                {
+                    "dimension": "US_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and Worldwide_Gross"
+        },
+        {
+            "name": "Worldwide_Gross",
+            "binning": [
+                {
+                    "dimension": "Worldwide_Gross",
+                    "width": 50000000,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "Release_Date and IMDB_Rating and Rotten_Tomatoes_Rating and Production_Budget and Running_Time_min and US_DVD_Sales and US_Gross"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 0,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 29,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 53,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 52.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 76,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 54",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 101,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 56",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 121,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 60.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 147,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 63.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 167,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 66.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 183,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 70",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 199,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 72.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 217,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 74.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 232,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 77.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 247,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 81.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 260,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 84.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 278,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 86",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 293,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 89.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 307,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 90.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 322,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 91.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 335,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 92",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 353,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 92.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 380,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 92.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 386,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 92.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 404,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 93.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 420,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 93.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 436,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 94.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 453,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 94.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 469,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 95.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 485,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 95.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 502,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 95.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 521,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 96",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 538,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 96.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 553,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 96.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 569,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 97.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 586,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 97.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 604,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 97.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 624,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 97.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 637,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 97.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 653,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 98",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 669,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 98.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 687,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 98.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 703,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 99.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 720,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 99.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 736,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 99.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 753,
+            "selection": "Rotten_Tomatoes_Rating >= 50 AND Rotten_Tomatoes_Rating < 99.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 770,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 786,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 804,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 838,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 856,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 879,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 1207,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 1231,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 1303,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "Rotten_Tomatoes_Rating",
+            "time": 1950,
+            "selection": "Rotten_Tomatoes_Rating >= 100 AND Rotten_Tomatoes_Rating < 50",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7055,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7069,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.057142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7086,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7102,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.2",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7119,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.257142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7136,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.371428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7152,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.457142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7170,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.685714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7188,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 5.857142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7201,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7218,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.085714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7235,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7252,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7269,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.171428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7286,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.171428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7303,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.257142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7320,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.314285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7336,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.371428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7352,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.428571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7369,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.485714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7385,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.571428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7402,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.657142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7419,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 6.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7436,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 7",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7452,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 7.228571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7468,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 7.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7485,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 7.771428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7502,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.085714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7519,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.2",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7536,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.314285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7552,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.4",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7572,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.457142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7588,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7602,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.571428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7619,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.628571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7636,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.714285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7652,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.799999999999999",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7669,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7686,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 8.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7703,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7735,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.028571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7752,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.142857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7768,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.17142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7785,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.228571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7801,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7820,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7836,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.314285714285713",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7857,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.371428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7870,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.485714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7886,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7902,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.685714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7919,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.742857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7936,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.77142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7968,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.77142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 7986,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.799999999999999",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8020,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.799999999999999",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8036,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.885714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8052,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8069,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.942857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8085,
+            "selection": "IMDB_Rating >= 5.0285714285714285 AND IMDB_Rating < 9.971428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8103,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8118,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8136,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8152,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8170,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8185,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8202,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8470,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8486,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8502,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8518,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8536,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8553,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8568,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8585,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8602,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8629,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8677,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "IMDB_Rating",
+            "time": 8862,
+            "selection": "IMDB_Rating >= 10 AND IMDB_Rating < 5.0285714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        }
+    ]
+}

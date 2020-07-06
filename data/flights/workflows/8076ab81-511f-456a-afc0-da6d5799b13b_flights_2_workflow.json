@@ -1,0 +1,6198 @@
+{
+    "setup": [
+        {
+            "name": "DISTANCE",
+            "binning": [
+                {
+                    "dimension": "DISTANCE",
+                    "width": 200,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "ARR_TIME and DEP_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "ARR_TIME",
+            "binning": [
+                {
+                    "dimension": "ARR_TIME",
+                    "width": 1,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and DEP_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "DEP_TIME",
+            "binning": [
+                {
+                    "dimension": "DEP_TIME",
+                    "width": 1,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_DELAY and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "DEP_DELAY",
+            "binning": [
+                {
+                    "dimension": "DEP_DELAY",
+                    "width": 5,
+                    "reference": -20
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and ARR_DELAY and AIR_TIME"
+        },
+        {
+            "name": "ARR_DELAY",
+            "binning": [
+                {
+                    "dimension": "ARR_DELAY",
+                    "width": 5,
+                    "reference": -20
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and DEP_DELAY and AIR_TIME"
+        },
+        {
+            "name": "AIR_TIME",
+            "binning": [
+                {
+                    "dimension": "AIR_TIME",
+                    "width": 20,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "DISTANCE and ARR_TIME and DEP_TIME and DEP_DELAY and ARR_DELAY"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "ARR_DELAY",
+            "time": 0,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 33,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 50,
+            "selection": "ARR_DELAY >= -7.657142857142858 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 68,
+            "selection": "ARR_DELAY >= -6.514285714285714 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 88,
+            "selection": "ARR_DELAY >= -5.6 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 104,
+            "selection": "ARR_DELAY >= -4.457142857142857 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 119,
+            "selection": "ARR_DELAY >= -4 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136,
+            "selection": "ARR_DELAY >= -3.0857142857142854 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 153,
+            "selection": "ARR_DELAY >= -1.942857142857143 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 169,
+            "selection": "ARR_DELAY >= -0.8000000000000007 AND ARR_DELAY < -9.257142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 186,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 201,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 1.0285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 217,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 1.485714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 326,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 1.485714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 369,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 1.7142857142857153",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 386,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 1.7142857142857153",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 401,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 1.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 417,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 2.3999999999999986",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 435,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 2.8571428571428577",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 454,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 3.0857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 484,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 3.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 734,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 3.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 752,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 3.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 768,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 3.7714285714285722",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 783,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 801,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 818,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 835,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.914285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 868,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.142857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 884,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.142857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 900,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 919,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 934,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.599999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 950,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.599999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 967,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 984,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1398,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1421,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1438,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 6.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1455,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1467,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1484,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1501,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.828571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1518,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.599999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1534,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.599999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1567,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1601,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 5.142857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1617,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.914285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1633,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.914285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 1798,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2078,
+            "selection": "ARR_DELAY >= -9.257142857142858 AND ARR_DELAY < 4.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2501,
+            "selection": "ARR_DELAY >= -9.714285714285717 AND ARR_DELAY < 4.228571428571424",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2517,
+            "selection": "ARR_DELAY >= -10.4 AND ARR_DELAY < 3.542857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2534,
+            "selection": "ARR_DELAY >= -10.85714285714286 AND ARR_DELAY < 3.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2551,
+            "selection": "ARR_DELAY >= -11.314285714285715 AND ARR_DELAY < 2.6285714285714263",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2567,
+            "selection": "ARR_DELAY >= -11.542857142857143 AND ARR_DELAY < 2.3999999999999986",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2584,
+            "selection": "ARR_DELAY >= -11.771428571428574 AND ARR_DELAY < 2.1714285714285673",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2601,
+            "selection": "ARR_DELAY >= -12.000000000000002 AND ARR_DELAY < 1.9428571428571395",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2652,
+            "selection": "ARR_DELAY >= -12.22857142857143 AND ARR_DELAY < 1.7142857142857117",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2685,
+            "selection": "ARR_DELAY >= -12.457142857142857 AND ARR_DELAY < 1.485714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2701,
+            "selection": "ARR_DELAY >= -13.142857142857144 AND ARR_DELAY < 0.7999999999999972",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2718,
+            "selection": "ARR_DELAY >= -13.6 AND ARR_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2733,
+            "selection": "ARR_DELAY >= -0.3428571428571452 AND ARR_DELAY < -14.285714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2750,
+            "selection": "ARR_DELAY >= -0.5714285714285747 AND ARR_DELAY < -14.514285714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2768,
+            "selection": "ARR_DELAY >= -1.9428571428571448 AND ARR_DELAY < -15.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2783,
+            "selection": "ARR_DELAY >= -17.028571428571432 AND ARR_DELAY < -3.085714285714289",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2801,
+            "selection": "ARR_DELAY >= -18.17142857142857 AND ARR_DELAY < -4.228571428571431",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2817,
+            "selection": "ARR_DELAY >= -19.08571428571429 AND ARR_DELAY < -5.142857142857146",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2834,
+            "selection": "ARR_DELAY >= -19.771428571428572 AND ARR_DELAY < -5.828571428571431",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 2886,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -6.0571428571428605",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5366,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.685714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5438,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.685714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5510,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.457142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5535,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.457142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5551,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.457142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5567,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.2285714285714295",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5934,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.2285714285714295",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 5957,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.2285714285714295",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6000,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.2285714285714295",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6134,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.2285714285714295",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6166,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.457142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6206,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.457142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6251,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.457142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6301,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.685714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6316,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.914285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 6334,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < -4.914285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11534,
+            "selection": "ARR_DELAY >= -19.771428571428572 AND ARR_DELAY < -4.685714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11549,
+            "selection": "ARR_DELAY >= -19.085714285714285 AND ARR_DELAY < -4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11567,
+            "selection": "ARR_DELAY >= -17.942857142857143 AND ARR_DELAY < -2.8571428571428577",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11584,
+            "selection": "ARR_DELAY >= -1.942857142857143 AND ARR_DELAY < -17.02857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11601,
+            "selection": "ARR_DELAY >= -0.5714285714285712 AND ARR_DELAY < -15.657142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11617,
+            "selection": "ARR_DELAY >= -14.971428571428572 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11634,
+            "selection": "ARR_DELAY >= -14.285714285714286 AND ARR_DELAY < 0.7999999999999989",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11650,
+            "selection": "ARR_DELAY >= -13.37142857142857 AND ARR_DELAY < 1.7142857142857153",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11666,
+            "selection": "ARR_DELAY >= -12.457142857142859 AND ARR_DELAY < 2.6285714285714263",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11683,
+            "selection": "ARR_DELAY >= -11.085714285714285 AND ARR_DELAY < 4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11701,
+            "selection": "ARR_DELAY >= -8.8 AND ARR_DELAY < 6.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11717,
+            "selection": "ARR_DELAY >= -7.428571428571431 AND ARR_DELAY < 7.657142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11734,
+            "selection": "ARR_DELAY >= -6.514285714285716 AND ARR_DELAY < 8.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11750,
+            "selection": "ARR_DELAY >= -6.057142857142857 AND ARR_DELAY < 9.028571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11768,
+            "selection": "ARR_DELAY >= -5.828571428571429 AND ARR_DELAY < 9.257142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 11851,
+            "selection": "ARR_DELAY >= -5.600000000000001 AND ARR_DELAY < 9.485714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12035,
+            "selection": "ARR_DELAY >= -5.142857142857142 AND ARR_DELAY < 9.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12050,
+            "selection": "ARR_DELAY >= -4.914285714285715 AND ARR_DELAY < 10.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12067,
+            "selection": "ARR_DELAY >= -4.685714285714287 AND ARR_DELAY < 10.399999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12084,
+            "selection": "ARR_DELAY >= -4.457142857142857 AND ARR_DELAY < 10.628571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12100,
+            "selection": "ARR_DELAY >= -4.000000000000002 AND ARR_DELAY < 11.085714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12118,
+            "selection": "ARR_DELAY >= -3.7714285714285722 AND ARR_DELAY < 11.314285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12134,
+            "selection": "ARR_DELAY >= -3.314285714285713 AND ARR_DELAY < 11.771428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12151,
+            "selection": "ARR_DELAY >= -2.8571428571428577 AND ARR_DELAY < 12.228571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12167,
+            "selection": "ARR_DELAY >= -2.400000000000002 AND ARR_DELAY < 12.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12184,
+            "selection": "ARR_DELAY >= -1.4857142857142875 AND ARR_DELAY < 13.599999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12200,
+            "selection": "ARR_DELAY >= -0.8000000000000007 AND ARR_DELAY < 14.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12217,
+            "selection": "ARR_DELAY >= -0.3428571428571452 AND ARR_DELAY < 14.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12234,
+            "selection": "ARR_DELAY >= 0.11428571428571388 AND ARR_DELAY < 15.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12250,
+            "selection": "ARR_DELAY >= 0.5714285714285694 AND ARR_DELAY < 15.657142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12670,
+            "selection": "ARR_DELAY >= 0.34285714285714164 AND ARR_DELAY < 15.428571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12758,
+            "selection": "ARR_DELAY >= 0.11428571428571388 AND ARR_DELAY < 15.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 12835,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 14.971428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16230,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 15.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16251,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 15.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16267,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 15.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16283,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 16.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16300,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 17.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16317,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 17.485714285714288",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16334,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 18.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16350,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 18.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16384,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 18.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16400,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 19.771428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16417,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 20.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16434,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 20.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16450,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 21.371428571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16467,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 21.82857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 16484,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 22.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 17014,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 22.057142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43476,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 22.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43499,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 23.199999999999996",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43534,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 23.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43549,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 26.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43566,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 28.228571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43583,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 30.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43599,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 33.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43616,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 36.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43633,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 40.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43649,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 44.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43666,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 49.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43683,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 54.514285714285705",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43699,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 58.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43715,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43732,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43750,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43766,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 43784,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95451,
+            "selection": "ARR_DELAY >= -0.3428571428571452 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95479,
+            "selection": "ARR_DELAY >= -0.3428571428571452 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95496,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95512,
+            "selection": "ARR_DELAY >= 0.34285714285714164 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95532,
+            "selection": "ARR_DELAY >= 0.5714285714285694 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95548,
+            "selection": "ARR_DELAY >= 1.0285714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95565,
+            "selection": "ARR_DELAY >= 1.2571428571428562 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95581,
+            "selection": "ARR_DELAY >= 1.7142857142857153 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95598,
+            "selection": "ARR_DELAY >= 2.171428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95614,
+            "selection": "ARR_DELAY >= 3.0857142857142854 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95631,
+            "selection": "ARR_DELAY >= 4.228571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95651,
+            "selection": "ARR_DELAY >= 5.599999999999998 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95664,
+            "selection": "ARR_DELAY >= 60 AND ARR_DELAY < 8.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95681,
+            "selection": "ARR_DELAY >= 60 AND ARR_DELAY < 9.485714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95697,
+            "selection": "ARR_DELAY >= 11.771428571428569 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95714,
+            "selection": "ARR_DELAY >= 15.42857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95731,
+            "selection": "ARR_DELAY >= 17.942857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95747,
+            "selection": "ARR_DELAY >= 20.228571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95764,
+            "selection": "ARR_DELAY >= 22.971428571428568 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95780,
+            "selection": "ARR_DELAY >= 25.485714285714288 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95798,
+            "selection": "ARR_DELAY >= 28 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95814,
+            "selection": "ARR_DELAY >= 30.514285714285712 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95832,
+            "selection": "ARR_DELAY >= 32.34285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95847,
+            "selection": "ARR_DELAY >= 34.17142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95864,
+            "selection": "ARR_DELAY >= 35.77142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95881,
+            "selection": "ARR_DELAY >= 36.91428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95897,
+            "selection": "ARR_DELAY >= 38.285714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95913,
+            "selection": "ARR_DELAY >= 40.34285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95931,
+            "selection": "ARR_DELAY >= 41.48571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95948,
+            "selection": "ARR_DELAY >= 42.628571428571426 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95964,
+            "selection": "ARR_DELAY >= 43.31428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 95981,
+            "selection": "ARR_DELAY >= 43.54285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96019,
+            "selection": "ARR_DELAY >= 43.77142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96048,
+            "selection": "ARR_DELAY >= 43.77142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96064,
+            "selection": "ARR_DELAY >= 44.22857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96081,
+            "selection": "ARR_DELAY >= 44.22857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96098,
+            "selection": "ARR_DELAY >= 44.457142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96138,
+            "selection": "ARR_DELAY >= 44.457142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96148,
+            "selection": "ARR_DELAY >= 44.457142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96165,
+            "selection": "ARR_DELAY >= 44.457142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96186,
+            "selection": "ARR_DELAY >= 44.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96198,
+            "selection": "ARR_DELAY >= 44.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96214,
+            "selection": "ARR_DELAY >= 44.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96231,
+            "selection": "ARR_DELAY >= 44.91428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96248,
+            "selection": "ARR_DELAY >= 45.14285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96264,
+            "selection": "ARR_DELAY >= 45.599999999999994 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96281,
+            "selection": "ARR_DELAY >= 46.28571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96297,
+            "selection": "ARR_DELAY >= 47.2 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96314,
+            "selection": "ARR_DELAY >= 47.885714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96330,
+            "selection": "ARR_DELAY >= 48.57142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96547,
+            "selection": "ARR_DELAY >= 48.57142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96564,
+            "selection": "ARR_DELAY >= 48.57142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96581,
+            "selection": "ARR_DELAY >= 48.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96598,
+            "selection": "ARR_DELAY >= 49.25714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96614,
+            "selection": "ARR_DELAY >= 49.71428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96631,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96647,
+            "selection": "ARR_DELAY >= 50.171428571428564 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96665,
+            "selection": "ARR_DELAY >= 50.39999999999999 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96682,
+            "selection": "ARR_DELAY >= 50.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96698,
+            "selection": "ARR_DELAY >= 50.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96749,
+            "selection": "ARR_DELAY >= 50.85714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96764,
+            "selection": "ARR_DELAY >= 50.85714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96782,
+            "selection": "ARR_DELAY >= 50.85714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96798,
+            "selection": "ARR_DELAY >= 51.08571428571429 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96814,
+            "selection": "ARR_DELAY >= 51.31428571428572 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96831,
+            "selection": "ARR_DELAY >= 51.77142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96847,
+            "selection": "ARR_DELAY >= 52 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96865,
+            "selection": "ARR_DELAY >= 52.22857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96881,
+            "selection": "ARR_DELAY >= 52.457142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96897,
+            "selection": "ARR_DELAY >= 52.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96914,
+            "selection": "ARR_DELAY >= 52.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96931,
+            "selection": "ARR_DELAY >= 52.91428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96948,
+            "selection": "ARR_DELAY >= 53.14285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 96964,
+            "selection": "ARR_DELAY >= 53.37142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97243,
+            "selection": "ARR_DELAY >= 53.37142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97258,
+            "selection": "ARR_DELAY >= 53.37142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97265,
+            "selection": "ARR_DELAY >= 53.14285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97298,
+            "selection": "ARR_DELAY >= 53.14285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97314,
+            "selection": "ARR_DELAY >= 53.14285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97330,
+            "selection": "ARR_DELAY >= 52.91428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97348,
+            "selection": "ARR_DELAY >= 52.91428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97364,
+            "selection": "ARR_DELAY >= 52.91428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97381,
+            "selection": "ARR_DELAY >= 52.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97397,
+            "selection": "ARR_DELAY >= 52.457142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97414,
+            "selection": "ARR_DELAY >= 52.22857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97431,
+            "selection": "ARR_DELAY >= 52 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97447,
+            "selection": "ARR_DELAY >= 51.77142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97464,
+            "selection": "ARR_DELAY >= 51.542857142857144 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97481,
+            "selection": "ARR_DELAY >= 51.31428571428572 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97497,
+            "selection": "ARR_DELAY >= 51.08571428571429 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97514,
+            "selection": "ARR_DELAY >= 50.85714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97531,
+            "selection": "ARR_DELAY >= 50.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97548,
+            "selection": "ARR_DELAY >= 50.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97611,
+            "selection": "ARR_DELAY >= 50.39999999999999 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97632,
+            "selection": "ARR_DELAY >= 50.39999999999999 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97648,
+            "selection": "ARR_DELAY >= 50.171428571428564 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97664,
+            "selection": "ARR_DELAY >= 50.171428571428564 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97681,
+            "selection": "ARR_DELAY >= 50.171428571428564 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97698,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97754,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97769,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97794,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 97816,
+            "selection": "ARR_DELAY >= 49.71428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 98522,
+            "selection": "ARR_DELAY >= 49.71428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 98546,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 98594,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121498,
+            "selection": "ARR_DELAY >= 49.71428571428571 AND ARR_DELAY < 59.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121512,
+            "selection": "ARR_DELAY >= 49.48571428571428 AND ARR_DELAY < 59.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121529,
+            "selection": "ARR_DELAY >= 48.571428571428555 AND ARR_DELAY < 58.62857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121545,
+            "selection": "ARR_DELAY >= 47.657142857142844 AND ARR_DELAY < 57.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121563,
+            "selection": "ARR_DELAY >= 46.28571428571428 AND ARR_DELAY < 56.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121580,
+            "selection": "ARR_DELAY >= 45.14285714285714 AND ARR_DELAY < 55.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121596,
+            "selection": "ARR_DELAY >= 43.999999999999986 AND ARR_DELAY < 54.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121614,
+            "selection": "ARR_DELAY >= 43.085714285714275 AND ARR_DELAY < 53.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121631,
+            "selection": "ARR_DELAY >= 41.48571428571428 AND ARR_DELAY < 51.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121647,
+            "selection": "ARR_DELAY >= 39.657142857142844 AND ARR_DELAY < 49.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121663,
+            "selection": "ARR_DELAY >= 37.59999999999999 AND ARR_DELAY < 47.65714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121679,
+            "selection": "ARR_DELAY >= 35.3142857142857 AND ARR_DELAY < 45.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121697,
+            "selection": "ARR_DELAY >= 33.02857142857142 AND ARR_DELAY < 43.08571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121713,
+            "selection": "ARR_DELAY >= 28.914285714285704 AND ARR_DELAY < 38.97142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121729,
+            "selection": "ARR_DELAY >= 26.39999999999999 AND ARR_DELAY < 36.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121747,
+            "selection": "ARR_DELAY >= 23.657142857142844 AND ARR_DELAY < 33.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121762,
+            "selection": "ARR_DELAY >= 21.828571428571415 AND ARR_DELAY < 31.88571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121781,
+            "selection": "ARR_DELAY >= 20.685714285714276 AND ARR_DELAY < 30.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121796,
+            "selection": "ARR_DELAY >= 19.771428571428558 AND ARR_DELAY < 29.828571428571422",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121814,
+            "selection": "ARR_DELAY >= 19.085714285714275 AND ARR_DELAY < 29.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121831,
+            "selection": "ARR_DELAY >= 18.628571428571423 AND ARR_DELAY < 28.685714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121847,
+            "selection": "ARR_DELAY >= 17.94285714285714 AND ARR_DELAY < 28.000000000000004",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121864,
+            "selection": "ARR_DELAY >= 17.028571428571418 AND ARR_DELAY < 27.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121880,
+            "selection": "ARR_DELAY >= 16.571428571428562 AND ARR_DELAY < 26.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121896,
+            "selection": "ARR_DELAY >= 15.885714285714279 AND ARR_DELAY < 25.942857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121913,
+            "selection": "ARR_DELAY >= 15.199999999999989 AND ARR_DELAY < 25.257142857142853",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121930,
+            "selection": "ARR_DELAY >= 14.742857142857133 AND ARR_DELAY < 24.799999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121947,
+            "selection": "ARR_DELAY >= 14.285714285714278 AND ARR_DELAY < 24.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121963,
+            "selection": "ARR_DELAY >= 14.05714285714285 AND ARR_DELAY < 24.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121980,
+            "selection": "ARR_DELAY >= 13.828571428571415 AND ARR_DELAY < 23.88571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 121997,
+            "selection": "ARR_DELAY >= 13.599999999999987 AND ARR_DELAY < 23.65714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122013,
+            "selection": "ARR_DELAY >= 13.142857142857132 AND ARR_DELAY < 23.199999999999996",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122030,
+            "selection": "ARR_DELAY >= 12.914285714285704 AND ARR_DELAY < 22.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122048,
+            "selection": "ARR_DELAY >= 12.22857142857142 AND ARR_DELAY < 22.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122063,
+            "selection": "ARR_DELAY >= 11.54285714285713 AND ARR_DELAY < 21.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122081,
+            "selection": "ARR_DELAY >= 10.62857142857142 AND ARR_DELAY < 20.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122096,
+            "selection": "ARR_DELAY >= 19.31428571428571 AND ARR_DELAY < 9.257142857142846",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122114,
+            "selection": "ARR_DELAY >= 18.17142857142857 AND ARR_DELAY < 8.114285714285707",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122130,
+            "selection": "ARR_DELAY >= 16.79999999999999 AND ARR_DELAY < 6.742857142857126",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122147,
+            "selection": "ARR_DELAY >= 15.657142857142858 AND ARR_DELAY < 5.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122164,
+            "selection": "ARR_DELAY >= 14.285714285714278 AND ARR_DELAY < 4.2285714285714135",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122183,
+            "selection": "ARR_DELAY >= 13.37142857142856 AND ARR_DELAY < 3.3142857142856954",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122197,
+            "selection": "ARR_DELAY >= 12.228571428571435 AND ARR_DELAY < 2.171428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122213,
+            "selection": "ARR_DELAY >= 1.0285714285714178 AND ARR_DELAY < 11.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122231,
+            "selection": "ARR_DELAY >= -0.11428571428572809 AND ARR_DELAY < 9.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122246,
+            "selection": "ARR_DELAY >= -0.8000000000000114 AND ARR_DELAY < 9.257142857142853",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122264,
+            "selection": "ARR_DELAY >= -1.4857142857142946 AND ARR_DELAY < 8.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122280,
+            "selection": "ARR_DELAY >= -2.171428571428578 AND ARR_DELAY < 7.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122297,
+            "selection": "ARR_DELAY >= -3.085714285714303 AND ARR_DELAY < 6.971428571428561",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122313,
+            "selection": "ARR_DELAY >= -4.45714285714287 AND ARR_DELAY < 5.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122330,
+            "selection": "ARR_DELAY >= -4.914285714285725 AND ARR_DELAY < 5.142857142857139",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122347,
+            "selection": "ARR_DELAY >= -5.6000000000000085 AND ARR_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122364,
+            "selection": "ARR_DELAY >= -6.057142857142871 AND ARR_DELAY < 3.999999999999993",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122379,
+            "selection": "ARR_DELAY >= -6.285714285714292 AND ARR_DELAY < 3.7714285714285722",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122397,
+            "selection": "ARR_DELAY >= -6.51428571428572 AND ARR_DELAY < 3.5428571428571445",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122413,
+            "selection": "ARR_DELAY >= -6.742857142857147 AND ARR_DELAY < 3.3142857142857167",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122429,
+            "selection": "ARR_DELAY >= -6.971428571428582 AND ARR_DELAY < 3.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122464,
+            "selection": "ARR_DELAY >= -7.428571428571438 AND ARR_DELAY < 2.6285714285714263",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122480,
+            "selection": "ARR_DELAY >= -7.657142857142858 AND ARR_DELAY < 2.4000000000000057",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122496,
+            "selection": "ARR_DELAY >= -8.114285714285735 AND ARR_DELAY < 1.9428571428571288",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122514,
+            "selection": "ARR_DELAY >= -9.25714285714286 AND ARR_DELAY < 0.8000000000000043",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122530,
+            "selection": "ARR_DELAY >= -9.714285714285722 AND ARR_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122547,
+            "selection": "ARR_DELAY >= -9.94285714285715 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122563,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < -10.171428571428578",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122581,
+            "selection": "ARR_DELAY >= -0.5714285714285765 AND ARR_DELAY < -10.62857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122614,
+            "selection": "ARR_DELAY >= -0.8000000000000043 AND ARR_DELAY < -10.857142857142868",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122630,
+            "selection": "ARR_DELAY >= -1.0285714285714391 AND ARR_DELAY < -11.085714285714303",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122647,
+            "selection": "ARR_DELAY >= -1.2571428571428598 AND ARR_DELAY < -11.314285714285724",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122664,
+            "selection": "ARR_DELAY >= -1.4857142857142875 AND ARR_DELAY < -11.542857142857152",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122679,
+            "selection": "ARR_DELAY >= -1.942857142857143 AND ARR_DELAY < -12.000000000000007",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122696,
+            "selection": "ARR_DELAY >= -12.228571428571442 AND ARR_DELAY < -2.171428571428578",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122713,
+            "selection": "ARR_DELAY >= -12.914285714285725 AND ARR_DELAY < -2.857142857142861",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122730,
+            "selection": "ARR_DELAY >= -13.142857142857153 AND ARR_DELAY < -3.085714285714289",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122747,
+            "selection": "ARR_DELAY >= -13.37142857142858 AND ARR_DELAY < -3.3142857142857167",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122764,
+            "selection": "ARR_DELAY >= -13.600000000000009 AND ARR_DELAY < -3.5428571428571445",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122780,
+            "selection": "ARR_DELAY >= -13.828571428571436 AND ARR_DELAY < -3.7714285714285722",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122813,
+            "selection": "ARR_DELAY >= -14.057142857142857 AND ARR_DELAY < -3.999999999999993",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122829,
+            "selection": "ARR_DELAY >= -14.51428571428572 AND ARR_DELAY < -4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122848,
+            "selection": "ARR_DELAY >= -14.742857142857147 AND ARR_DELAY < -4.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122864,
+            "selection": "ARR_DELAY >= -15.200000000000003 AND ARR_DELAY < -5.142857142857139",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122880,
+            "selection": "ARR_DELAY >= -15.8857142857143 AND ARR_DELAY < -5.828571428571436",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122896,
+            "selection": "ARR_DELAY >= -16.342857142857156 AND ARR_DELAY < -6.285714285714292",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122913,
+            "selection": "ARR_DELAY >= -17.485714285714295 AND ARR_DELAY < -7.428571428571431",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122930,
+            "selection": "ARR_DELAY >= -17.94285714285715 AND ARR_DELAY < -7.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122946,
+            "selection": "ARR_DELAY >= -18.171428571428578 AND ARR_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 122964,
+            "selection": "ARR_DELAY >= -18.400000000000006 AND ARR_DELAY < -8.342857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123547,
+            "selection": "ARR_DELAY >= -18.171428571428578 AND ARR_DELAY < -8.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123564,
+            "selection": "ARR_DELAY >= -17.714285714285722 AND ARR_DELAY < -7.657142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123580,
+            "selection": "ARR_DELAY >= -17.485714285714295 AND ARR_DELAY < -7.428571428571431",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123597,
+            "selection": "ARR_DELAY >= -17.257142857142867 AND ARR_DELAY < -7.200000000000003",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123614,
+            "selection": "ARR_DELAY >= -17.02857142857144 AND ARR_DELAY < -6.971428571428575",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123629,
+            "selection": "ARR_DELAY >= -16.80000000000001 AND ARR_DELAY < -6.742857142857147",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123647,
+            "selection": "ARR_DELAY >= -16.571428571428584 AND ARR_DELAY < -6.51428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123680,
+            "selection": "ARR_DELAY >= -16.114285714285728 AND ARR_DELAY < -6.057142857142864",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123697,
+            "selection": "ARR_DELAY >= -15.8857142857143 AND ARR_DELAY < -5.828571428571436",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123713,
+            "selection": "ARR_DELAY >= -15.42857142857143 AND ARR_DELAY < -5.371428571428567",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123730,
+            "selection": "ARR_DELAY >= -14.971428571428575 AND ARR_DELAY < -4.914285714285711",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123746,
+            "selection": "ARR_DELAY >= -14.51428571428572 AND ARR_DELAY < -4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123763,
+            "selection": "ARR_DELAY >= -13.828571428571436 AND ARR_DELAY < -3.7714285714285722",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123780,
+            "selection": "ARR_DELAY >= -13.37142857142858 AND ARR_DELAY < -3.3142857142857167",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123797,
+            "selection": "ARR_DELAY >= -12.68571428571429 AND ARR_DELAY < -2.6285714285714263",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123813,
+            "selection": "ARR_DELAY >= -1.7142857142857153 AND ARR_DELAY < -11.77142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123830,
+            "selection": "ARR_DELAY >= -0.8000000000000043 AND ARR_DELAY < -10.857142857142868",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123847,
+            "selection": "ARR_DELAY >= -9.94285714285715 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123863,
+            "selection": "ARR_DELAY >= -8.800000000000011 AND ARR_DELAY < 1.2571428571428527",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123881,
+            "selection": "ARR_DELAY >= -8.114285714285735 AND ARR_DELAY < 1.9428571428571288",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123896,
+            "selection": "ARR_DELAY >= -7.20000000000001 AND ARR_DELAY < 2.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123913,
+            "selection": "ARR_DELAY >= -6.971428571428582 AND ARR_DELAY < 3.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123930,
+            "selection": "ARR_DELAY >= -6.51428571428572 AND ARR_DELAY < 3.5428571428571445",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123946,
+            "selection": "ARR_DELAY >= -6.057142857142871 AND ARR_DELAY < 3.999999999999993",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123964,
+            "selection": "ARR_DELAY >= -5.6000000000000085 AND ARR_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123979,
+            "selection": "ARR_DELAY >= -5.142857142857153 AND ARR_DELAY < 4.914285714285711",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 123998,
+            "selection": "ARR_DELAY >= -4.685714285714305 AND ARR_DELAY < 5.3714285714285595",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124013,
+            "selection": "ARR_DELAY >= -4.228571428571442 AND ARR_DELAY < 5.828571428571422",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124029,
+            "selection": "ARR_DELAY >= -3.7714285714285793 AND ARR_DELAY < 6.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124047,
+            "selection": "ARR_DELAY >= -3.085714285714303 AND ARR_DELAY < 6.971428571428561",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124063,
+            "selection": "ARR_DELAY >= -2.857142857142861 AND ARR_DELAY < 7.200000000000003",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124080,
+            "selection": "ARR_DELAY >= -2.4000000000000057 AND ARR_DELAY < 7.657142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124097,
+            "selection": "ARR_DELAY >= -1.9428571428571502 AND ARR_DELAY < 8.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124113,
+            "selection": "ARR_DELAY >= -1.7142857142857224 AND ARR_DELAY < 8.342857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124129,
+            "selection": "ARR_DELAY >= -1.4857142857142946 AND ARR_DELAY < 8.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124147,
+            "selection": "ARR_DELAY >= -1.0285714285714391 AND ARR_DELAY < 9.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124163,
+            "selection": "ARR_DELAY >= -0.5714285714285836 AND ARR_DELAY < 9.48571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124180,
+            "selection": "ARR_DELAY >= -0.34285714285715585 AND ARR_DELAY < 9.714285714285708",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124196,
+            "selection": "ARR_DELAY >= 0.11428571428570677 AND ARR_DELAY < 10.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124213,
+            "selection": "ARR_DELAY >= 0.34285714285712743 AND ARR_DELAY < 10.399999999999991",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124230,
+            "selection": "ARR_DELAY >= 0.5714285714285623 AND ARR_DELAY < 10.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124246,
+            "selection": "ARR_DELAY >= 1.0285714285714178 AND ARR_DELAY < 11.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124280,
+            "selection": "ARR_DELAY >= 1.2571428571428527 AND ARR_DELAY < 11.314285714285717",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124313,
+            "selection": "ARR_DELAY >= 1.4857142857142804 AND ARR_DELAY < 11.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124347,
+            "selection": "ARR_DELAY >= 1.9428571428571288 AND ARR_DELAY < 11.999999999999993",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124364,
+            "selection": "ARR_DELAY >= 12.228571428571435 AND ARR_DELAY < 2.171428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124379,
+            "selection": "ARR_DELAY >= 12.457142857142856 AND ARR_DELAY < 2.3999999999999915",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124397,
+            "selection": "ARR_DELAY >= 12.914285714285711 AND ARR_DELAY < 2.857142857142847",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124413,
+            "selection": "ARR_DELAY >= 13.142857142857139 AND ARR_DELAY < 3.0857142857142748",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124430,
+            "selection": "ARR_DELAY >= 13.828571428571422 AND ARR_DELAY < 3.771428571428558",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124447,
+            "selection": "ARR_DELAY >= 14.285714285714278 AND ARR_DELAY < 4.2285714285714135",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124466,
+            "selection": "ARR_DELAY >= 14.74285714285714 AND ARR_DELAY < 4.685714285714276",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124480,
+            "selection": "ARR_DELAY >= 15.428571428571423 AND ARR_DELAY < 5.3714285714285595",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124496,
+            "selection": "ARR_DELAY >= 16.114285714285714 AND ARR_DELAY < 6.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124512,
+            "selection": "ARR_DELAY >= 17.028571428571425 AND ARR_DELAY < 6.971428571428561",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124531,
+            "selection": "ARR_DELAY >= 18.628571428571433 AND ARR_DELAY < 8.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124547,
+            "selection": "ARR_DELAY >= 10.399999999999991 AND ARR_DELAY < 20.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124563,
+            "selection": "ARR_DELAY >= 12.914285714285704 AND ARR_DELAY < 22.971428571428568",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124579,
+            "selection": "ARR_DELAY >= 15.199999999999989 AND ARR_DELAY < 25.257142857142853",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124596,
+            "selection": "ARR_DELAY >= 17.028571428571418 AND ARR_DELAY < 27.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124614,
+            "selection": "ARR_DELAY >= 19.085714285714275 AND ARR_DELAY < 29.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124630,
+            "selection": "ARR_DELAY >= 20.45714285714285 AND ARR_DELAY < 30.514285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124647,
+            "selection": "ARR_DELAY >= 21.828571428571415 AND ARR_DELAY < 31.88571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124663,
+            "selection": "ARR_DELAY >= 22.97142857142856 AND ARR_DELAY < 33.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124680,
+            "selection": "ARR_DELAY >= 23.885714285714272 AND ARR_DELAY < 33.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124696,
+            "selection": "ARR_DELAY >= 24.571428571428562 AND ARR_DELAY < 34.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124714,
+            "selection": "ARR_DELAY >= 25.02857142857142 AND ARR_DELAY < 35.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124730,
+            "selection": "ARR_DELAY >= 25.257142857142846 AND ARR_DELAY < 35.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124763,
+            "selection": "ARR_DELAY >= 25.485714285714273 AND ARR_DELAY < 35.54285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124863,
+            "selection": "ARR_DELAY >= 25.714285714285698 AND ARR_DELAY < 35.77142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124915,
+            "selection": "ARR_DELAY >= 25.94285714285713 AND ARR_DELAY < 35.99999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124930,
+            "selection": "ARR_DELAY >= 26.171428571428564 AND ARR_DELAY < 36.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124947,
+            "selection": "ARR_DELAY >= 26.39999999999999 AND ARR_DELAY < 36.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124963,
+            "selection": "ARR_DELAY >= 26.628571428571416 AND ARR_DELAY < 36.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124979,
+            "selection": "ARR_DELAY >= 27.085714285714275 AND ARR_DELAY < 37.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 124998,
+            "selection": "ARR_DELAY >= 27.54285714285713 AND ARR_DELAY < 37.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125013,
+            "selection": "ARR_DELAY >= 27.999999999999993 AND ARR_DELAY < 38.05714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125031,
+            "selection": "ARR_DELAY >= 28.22857142857142 AND ARR_DELAY < 38.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125047,
+            "selection": "ARR_DELAY >= 28.45714285714285 AND ARR_DELAY < 38.51428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125063,
+            "selection": "ARR_DELAY >= 28.685714285714276 AND ARR_DELAY < 38.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125080,
+            "selection": "ARR_DELAY >= 29.14285714285713 AND ARR_DELAY < 39.199999999999996",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125114,
+            "selection": "ARR_DELAY >= 29.599999999999987 AND ARR_DELAY < 39.65714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125129,
+            "selection": "ARR_DELAY >= 29.828571428571415 AND ARR_DELAY < 39.88571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125163,
+            "selection": "ARR_DELAY >= 30.05714285714285 AND ARR_DELAY < 40.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125180,
+            "selection": "ARR_DELAY >= 30.514285714285705 AND ARR_DELAY < 40.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125197,
+            "selection": "ARR_DELAY >= 31.19999999999999 AND ARR_DELAY < 41.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125212,
+            "selection": "ARR_DELAY >= 31.657142857142844 AND ARR_DELAY < 41.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125230,
+            "selection": "ARR_DELAY >= 32.11428571428571 AND ARR_DELAY < 42.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125246,
+            "selection": "ARR_DELAY >= 32.342857142857135 AND ARR_DELAY < 42.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125264,
+            "selection": "ARR_DELAY >= 32.57142857142856 AND ARR_DELAY < 42.628571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125279,
+            "selection": "ARR_DELAY >= 32.79999999999999 AND ARR_DELAY < 42.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125296,
+            "selection": "ARR_DELAY >= 33.02857142857142 AND ARR_DELAY < 43.08571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125313,
+            "selection": "ARR_DELAY >= 33.7142857142857 AND ARR_DELAY < 43.771428571428565",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125347,
+            "selection": "ARR_DELAY >= 33.94285714285713 AND ARR_DELAY < 43.99999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125381,
+            "selection": "ARR_DELAY >= 34.171428571428564 AND ARR_DELAY < 44.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125414,
+            "selection": "ARR_DELAY >= 34.39999999999999 AND ARR_DELAY < 44.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125430,
+            "selection": "ARR_DELAY >= 34.85714285714285 AND ARR_DELAY < 44.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125447,
+            "selection": "ARR_DELAY >= 35.3142857142857 AND ARR_DELAY < 45.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125463,
+            "selection": "ARR_DELAY >= 35.54285714285713 AND ARR_DELAY < 45.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125480,
+            "selection": "ARR_DELAY >= 36.22857142857142 AND ARR_DELAY < 46.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125497,
+            "selection": "ARR_DELAY >= 36.914285714285704 AND ARR_DELAY < 46.97142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125513,
+            "selection": "ARR_DELAY >= 37.37142857142856 AND ARR_DELAY < 47.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125531,
+            "selection": "ARR_DELAY >= 37.59999999999999 AND ARR_DELAY < 47.65714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125546,
+            "selection": "ARR_DELAY >= 38.05714285714284 AND ARR_DELAY < 48.11428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125563,
+            "selection": "ARR_DELAY >= 38.28571428571428 AND ARR_DELAY < 48.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125580,
+            "selection": "ARR_DELAY >= 38.514285714285705 AND ARR_DELAY < 48.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125597,
+            "selection": "ARR_DELAY >= 38.97142857142856 AND ARR_DELAY < 49.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125613,
+            "selection": "ARR_DELAY >= 39.19999999999999 AND ARR_DELAY < 49.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125629,
+            "selection": "ARR_DELAY >= 39.657142857142844 AND ARR_DELAY < 49.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125647,
+            "selection": "ARR_DELAY >= 39.88571428571427 AND ARR_DELAY < 49.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125663,
+            "selection": "ARR_DELAY >= 40.1142857142857 AND ARR_DELAY < 50.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125680,
+            "selection": "ARR_DELAY >= 40.571428571428555 AND ARR_DELAY < 50.62857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125696,
+            "selection": "ARR_DELAY >= 40.79999999999998 AND ARR_DELAY < 50.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125713,
+            "selection": "ARR_DELAY >= 41.25714285714285 AND ARR_DELAY < 51.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125747,
+            "selection": "ARR_DELAY >= 41.48571428571428 AND ARR_DELAY < 51.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125763,
+            "selection": "ARR_DELAY >= 41.71428571428571 AND ARR_DELAY < 51.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125779,
+            "selection": "ARR_DELAY >= 41.942857142857136 AND ARR_DELAY < 52",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125814,
+            "selection": "ARR_DELAY >= 42.39999999999999 AND ARR_DELAY < 52.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125846,
+            "selection": "ARR_DELAY >= 42.62857142857142 AND ARR_DELAY < 52.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125863,
+            "selection": "ARR_DELAY >= 42.85714285714285 AND ARR_DELAY < 52.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125880,
+            "selection": "ARR_DELAY >= 43.085714285714275 AND ARR_DELAY < 53.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125896,
+            "selection": "ARR_DELAY >= 43.3142857142857 AND ARR_DELAY < 53.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125912,
+            "selection": "ARR_DELAY >= 43.54285714285713 AND ARR_DELAY < 53.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125946,
+            "selection": "ARR_DELAY >= 43.77142857142856 AND ARR_DELAY < 53.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125964,
+            "selection": "ARR_DELAY >= 43.999999999999986 AND ARR_DELAY < 54.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 125996,
+            "selection": "ARR_DELAY >= 44.22857142857141 AND ARR_DELAY < 54.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126013,
+            "selection": "ARR_DELAY >= 44.45714285714284 AND ARR_DELAY < 54.514285714285705",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126030,
+            "selection": "ARR_DELAY >= 44.68571428571427 AND ARR_DELAY < 54.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126046,
+            "selection": "ARR_DELAY >= 44.9142857142857 AND ARR_DELAY < 54.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126063,
+            "selection": "ARR_DELAY >= 45.37142857142857 AND ARR_DELAY < 55.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126096,
+            "selection": "ARR_DELAY >= 45.82857142857142 AND ARR_DELAY < 55.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126112,
+            "selection": "ARR_DELAY >= 46.28571428571428 AND ARR_DELAY < 56.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126164,
+            "selection": "ARR_DELAY >= 46.514285714285705 AND ARR_DELAY < 56.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126213,
+            "selection": "ARR_DELAY >= 46.74285714285713 AND ARR_DELAY < 56.8",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126229,
+            "selection": "ARR_DELAY >= 46.97142857142856 AND ARR_DELAY < 57.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126289,
+            "selection": "ARR_DELAY >= 47.19999999999999 AND ARR_DELAY < 57.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126330,
+            "selection": "ARR_DELAY >= 47.428571428571416 AND ARR_DELAY < 57.48571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126364,
+            "selection": "ARR_DELAY >= 47.657142857142844 AND ARR_DELAY < 57.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126397,
+            "selection": "ARR_DELAY >= 47.88571428571427 AND ARR_DELAY < 57.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126413,
+            "selection": "ARR_DELAY >= 48.1142857142857 AND ARR_DELAY < 58.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126429,
+            "selection": "ARR_DELAY >= 48.34285714285713 AND ARR_DELAY < 58.39999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126464,
+            "selection": "ARR_DELAY >= 48.571428571428555 AND ARR_DELAY < 58.62857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126497,
+            "selection": "ARR_DELAY >= 48.79999999999998 AND ARR_DELAY < 58.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126547,
+            "selection": "ARR_DELAY >= 49.02857142857141 AND ARR_DELAY < 59.085714285714275",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126601,
+            "selection": "ARR_DELAY >= 49.25714285714285 AND ARR_DELAY < 59.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126697,
+            "selection": "ARR_DELAY >= 49.48571428571428 AND ARR_DELAY < 59.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126763,
+            "selection": "ARR_DELAY >= 49.71428571428571 AND ARR_DELAY < 59.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 126797,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129321,
+            "selection": "ARR_DELAY >= 49.71428571428571 AND ARR_DELAY < 59.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129363,
+            "selection": "ARR_DELAY >= 49.48571428571428 AND ARR_DELAY < 59.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129380,
+            "selection": "ARR_DELAY >= 49.25714285714285 AND ARR_DELAY < 59.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129449,
+            "selection": "ARR_DELAY >= 49.02857142857141 AND ARR_DELAY < 59.085714285714275",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129513,
+            "selection": "ARR_DELAY >= 48.79999999999998 AND ARR_DELAY < 58.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129613,
+            "selection": "ARR_DELAY >= 48.571428571428555 AND ARR_DELAY < 58.62857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129646,
+            "selection": "ARR_DELAY >= 48.34285714285713 AND ARR_DELAY < 58.39999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129663,
+            "selection": "ARR_DELAY >= 47.88571428571427 AND ARR_DELAY < 57.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129679,
+            "selection": "ARR_DELAY >= 47.657142857142844 AND ARR_DELAY < 57.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129697,
+            "selection": "ARR_DELAY >= 47.19999999999999 AND ARR_DELAY < 57.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129712,
+            "selection": "ARR_DELAY >= 46.514285714285705 AND ARR_DELAY < 56.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129729,
+            "selection": "ARR_DELAY >= 46.28571428571428 AND ARR_DELAY < 56.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129746,
+            "selection": "ARR_DELAY >= 45.599999999999994 AND ARR_DELAY < 55.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129762,
+            "selection": "ARR_DELAY >= 44.9142857142857 AND ARR_DELAY < 54.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129780,
+            "selection": "ARR_DELAY >= 43.999999999999986 AND ARR_DELAY < 54.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129795,
+            "selection": "ARR_DELAY >= 43.085714285714275 AND ARR_DELAY < 53.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129813,
+            "selection": "ARR_DELAY >= 41.942857142857136 AND ARR_DELAY < 52",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129829,
+            "selection": "ARR_DELAY >= 40.79999999999998 AND ARR_DELAY < 50.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129846,
+            "selection": "ARR_DELAY >= 39.657142857142844 AND ARR_DELAY < 49.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129863,
+            "selection": "ARR_DELAY >= 38.514285714285705 AND ARR_DELAY < 48.57142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129879,
+            "selection": "ARR_DELAY >= 37.14285714285713 AND ARR_DELAY < 47.199999999999996",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129896,
+            "selection": "ARR_DELAY >= 35.54285714285713 AND ARR_DELAY < 45.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129913,
+            "selection": "ARR_DELAY >= 31.657142857142844 AND ARR_DELAY < 41.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129929,
+            "selection": "ARR_DELAY >= 28.22857142857142 AND ARR_DELAY < 38.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129946,
+            "selection": "ARR_DELAY >= 25.257142857142846 AND ARR_DELAY < 35.31428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129963,
+            "selection": "ARR_DELAY >= 22.285714285714278 AND ARR_DELAY < 32.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129979,
+            "selection": "ARR_DELAY >= 19.085714285714275 AND ARR_DELAY < 29.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 129996,
+            "selection": "ARR_DELAY >= 16.114285714285707 AND ARR_DELAY < 26.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130013,
+            "selection": "ARR_DELAY >= 12.685714285714276 AND ARR_DELAY < 22.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130029,
+            "selection": "ARR_DELAY >= 19.085714285714282 AND ARR_DELAY < 9.028571428571418",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130047,
+            "selection": "ARR_DELAY >= 15.885714285714286 AND ARR_DELAY < 5.828571428571422",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130063,
+            "selection": "ARR_DELAY >= 13.37142857142856 AND ARR_DELAY < 3.3142857142856954",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130079,
+            "selection": "ARR_DELAY >= 1.0285714285714178 AND ARR_DELAY < 11.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130096,
+            "selection": "ARR_DELAY >= -0.5714285714285836 AND ARR_DELAY < 9.48571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130112,
+            "selection": "ARR_DELAY >= -2.4000000000000057 AND ARR_DELAY < 7.657142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130129,
+            "selection": "ARR_DELAY >= -3.314285714285724 AND ARR_DELAY < 6.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130146,
+            "selection": "ARR_DELAY >= -3.7714285714285793 AND ARR_DELAY < 6.285714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130163,
+            "selection": "ARR_DELAY >= -4.000000000000014 AND ARR_DELAY < 6.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130180,
+            "selection": "ARR_DELAY >= -4.228571428571442 AND ARR_DELAY < 5.828571428571422",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130196,
+            "selection": "ARR_DELAY >= -4.45714285714287 AND ARR_DELAY < 5.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130212,
+            "selection": "ARR_DELAY >= -4.685714285714305 AND ARR_DELAY < 5.3714285714285595",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130229,
+            "selection": "ARR_DELAY >= -5.142857142857153 AND ARR_DELAY < 4.914285714285711",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130246,
+            "selection": "ARR_DELAY >= -5.371428571428581 AND ARR_DELAY < 4.685714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130262,
+            "selection": "ARR_DELAY >= -5.6000000000000085 AND ARR_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130386,
+            "selection": "ARR_DELAY >= -5.828571428571436 AND ARR_DELAY < 4.228571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130413,
+            "selection": "ARR_DELAY >= -6.057142857142871 AND ARR_DELAY < 3.999999999999993",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130429,
+            "selection": "ARR_DELAY >= -6.51428571428572 AND ARR_DELAY < 3.5428571428571445",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130447,
+            "selection": "ARR_DELAY >= -6.971428571428582 AND ARR_DELAY < 3.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130462,
+            "selection": "ARR_DELAY >= -7.657142857142858 AND ARR_DELAY < 2.4000000000000057",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130480,
+            "selection": "ARR_DELAY >= -7.885714285714293 AND ARR_DELAY < 2.171428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130496,
+            "selection": "ARR_DELAY >= -8.114285714285735 AND ARR_DELAY < 1.9428571428571288",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130513,
+            "selection": "ARR_DELAY >= -8.342857142857156 AND ARR_DELAY < 1.7142857142857082",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130564,
+            "selection": "ARR_DELAY >= -8.571428571428584 AND ARR_DELAY < 1.4857142857142804",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130596,
+            "selection": "ARR_DELAY >= -8.800000000000011 AND ARR_DELAY < 1.2571428571428527",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130612,
+            "selection": "ARR_DELAY >= -9.02857142857144 AND ARR_DELAY < 1.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130630,
+            "selection": "ARR_DELAY >= -9.25714285714286 AND ARR_DELAY < 0.8000000000000043",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130646,
+            "selection": "ARR_DELAY >= -9.485714285714302 AND ARR_DELAY < 0.5714285714285623",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130953,
+            "selection": "ARR_DELAY >= -9.714285714285722 AND ARR_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130980,
+            "selection": "ARR_DELAY >= -9.94285714285715 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 130996,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < -10.171428571428578",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 131012,
+            "selection": "ARR_DELAY >= -0.34285714285714164 AND ARR_DELAY < -10.400000000000006",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 131793,
+            "selection": "ARR_DELAY >= -0.11428571428571388 AND ARR_DELAY < -10.171428571428578",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 131863,
+            "selection": "ARR_DELAY >= -9.94285714285715 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 131980,
+            "selection": "ARR_DELAY >= -9.714285714285722 AND ARR_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 133217,
+            "selection": "ARR_DELAY >= -9.94285714285715 AND ARR_DELAY < 0.11428571428571388",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136057,
+            "selection": "ARR_DELAY >= -9.714285714285722 AND ARR_DELAY < 0.34285714285714164",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136080,
+            "selection": "ARR_DELAY >= -9.25714285714286 AND ARR_DELAY < 0.8000000000000043",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136096,
+            "selection": "ARR_DELAY >= -8.342857142857156 AND ARR_DELAY < 1.7142857142857082",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136113,
+            "selection": "ARR_DELAY >= -7.885714285714293 AND ARR_DELAY < 2.171428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136129,
+            "selection": "ARR_DELAY >= -7.428571428571438 AND ARR_DELAY < 2.6285714285714263",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136162,
+            "selection": "ARR_DELAY >= -6.971428571428582 AND ARR_DELAY < 3.085714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136180,
+            "selection": "ARR_DELAY >= -6.742857142857147 AND ARR_DELAY < 3.3142857142857167",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136196,
+            "selection": "ARR_DELAY >= -6.285714285714292 AND ARR_DELAY < 3.7714285714285722",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136213,
+            "selection": "ARR_DELAY >= -5.6000000000000085 AND ARR_DELAY < 4.4571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136230,
+            "selection": "ARR_DELAY >= -4.45714285714287 AND ARR_DELAY < 5.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136245,
+            "selection": "ARR_DELAY >= -3.314285714285724 AND ARR_DELAY < 6.74285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136263,
+            "selection": "ARR_DELAY >= -1.7142857142857224 AND ARR_DELAY < 8.342857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136279,
+            "selection": "ARR_DELAY >= 0.79999999999999 AND ARR_DELAY < 10.857142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136300,
+            "selection": "ARR_DELAY >= 15.885714285714286 AND ARR_DELAY < 5.828571428571422",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136312,
+            "selection": "ARR_DELAY >= 20 AND ARR_DELAY < 9.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136329,
+            "selection": "ARR_DELAY >= 14.285714285714278 AND ARR_DELAY < 24.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136346,
+            "selection": "ARR_DELAY >= 19.314285714285706 AND ARR_DELAY < 29.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136363,
+            "selection": "ARR_DELAY >= 24.114285714285707 AND ARR_DELAY < 34.17142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136380,
+            "selection": "ARR_DELAY >= 28.914285714285704 AND ARR_DELAY < 38.97142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136396,
+            "selection": "ARR_DELAY >= 33.7142857142857 AND ARR_DELAY < 43.771428571428565",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136413,
+            "selection": "ARR_DELAY >= 38.05714285714284 AND ARR_DELAY < 48.11428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136429,
+            "selection": "ARR_DELAY >= 41.942857142857136 AND ARR_DELAY < 52",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136447,
+            "selection": "ARR_DELAY >= 45.37142857142857 AND ARR_DELAY < 55.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136463,
+            "selection": "ARR_DELAY >= 48.34285714285713 AND ARR_DELAY < 58.39999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136480,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136496,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136513,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 136529,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 137264,
+            "selection": "ARR_DELAY >= 49.942857142857136 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 140913,
+            "selection": "ARR_DELAY >= 49.25714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 140929,
+            "selection": "ARR_DELAY >= 49.028571428571425 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 140945,
+            "selection": "ARR_DELAY >= 48.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 140962,
+            "selection": "ARR_DELAY >= 48.34285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 140979,
+            "selection": "ARR_DELAY >= 47.42857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 140996,
+            "selection": "ARR_DELAY >= 46.28571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141012,
+            "selection": "ARR_DELAY >= 44.68571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141029,
+            "selection": "ARR_DELAY >= 42.857142857142854 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141045,
+            "selection": "ARR_DELAY >= 40.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141063,
+            "selection": "ARR_DELAY >= 38.51428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141079,
+            "selection": "ARR_DELAY >= 36 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141096,
+            "selection": "ARR_DELAY >= 33.25714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141112,
+            "selection": "ARR_DELAY >= 28.228571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141129,
+            "selection": "ARR_DELAY >= 23.885714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141146,
+            "selection": "ARR_DELAY >= 19.31428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141163,
+            "selection": "ARR_DELAY >= 13.82857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141179,
+            "selection": "ARR_DELAY >= 60 AND ARR_DELAY < 8.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141196,
+            "selection": "ARR_DELAY >= 3.7714285714285722 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141212,
+            "selection": "ARR_DELAY >= 0.34285714285714164 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141229,
+            "selection": "ARR_DELAY >= -1.4857142857142875 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141245,
+            "selection": "ARR_DELAY >= -2.8571428571428577 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141263,
+            "selection": "ARR_DELAY >= -3.5428571428571445 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141279,
+            "selection": "ARR_DELAY >= -4 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141296,
+            "selection": "ARR_DELAY >= -4.457142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141313,
+            "selection": "ARR_DELAY >= -5.142857142857144 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141329,
+            "selection": "ARR_DELAY >= -5.828571428571429 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141345,
+            "selection": "ARR_DELAY >= -6.2857142857142865 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141362,
+            "selection": "ARR_DELAY >= -6.9714285714285715 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141380,
+            "selection": "ARR_DELAY >= -7.657142857142858 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141395,
+            "selection": "ARR_DELAY >= -8.114285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141412,
+            "selection": "ARR_DELAY >= -8.342857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141429,
+            "selection": "ARR_DELAY >= -8.571428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141447,
+            "selection": "ARR_DELAY >= -8.571428571428571 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141462,
+            "selection": "ARR_DELAY >= -8.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141479,
+            "selection": "ARR_DELAY >= -8.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141495,
+            "selection": "ARR_DELAY >= -9.028571428571428 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141513,
+            "selection": "ARR_DELAY >= -9.485714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141529,
+            "selection": "ARR_DELAY >= -10.4 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141545,
+            "selection": "ARR_DELAY >= -11.085714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141563,
+            "selection": "ARR_DELAY >= -11.771428571428572 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141579,
+            "selection": "ARR_DELAY >= -12.457142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141595,
+            "selection": "ARR_DELAY >= -12.914285714285715 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141612,
+            "selection": "ARR_DELAY >= -13.142857142857142 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141629,
+            "selection": "ARR_DELAY >= -13.600000000000001 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141646,
+            "selection": "ARR_DELAY >= -13.82857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141662,
+            "selection": "ARR_DELAY >= -14.057142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141679,
+            "selection": "ARR_DELAY >= -14.285714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141695,
+            "selection": "ARR_DELAY >= -14.514285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141713,
+            "selection": "ARR_DELAY >= -14.742857142857144 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141728,
+            "selection": "ARR_DELAY >= -15.2 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141745,
+            "selection": "ARR_DELAY >= -15.428571428571429 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141763,
+            "selection": "ARR_DELAY >= -15.657142857142858 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141779,
+            "selection": "ARR_DELAY >= -15.885714285714286 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141796,
+            "selection": "ARR_DELAY >= -16.114285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141812,
+            "selection": "ARR_DELAY >= -16.34285714285714 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141829,
+            "selection": "ARR_DELAY >= -16.571428571428573 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141846,
+            "selection": "ARR_DELAY >= -16.571428571428573 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141863,
+            "selection": "ARR_DELAY >= -16.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141879,
+            "selection": "ARR_DELAY >= -16.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141897,
+            "selection": "ARR_DELAY >= -16.8 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141913,
+            "selection": "ARR_DELAY >= -17.02857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141947,
+            "selection": "ARR_DELAY >= -17.02857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141963,
+            "selection": "ARR_DELAY >= -17.257142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141979,
+            "selection": "ARR_DELAY >= -17.257142857142856 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 141997,
+            "selection": "ARR_DELAY >= -17.485714285714288 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142013,
+            "selection": "ARR_DELAY >= -17.485714285714288 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142030,
+            "selection": "ARR_DELAY >= -17.714285714285715 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142046,
+            "selection": "ARR_DELAY >= -17.714285714285715 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142063,
+            "selection": "ARR_DELAY >= -17.942857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142079,
+            "selection": "ARR_DELAY >= -17.942857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142096,
+            "selection": "ARR_DELAY >= -18.17142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142113,
+            "selection": "ARR_DELAY >= -18.17142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142162,
+            "selection": "ARR_DELAY >= -18.17142857142857 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142193,
+            "selection": "ARR_DELAY >= -18.4 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142213,
+            "selection": "ARR_DELAY >= -18.4 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142230,
+            "selection": "ARR_DELAY >= -18.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142247,
+            "selection": "ARR_DELAY >= -18.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142262,
+            "selection": "ARR_DELAY >= -18.62857142857143 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142280,
+            "selection": "ARR_DELAY >= -18.857142857142858 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142314,
+            "selection": "ARR_DELAY >= -18.857142857142858 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142330,
+            "selection": "ARR_DELAY >= -19.085714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142346,
+            "selection": "ARR_DELAY >= -19.085714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142363,
+            "selection": "ARR_DELAY >= -19.085714285714285 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142379,
+            "selection": "ARR_DELAY >= -19.314285714285713 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142396,
+            "selection": "ARR_DELAY >= -19.314285714285713 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142413,
+            "selection": "ARR_DELAY >= -19.314285714285713 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142430,
+            "selection": "ARR_DELAY >= -19.542857142857144 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142463,
+            "selection": "ARR_DELAY >= -19.542857142857144 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142514,
+            "selection": "ARR_DELAY >= -19.771428571428572 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142529,
+            "selection": "ARR_DELAY >= -19.771428571428572 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142546,
+            "selection": "ARR_DELAY >= -19.771428571428572 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142563,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142597,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142705,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142713,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142729,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142751,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142762,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142780,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142797,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142824,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142857,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 142945,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 143001,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 143017,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_DELAY",
+            "time": 143073,
+            "selection": "ARR_DELAY >= -20 AND ARR_DELAY < 60",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149520,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 15.977142857142859",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149546,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 15.977142857142859",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149563,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.045714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149579,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.045714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149596,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.114285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149612,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.182857142857145",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149628,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.182857142857145",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149646,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.251428571428573",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149662,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.251428571428573",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149679,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.32",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149695,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.32",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149713,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.388571428571428",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149729,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.45714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149745,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.45714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149763,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.525714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149778,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.525714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149809,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.594285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149846,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.594285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149863,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.594285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149879,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.662857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149895,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.662857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149913,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.662857142857142",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149929,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.731428571428573",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149945,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149963,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.8",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149979,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.86857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 149995,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 16.93714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150013,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.005714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150028,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.074285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150045,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.211428571428574",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150062,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.28",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150079,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.34857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150095,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.34857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150112,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.417142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150128,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150145,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.485714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150163,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.554285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150179,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.622857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150196,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.622857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150212,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.622857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150229,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.691428571428574",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150246,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.691428571428574",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150262,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.76",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150279,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.76",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150297,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.82857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150312,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.82857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150336,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.82857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150352,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.82857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150368,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150395,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150417,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150446,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 150466,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151057,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 18.034285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151521,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 18.034285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151562,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 18.034285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151578,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 18.034285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151600,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 18.034285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151849,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 18.034285714285716",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151872,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151895,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151913,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 151936,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 152337,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 152360,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 152433,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 152479,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.897142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 152504,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "ARR_TIME",
+            "time": 153048,
+            "selection": "ARR_TIME >= 15.977142857142859 AND ARR_TIME < 17.965714285714288",
+            "metadata": {
+                "brush_id": 2
+            }
+        }
+    ]
+}

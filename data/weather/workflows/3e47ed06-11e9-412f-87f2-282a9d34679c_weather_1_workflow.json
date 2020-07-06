@@ -1,0 +1,6502 @@
+{
+    "setup": [
+        {
+            "name": "RECORD_DATE",
+            "binning": [
+                {
+                    "dimension": "RECORD_DATE",
+                    "width": 163725000,
+                    "reference": 1325307600000
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "ELEVATION",
+            "binning": [
+                {
+                    "dimension": "ELEVATION",
+                    "width": 200,
+                    "reference": -200
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "LONGITUDE",
+            "binning": [
+                {
+                    "dimension": "LONGITUDE",
+                    "width": 20,
+                    "reference": -160
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "TEMP_MIN",
+            "binning": [
+                {
+                    "dimension": "TEMP_MIN",
+                    "width": 5,
+                    "reference": -10
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MAX and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "TEMP_MAX",
+            "binning": [
+                {
+                    "dimension": "TEMP_MAX",
+                    "width": 5,
+                    "reference": -10
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and SNOW and PRECIPITATION and WIND"
+        },
+        {
+            "name": "SNOW",
+            "binning": [
+                {
+                    "dimension": "SNOW",
+                    "width": 50,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and PRECIPITATION and WIND"
+        },
+        {
+            "name": "PRECIPITATION",
+            "binning": [
+                {
+                    "dimension": "PRECIPITATION",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and WIND"
+        },
+        {
+            "name": "WIND",
+            "binning": [
+                {
+                    "dimension": "WIND",
+                    "width": 0.5,
+                    "reference": 0
+                }
+            ],
+            "perBinAggregates": [
+                {
+                    "type": "count"
+                }
+            ],
+            "source": "RECORD_DATE and ELEVATION and LONGITUDE and TEMP_MIN and TEMP_MAX and SNOW and PRECIPITATION"
+        }
+    ],
+    "interactions": [
+        {
+            "name": "LONGITUDE",
+            "time": 0,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 46,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 62,
+            "selection": "LONGITUDE >= -119.77142857142857 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 96,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 112,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 152,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 170,
+            "selection": "LONGITUDE >= -117.94285714285715 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 188,
+            "selection": "LONGITUDE >= -117.94285714285715 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 203,
+            "selection": "LONGITUDE >= -117.94285714285715 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 220,
+            "selection": "LONGITUDE >= -117.94285714285715 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 253,
+            "selection": "LONGITUDE >= -117.02857142857144 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 271,
+            "selection": "LONGITUDE >= -117.02857142857144 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 286,
+            "selection": "LONGITUDE >= -117.02857142857144 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 303,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 319,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 336,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 354,
+            "selection": "LONGITUDE >= -115.2 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 372,
+            "selection": "LONGITUDE >= -115.2 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 385,
+            "selection": "LONGITUDE >= -114.28571428571428 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 403,
+            "selection": "LONGITUDE >= -113.37142857142857 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 421,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 436,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 453,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 469,
+            "selection": "LONGITUDE >= -110.62857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 485,
+            "selection": "LONGITUDE >= -109.71428571428572 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 503,
+            "selection": "LONGITUDE >= -108.80000000000001 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 519,
+            "selection": "LONGITUDE >= -107.88571428571429 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 536,
+            "selection": "LONGITUDE >= -106.05714285714285 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 570,
+            "selection": "LONGITUDE >= -106.05714285714285 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 587,
+            "selection": "LONGITUDE >= -106.05714285714285 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 603,
+            "selection": "LONGITUDE >= -105.14285714285714 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 620,
+            "selection": "LONGITUDE >= -105.14285714285714 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 636,
+            "selection": "LONGITUDE >= -105.14285714285714 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 653,
+            "selection": "LONGITUDE >= -104.22857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 670,
+            "selection": "LONGITUDE >= -104.22857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 695,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 720,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 736,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 863,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 903,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 922,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1199,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1279,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1303,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1321,
+            "selection": "LONGITUDE >= -102.4 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1337,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1354,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1371,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1388,
+            "selection": "LONGITUDE >= -100.57142857142858 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1403,
+            "selection": "LONGITUDE >= -100.57142857142858 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1421,
+            "selection": "LONGITUDE >= -100.57142857142858 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1437,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1519,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1550,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1588,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -98.74285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 1630,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -98.74285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 2055,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -98.74285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 2167,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -98.74285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 2223,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -98.74285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 2272,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 2655,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 7383,
+            "selection": "LONGITUDE >= -121.6 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 8486,
+            "selection": "LONGITUDE >= -121.6 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 8998,
+            "selection": "LONGITUDE >= -121.6 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 9022,
+            "selection": "LONGITUDE >= -121.6 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 9223,
+            "selection": "LONGITUDE >= -121.6 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 9375,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 9543,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 9927,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 9958,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 10079,
+            "selection": "LONGITUDE >= -119.77142857142857 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24221,
+            "selection": "LONGITUDE >= -100.57142857142857 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24266,
+            "selection": "LONGITUDE >= -101.48571428571428 AND LONGITUDE < -121.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24299,
+            "selection": "LONGITUDE >= -102.39999999999999 AND LONGITUDE < -122.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24319,
+            "selection": "LONGITUDE >= -103.31428571428572 AND LONGITUDE < -123.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24353,
+            "selection": "LONGITUDE >= -105.14285714285715 AND LONGITUDE < -125.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24369,
+            "selection": "LONGITUDE >= -106.97142857142858 AND LONGITUDE < -127.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24385,
+            "selection": "LONGITUDE >= -108.8 AND LONGITUDE < -128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24403,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -131.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24419,
+            "selection": "LONGITUDE >= -114.28571428571429 AND LONGITUDE < -134.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24435,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24452,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24469,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -138.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24502,
+            "selection": "LONGITUDE >= -118.85714285714285 AND LONGITUDE < -138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24537,
+            "selection": "LONGITUDE >= -120.6857142857143 AND LONGITUDE < -140.8",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24570,
+            "selection": "LONGITUDE >= -121.60000000000001 AND LONGITUDE < -141.71428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24586,
+            "selection": "LONGITUDE >= -123.42857142857143 AND LONGITUDE < -143.54285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24603,
+            "selection": "LONGITUDE >= -124.34285714285714 AND LONGITUDE < -144.45714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24619,
+            "selection": "LONGITUDE >= -127.08571428571427 AND LONGITUDE < -147.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24635,
+            "selection": "LONGITUDE >= -128 AND LONGITUDE < -148.11428571428573",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24653,
+            "selection": "LONGITUDE >= -129.82857142857145 AND LONGITUDE < -149.94285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24686,
+            "selection": "LONGITUDE >= -130.74285714285713 AND LONGITUDE < -150.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24703,
+            "selection": "LONGITUDE >= -131.65714285714284 AND LONGITUDE < -151.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24719,
+            "selection": "LONGITUDE >= -132.57142857142856 AND LONGITUDE < -152.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24735,
+            "selection": "LONGITUDE >= -133.48571428571427 AND LONGITUDE < -153.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24769,
+            "selection": "LONGITUDE >= -134.39999999999998 AND LONGITUDE < -154.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24785,
+            "selection": "LONGITUDE >= -135.3142857142857 AND LONGITUDE < -155.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 24967,
+            "selection": "LONGITUDE >= -136.2285714285714 AND LONGITUDE < -156.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 25023,
+            "selection": "LONGITUDE >= -137.14285714285717 AND LONGITUDE < -157.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 25071,
+            "selection": "LONGITUDE >= -138.05714285714288 AND LONGITUDE < -158.17142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 25192,
+            "selection": "LONGITUDE >= -138.9714285714286 AND LONGITUDE < -159.0857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 25921,
+            "selection": "LONGITUDE >= -138.05714285714288 AND LONGITUDE < -158.17142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 25989,
+            "selection": "LONGITUDE >= -137.14285714285717 AND LONGITUDE < -157.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26071,
+            "selection": "LONGITUDE >= -136.2285714285714 AND LONGITUDE < -156.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26159,
+            "selection": "LONGITUDE >= -135.3142857142857 AND LONGITUDE < -155.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26222,
+            "selection": "LONGITUDE >= -134.39999999999998 AND LONGITUDE < -154.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26279,
+            "selection": "LONGITUDE >= -133.48571428571427 AND LONGITUDE < -153.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26338,
+            "selection": "LONGITUDE >= -132.57142857142856 AND LONGITUDE < -152.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26371,
+            "selection": "LONGITUDE >= -131.65714285714284 AND LONGITUDE < -151.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26405,
+            "selection": "LONGITUDE >= -130.74285714285713 AND LONGITUDE < -150.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26421,
+            "selection": "LONGITUDE >= -129.82857142857145 AND LONGITUDE < -149.94285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26437,
+            "selection": "LONGITUDE >= -128 AND LONGITUDE < -148.11428571428573",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26473,
+            "selection": "LONGITUDE >= -127.08571428571427 AND LONGITUDE < -147.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26505,
+            "selection": "LONGITUDE >= -126.17142857142856 AND LONGITUDE < -146.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26542,
+            "selection": "LONGITUDE >= -125.25714285714285 AND LONGITUDE < -145.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26605,
+            "selection": "LONGITUDE >= -124.34285714285714 AND LONGITUDE < -144.45714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26672,
+            "selection": "LONGITUDE >= -123.42857142857143 AND LONGITUDE < -143.54285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 26951,
+            "selection": "LONGITUDE >= -122.51428571428572 AND LONGITUDE < -142.62857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 27022,
+            "selection": "LONGITUDE >= -121.60000000000001 AND LONGITUDE < -141.71428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 27822,
+            "selection": "LONGITUDE >= -120.6857142857143 AND LONGITUDE < -140.8",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 27872,
+            "selection": "LONGITUDE >= -119.77142857142856 AND LONGITUDE < -139.88571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 27943,
+            "selection": "LONGITUDE >= -118.85714285714285 AND LONGITUDE < -138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 27973,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -138.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 27990,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 28023,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 28263,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 28307,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -138.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 28441,
+            "selection": "LONGITUDE >= -118.85714285714285 AND LONGITUDE < -138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 28473,
+            "selection": "LONGITUDE >= -119.77142857142856 AND LONGITUDE < -139.88571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 29792,
+            "selection": "LONGITUDE >= -118.85714285714285 AND LONGITUDE < -138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 29841,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -138.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 29892,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 29941,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 29975,
+            "selection": "LONGITUDE >= -115.2 AND LONGITUDE < -135.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30008,
+            "selection": "LONGITUDE >= -114.28571428571429 AND LONGITUDE < -134.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30058,
+            "selection": "LONGITUDE >= -113.37142857142858 AND LONGITUDE < -133.4857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30092,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -132.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30108,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -131.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30158,
+            "selection": "LONGITUDE >= -110.62857142857142 AND LONGITUDE < -130.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30206,
+            "selection": "LONGITUDE >= -109.71428571428571 AND LONGITUDE < -129.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30543,
+            "selection": "LONGITUDE >= -108.8 AND LONGITUDE < -128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 30679,
+            "selection": "LONGITUDE >= -107.88571428571429 AND LONGITUDE < -128",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 33479,
+            "selection": "LONGITUDE >= -108.8 AND LONGITUDE < -128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 33535,
+            "selection": "LONGITUDE >= -109.71428571428571 AND LONGITUDE < -129.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 33639,
+            "selection": "LONGITUDE >= -110.62857142857142 AND LONGITUDE < -130.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 33980,
+            "selection": "LONGITUDE >= -109.71428571428571 AND LONGITUDE < -129.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34129,
+            "selection": "LONGITUDE >= -110.62857142857142 AND LONGITUDE < -130.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34145,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -131.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34162,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -132.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34196,
+            "selection": "LONGITUDE >= -113.37142857142858 AND LONGITUDE < -133.4857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34246,
+            "selection": "LONGITUDE >= -114.28571428571429 AND LONGITUDE < -134.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34287,
+            "selection": "LONGITUDE >= -115.2 AND LONGITUDE < -135.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34335,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34369,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34671,
+            "selection": "LONGITUDE >= -116.11428571428571 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34686,
+            "selection": "LONGITUDE >= -115.2 AND LONGITUDE < -135.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34737,
+            "selection": "LONGITUDE >= -114.28571428571429 AND LONGITUDE < -134.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34752,
+            "selection": "LONGITUDE >= -113.37142857142858 AND LONGITUDE < -133.4857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34769,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -132.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34803,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -131.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 34887,
+            "selection": "LONGITUDE >= -110.62857142857142 AND LONGITUDE < -130.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 35671,
+            "selection": "LONGITUDE >= -109.71428571428571 AND LONGITUDE < -129.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 35751,
+            "selection": "LONGITUDE >= -108.8 AND LONGITUDE < -128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36279,
+            "selection": "LONGITUDE >= -107.88571428571429 AND LONGITUDE < -128",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36339,
+            "selection": "LONGITUDE >= -106.97142857142858 AND LONGITUDE < -127.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36354,
+            "selection": "LONGITUDE >= -106.05714285714286 AND LONGITUDE < -126.17142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36371,
+            "selection": "LONGITUDE >= -105.14285714285715 AND LONGITUDE < -125.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36387,
+            "selection": "LONGITUDE >= -104.22857142857143 AND LONGITUDE < -124.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36405,
+            "selection": "LONGITUDE >= -103.31428571428572 AND LONGITUDE < -123.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36471,
+            "selection": "LONGITUDE >= -102.39999999999999 AND LONGITUDE < -122.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36504,
+            "selection": "LONGITUDE >= -101.48571428571428 AND LONGITUDE < -121.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 36555,
+            "selection": "LONGITUDE >= -100.57142857142857 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 52319,
+            "selection": "LONGITUDE >= -100.57142857142858 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 52353,
+            "selection": "LONGITUDE >= -119.77142857142857 AND LONGITUDE < -99.65714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 53912,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -98.74285714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 54031,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -97.82857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 54135,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -96.91428571428573",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56623,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -97.82857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56657,
+            "selection": "LONGITUDE >= -100.57142857142858 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56673,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -121.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56690,
+            "selection": "LONGITUDE >= -103.31428571428572 AND LONGITUDE < -123.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56706,
+            "selection": "LONGITUDE >= -104.22857142857143 AND LONGITUDE < -124.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56723,
+            "selection": "LONGITUDE >= -105.14285714285715 AND LONGITUDE < -125.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56740,
+            "selection": "LONGITUDE >= -106.05714285714286 AND LONGITUDE < -126.17142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56774,
+            "selection": "LONGITUDE >= -106.97142857142859 AND LONGITUDE < -127.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56790,
+            "selection": "LONGITUDE >= -107.8857142857143 AND LONGITUDE < -128",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56807,
+            "selection": "LONGITUDE >= -109.71428571428572 AND LONGITUDE < -129.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56823,
+            "selection": "LONGITUDE >= -110.62857142857143 AND LONGITUDE < -130.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56840,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -131.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56856,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -132.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56890,
+            "selection": "LONGITUDE >= -113.37142857142858 AND LONGITUDE < -133.48571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56906,
+            "selection": "LONGITUDE >= -114.28571428571429 AND LONGITUDE < -134.39999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 56958,
+            "selection": "LONGITUDE >= -115.20000000000002 AND LONGITUDE < -135.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57024,
+            "selection": "LONGITUDE >= -116.11428571428573 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57058,
+            "selection": "LONGITUDE >= -117.02857142857144 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57073,
+            "selection": "LONGITUDE >= -117.94285714285715 AND LONGITUDE < -138.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57107,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57140,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -140.79999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57174,
+            "selection": "LONGITUDE >= -122.51428571428573 AND LONGITUDE < -142.62857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57190,
+            "selection": "LONGITUDE >= -124.34285714285716 AND LONGITUDE < -144.45714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57207,
+            "selection": "LONGITUDE >= -125.25714285714287 AND LONGITUDE < -145.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57223,
+            "selection": "LONGITUDE >= -126.17142857142858 AND LONGITUDE < -146.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57241,
+            "selection": "LONGITUDE >= -127.08571428571429 AND LONGITUDE < -147.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57256,
+            "selection": "LONGITUDE >= -128 AND LONGITUDE < -148.1142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57273,
+            "selection": "LONGITUDE >= -129.82857142857145 AND LONGITUDE < -149.94285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57290,
+            "selection": "LONGITUDE >= -130.74285714285716 AND LONGITUDE < -150.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57307,
+            "selection": "LONGITUDE >= -133.4857142857143 AND LONGITUDE < -153.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57323,
+            "selection": "LONGITUDE >= -134.4 AND LONGITUDE < -154.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57340,
+            "selection": "LONGITUDE >= -135.31428571428572 AND LONGITUDE < -155.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57392,
+            "selection": "LONGITUDE >= -136.22857142857143 AND LONGITUDE < -156.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57592,
+            "selection": "LONGITUDE >= -135.31428571428572 AND LONGITUDE < -155.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57607,
+            "selection": "LONGITUDE >= -134.4 AND LONGITUDE < -154.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57624,
+            "selection": "LONGITUDE >= -133.4857142857143 AND LONGITUDE < -153.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57641,
+            "selection": "LONGITUDE >= -131.65714285714287 AND LONGITUDE < -151.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57657,
+            "selection": "LONGITUDE >= -130.74285714285716 AND LONGITUDE < -150.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57674,
+            "selection": "LONGITUDE >= -128.9142857142857 AND LONGITUDE < -149.0285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57691,
+            "selection": "LONGITUDE >= -126.17142857142858 AND LONGITUDE < -146.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57707,
+            "selection": "LONGITUDE >= -125.25714285714287 AND LONGITUDE < -145.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57724,
+            "selection": "LONGITUDE >= -123.42857142857144 AND LONGITUDE < -143.54285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57741,
+            "selection": "LONGITUDE >= -122.51428571428573 AND LONGITUDE < -142.62857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57774,
+            "selection": "LONGITUDE >= -121.6 AND LONGITUDE < -141.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57808,
+            "selection": "LONGITUDE >= -120.68571428571428 AND LONGITUDE < -140.79999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57863,
+            "selection": "LONGITUDE >= -119.77142857142857 AND LONGITUDE < -139.88571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57909,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57941,
+            "selection": "LONGITUDE >= -117.94285714285715 AND LONGITUDE < -138.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57975,
+            "selection": "LONGITUDE >= -117.02857142857144 AND LONGITUDE < -137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 57991,
+            "selection": "LONGITUDE >= -116.11428571428573 AND LONGITUDE < -136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58008,
+            "selection": "LONGITUDE >= -115.20000000000002 AND LONGITUDE < -135.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58059,
+            "selection": "LONGITUDE >= -114.28571428571429 AND LONGITUDE < -134.39999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58092,
+            "selection": "LONGITUDE >= -113.37142857142858 AND LONGITUDE < -133.48571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58108,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -132.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58151,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -131.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58423,
+            "selection": "LONGITUDE >= -110.62857142857143 AND LONGITUDE < -130.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58495,
+            "selection": "LONGITUDE >= -109.71428571428572 AND LONGITUDE < -129.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58560,
+            "selection": "LONGITUDE >= -108.80000000000001 AND LONGITUDE < -128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58593,
+            "selection": "LONGITUDE >= -107.8857142857143 AND LONGITUDE < -128",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58642,
+            "selection": "LONGITUDE >= -106.97142857142859 AND LONGITUDE < -127.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58658,
+            "selection": "LONGITUDE >= -106.05714285714286 AND LONGITUDE < -126.17142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58675,
+            "selection": "LONGITUDE >= -105.14285714285715 AND LONGITUDE < -125.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58709,
+            "selection": "LONGITUDE >= -104.22857142857143 AND LONGITUDE < -124.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58743,
+            "selection": "LONGITUDE >= -103.31428571428572 AND LONGITUDE < -123.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58775,
+            "selection": "LONGITUDE >= -101.4857142857143 AND LONGITUDE < -121.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58792,
+            "selection": "LONGITUDE >= -100.57142857142858 AND LONGITUDE < -120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58928,
+            "selection": "LONGITUDE >= -119.77142857142857 AND LONGITUDE < -99.65714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 58959,
+            "selection": "LONGITUDE >= -118.85714285714286 AND LONGITUDE < -98.74285714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 59009,
+            "selection": "LONGITUDE >= -117.94285714285714 AND LONGITUDE < -97.82857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 59077,
+            "selection": "LONGITUDE >= -117.02857142857142 AND LONGITUDE < -96.91428571428573",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 59431,
+            "selection": "LONGITUDE >= -116.1142857142857 AND LONGITUDE < -96",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 59493,
+            "selection": "LONGITUDE >= -115.19999999999999 AND LONGITUDE < -95.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 59527,
+            "selection": "LONGITUDE >= -114.28571428571428 AND LONGITUDE < -94.17142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60080,
+            "selection": "LONGITUDE >= -113.37142857142857 AND LONGITUDE < -93.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60109,
+            "selection": "LONGITUDE >= -112.45714285714286 AND LONGITUDE < -92.34285714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60127,
+            "selection": "LONGITUDE >= -111.54285714285714 AND LONGITUDE < -91.42857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60143,
+            "selection": "LONGITUDE >= -110.62857142857143 AND LONGITUDE < -90.51428571428573",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60159,
+            "selection": "LONGITUDE >= -109.71428571428571 AND LONGITUDE < -89.60000000000001",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60194,
+            "selection": "LONGITUDE >= -108.8 AND LONGITUDE < -88.6857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60227,
+            "selection": "LONGITUDE >= -107.88571428571427 AND LONGITUDE < -87.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 60295,
+            "selection": "LONGITUDE >= -106.97142857142856 AND LONGITUDE < -86.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61000,
+            "selection": "LONGITUDE >= -106.05714285714285 AND LONGITUDE < -85.94285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61079,
+            "selection": "LONGITUDE >= -105.14285714285714 AND LONGITUDE < -85.02857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61128,
+            "selection": "LONGITUDE >= -104.22857142857143 AND LONGITUDE < -84.11428571428573",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61161,
+            "selection": "LONGITUDE >= -103.3142857142857 AND LONGITUDE < -83.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61177,
+            "selection": "LONGITUDE >= -102.39999999999999 AND LONGITUDE < -82.28571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61278,
+            "selection": "LONGITUDE >= -101.48571428571428 AND LONGITUDE < -81.37142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61320,
+            "selection": "LONGITUDE >= -100.57142857142857 AND LONGITUDE < -80.45714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 61383,
+            "selection": "LONGITUDE >= -79.54285714285716 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63352,
+            "selection": "LONGITUDE >= -78.62857142857143 AND LONGITUDE < -98.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63414,
+            "selection": "LONGITUDE >= -77.71428571428572 AND LONGITUDE < -97.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63470,
+            "selection": "LONGITUDE >= -76.80000000000001 AND LONGITUDE < -96.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63486,
+            "selection": "LONGITUDE >= -75.8857142857143 AND LONGITUDE < -96",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63519,
+            "selection": "LONGITUDE >= -74.97142857142858 AND LONGITUDE < -95.08571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63569,
+            "selection": "LONGITUDE >= -74.05714285714286 AND LONGITUDE < -94.17142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63636,
+            "selection": "LONGITUDE >= -73.14285714285715 AND LONGITUDE < -93.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63687,
+            "selection": "LONGITUDE >= -72.22857142857144 AND LONGITUDE < -92.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63767,
+            "selection": "LONGITUDE >= -71.31428571428573 AND LONGITUDE < -91.42857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 63853,
+            "selection": "LONGITUDE >= -70.4 AND LONGITUDE < -90.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64232,
+            "selection": "LONGITUDE >= -69.4857142857143 AND LONGITUDE < -89.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64424,
+            "selection": "LONGITUDE >= -68.57142857142858 AND LONGITUDE < -88.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64455,
+            "selection": "LONGITUDE >= -67.65714285714287 AND LONGITUDE < -87.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64559,
+            "selection": "LONGITUDE >= -66.74285714285715 AND LONGITUDE < -86.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64605,
+            "selection": "LONGITUDE >= -65.82857142857144 AND LONGITUDE < -85.94285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64654,
+            "selection": "LONGITUDE >= -64.91428571428573 AND LONGITUDE < -85.02857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64711,
+            "selection": "LONGITUDE >= -64.00000000000001 AND LONGITUDE < -84.11428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64775,
+            "selection": "LONGITUDE >= -63.08571428571429 AND LONGITUDE < -83.19999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 64920,
+            "selection": "LONGITUDE >= -62.17142857142858 AND LONGITUDE < -82.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 65080,
+            "selection": "LONGITUDE >= -61.25714285714287 AND LONGITUDE < -81.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 65872,
+            "selection": "LONGITUDE >= -60.342857142857156 AND LONGITUDE < -80.45714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 68288,
+            "selection": "LONGITUDE >= -59.428571428571445 AND LONGITUDE < -79.54285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 68307,
+            "selection": "LONGITUDE >= -58.51428571428572 AND LONGITUDE < -78.62857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 68324,
+            "selection": "LONGITUDE >= -57.60000000000001 AND LONGITUDE < -77.71428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71184,
+            "selection": "LONGITUDE >= -55.77142857142859 AND LONGITUDE < -75.88571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71245,
+            "selection": "LONGITUDE >= -54.85714285714286 AND LONGITUDE < -74.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71278,
+            "selection": "LONGITUDE >= -53.94285714285715 AND LONGITUDE < -74.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71375,
+            "selection": "LONGITUDE >= -53.02857142857144 AND LONGITUDE < -73.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71411,
+            "selection": "LONGITUDE >= -52.11428571428572 AND LONGITUDE < -72.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71427,
+            "selection": "LONGITUDE >= -51.20000000000002 AND LONGITUDE < -71.31428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71443,
+            "selection": "LONGITUDE >= -50.28571428571429 AND LONGITUDE < -70.39999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71494,
+            "selection": "LONGITUDE >= -49.371428571428574 AND LONGITUDE < -69.48571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71510,
+            "selection": "LONGITUDE >= -47.54285714285716 AND LONGITUDE < -67.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71527,
+            "selection": "LONGITUDE >= -44.80000000000001 AND LONGITUDE < -64.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71544,
+            "selection": "LONGITUDE >= -42.971428571428575 AND LONGITUDE < -63.085714285714275",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71578,
+            "selection": "LONGITUDE >= -42.057142857142864 AND LONGITUDE < -62.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71661,
+            "selection": "LONGITUDE >= -41.14285714285715 AND LONGITUDE < -61.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71695,
+            "selection": "LONGITUDE >= -40.22857142857144 AND LONGITUDE < -60.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 71711,
+            "selection": "LONGITUDE >= -39.314285714285724 AND LONGITUDE < -59.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 72195,
+            "selection": "LONGITUDE >= -40.22857142857144 AND LONGITUDE < -60.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 72263,
+            "selection": "LONGITUDE >= -41.14285714285715 AND LONGITUDE < -61.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 72328,
+            "selection": "LONGITUDE >= -42.057142857142864 AND LONGITUDE < -62.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 72428,
+            "selection": "LONGITUDE >= -42.971428571428575 AND LONGITUDE < -63.085714285714275",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 72880,
+            "selection": "LONGITUDE >= -42.057142857142864 AND LONGITUDE < -62.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 72978,
+            "selection": "LONGITUDE >= -41.14285714285715 AND LONGITUDE < -61.25714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73045,
+            "selection": "LONGITUDE >= -40.22857142857144 AND LONGITUDE < -60.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73079,
+            "selection": "LONGITUDE >= -39.314285714285724 AND LONGITUDE < -59.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73096,
+            "selection": "LONGITUDE >= -38.400000000000006 AND LONGITUDE < -58.514285714285705",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73146,
+            "selection": "LONGITUDE >= -37.485714285714295 AND LONGITUDE < -57.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73196,
+            "selection": "LONGITUDE >= -36.571428571428584 AND LONGITUDE < -56.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73263,
+            "selection": "LONGITUDE >= -35.65714285714287 AND LONGITUDE < -55.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73329,
+            "selection": "LONGITUDE >= -34.74285714285715 AND LONGITUDE < -54.85714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73379,
+            "selection": "LONGITUDE >= -33.828571428571436 AND LONGITUDE < -53.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73815,
+            "selection": "LONGITUDE >= -32.914285714285725 AND LONGITUDE < -53.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73829,
+            "selection": "LONGITUDE >= -32.000000000000014 AND LONGITUDE < -52.114285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73846,
+            "selection": "LONGITUDE >= -31.085714285714303 AND LONGITUDE < -51.2",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73869,
+            "selection": "LONGITUDE >= -29.257142857142867 AND LONGITUDE < -49.37142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73886,
+            "selection": "LONGITUDE >= -27.428571428571445 AND LONGITUDE < -47.542857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73903,
+            "selection": "LONGITUDE >= -23.771428571428586 AND LONGITUDE < -43.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73919,
+            "selection": "LONGITUDE >= -22.857142857142875 AND LONGITUDE < -42.971428571428575",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73937,
+            "selection": "LONGITUDE >= -21.02857142857144 AND LONGITUDE < -41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73953,
+            "selection": "LONGITUDE >= -20.114285714285728 AND LONGITUDE < -40.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73969,
+            "selection": "LONGITUDE >= -16.457142857142856 AND LONGITUDE < -36.571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 73985,
+            "selection": "LONGITUDE >= -10.97142857142859 AND LONGITUDE < -31.08571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74002,
+            "selection": "LONGITUDE >= -23.771428571428558 AND LONGITUDE < -3.6571428571428584",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74019,
+            "selection": "LONGITUDE >= -20.1142857142857 AND LONGITUDE < 0",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74036,
+            "selection": "LONGITUDE >= -17.371428571428567 AND LONGITUDE < 2.742857142857133",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74053,
+            "selection": "LONGITUDE >= -16.457142857142856 AND LONGITUDE < 3.657142857142844",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74069,
+            "selection": "LONGITUDE >= -15.542857142857144 AND LONGITUDE < 4.571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74103,
+            "selection": "LONGITUDE >= -14.628571428571433 AND LONGITUDE < 5.485714285714266",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74159,
+            "selection": "LONGITUDE >= -13.714285714285708 AND LONGITUDE < 6.3999999999999915",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74264,
+            "selection": "LONGITUDE >= -12.800000000000011 AND LONGITUDE < 7.314285714285688",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74303,
+            "selection": "LONGITUDE >= -10.97142857142856 AND LONGITUDE < 9.142857142857139",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74320,
+            "selection": "LONGITUDE >= -9.142857142857139 AND LONGITUDE < 10.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74336,
+            "selection": "LONGITUDE >= -8.228571428571414 AND LONGITUDE < 11.885714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74370,
+            "selection": "LONGITUDE >= -6.400000000000006 AND LONGITUDE < 13.714285714285694",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74387,
+            "selection": "LONGITUDE >= -3.657142857142844 AND LONGITUDE < 16.457142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74403,
+            "selection": "LONGITUDE >= -0.914285714285711 AND LONGITUDE < 19.19999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74420,
+            "selection": "LONGITUDE >= 0.914285714285711 AND LONGITUDE < 21.02857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74436,
+            "selection": "LONGITUDE >= 1.8285714285714363 AND LONGITUDE < 21.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74453,
+            "selection": "LONGITUDE >= 2.742857142857133 AND LONGITUDE < 22.857142857142833",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 74470,
+            "selection": "LONGITUDE >= 23.771428571428572 AND LONGITUDE < 3.6571428571428726",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75305,
+            "selection": "LONGITUDE >= 2.742857142857133 AND LONGITUDE < 22.857142857142833",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75355,
+            "selection": "LONGITUDE >= 1.8285714285714363 AND LONGITUDE < 21.942857142857136",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75823,
+            "selection": "LONGITUDE >= 2.742857142857133 AND LONGITUDE < 22.857142857142833",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75838,
+            "selection": "LONGITUDE >= 23.771428571428572 AND LONGITUDE < 3.6571428571428726",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75854,
+            "selection": "LONGITUDE >= 24.685714285714283 AND LONGITUDE < 4.571428571428584",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75871,
+            "selection": "LONGITUDE >= 25.599999999999994 AND LONGITUDE < 5.485714285714295",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75904,
+            "selection": "LONGITUDE >= 26.514285714285705 AND LONGITUDE < 6.400000000000006",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 75967,
+            "selection": "LONGITUDE >= 27.428571428571416 AND LONGITUDE < 7.314285714285717",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76006,
+            "selection": "LONGITUDE >= 28.342857142857127 AND LONGITUDE < 8.228571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76021,
+            "selection": "LONGITUDE >= 29.25714285714284 AND LONGITUDE < 9.142857142857139",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76038,
+            "selection": "LONGITUDE >= 10.05714285714285 AND LONGITUDE < 30.17142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76054,
+            "selection": "LONGITUDE >= 11.8857142857143 AND LONGITUDE < 32",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76071,
+            "selection": "LONGITUDE >= 13.714285714285722 AND LONGITUDE < 33.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76089,
+            "selection": "LONGITUDE >= 14.628571428571433 AND LONGITUDE < 34.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76105,
+            "selection": "LONGITUDE >= 15.542857142857144 AND LONGITUDE < 35.657142857142844",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76121,
+            "selection": "LONGITUDE >= 16.457142857142856 AND LONGITUDE < 36.571428571428555",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76138,
+            "selection": "LONGITUDE >= 17.371428571428567 AND LONGITUDE < 37.485714285714266",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76155,
+            "selection": "LONGITUDE >= 18.285714285714278 AND LONGITUDE < 38.39999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76189,
+            "selection": "LONGITUDE >= 19.19999999999999 AND LONGITUDE < 39.31428571428569",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76223,
+            "selection": "LONGITUDE >= 20.114285714285728 AND LONGITUDE < 40.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76373,
+            "selection": "LONGITUDE >= 21.02857142857144 AND LONGITUDE < 41.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76432,
+            "selection": "LONGITUDE >= 21.94285714285715 AND LONGITUDE < 42.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76471,
+            "selection": "LONGITUDE >= 22.85714285714286 AND LONGITUDE < 42.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76523,
+            "selection": "LONGITUDE >= 23.771428571428572 AND LONGITUDE < 43.88571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76539,
+            "selection": "LONGITUDE >= 25.599999999999994 AND LONGITUDE < 45.714285714285694",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76556,
+            "selection": "LONGITUDE >= 27.428571428571416 AND LONGITUDE < 47.542857142857116",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76572,
+            "selection": "LONGITUDE >= 30.171428571428578 AND LONGITUDE < 50.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76589,
+            "selection": "LONGITUDE >= 32 AND LONGITUDE < 52.1142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76605,
+            "selection": "LONGITUDE >= 33.82857142857142 AND LONGITUDE < 53.94285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76622,
+            "selection": "LONGITUDE >= 35.657142857142844 AND LONGITUDE < 55.771428571428544",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76638,
+            "selection": "LONGITUDE >= 36.571428571428584 AND LONGITUDE < 56.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76655,
+            "selection": "LONGITUDE >= 38.400000000000006 AND LONGITUDE < 58.514285714285705",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76673,
+            "selection": "LONGITUDE >= 41.14285714285714 AND LONGITUDE < 61.25714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76689,
+            "selection": "LONGITUDE >= 43.8857142857143 AND LONGITUDE < 64",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76706,
+            "selection": "LONGITUDE >= 48.457142857142856 AND LONGITUDE < 68.57142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76722,
+            "selection": "LONGITUDE >= 53.02857142857147 AND LONGITUDE < 73.14285714285717",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76739,
+            "selection": "LONGITUDE >= 58.514285714285705 AND LONGITUDE < 78.6285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76755,
+            "selection": "LONGITUDE >= 62.17142857142858 AND LONGITUDE < 82.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76772,
+            "selection": "LONGITUDE >= 63.08571428571432 AND LONGITUDE < 83.20000000000002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76790,
+            "selection": "LONGITUDE >= 64 AND LONGITUDE < 84.1142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76807,
+            "selection": "LONGITUDE >= 64.91428571428571 AND LONGITUDE < 85.02857142857141",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76839,
+            "selection": "LONGITUDE >= 65.82857142857142 AND LONGITUDE < 85.94285714285712",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76855,
+            "selection": "LONGITUDE >= 69.4857142857143 AND LONGITUDE < 89.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76872,
+            "selection": "LONGITUDE >= 73.14285714285717 AND LONGITUDE < 93.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76888,
+            "selection": "LONGITUDE >= 76.80000000000001 AND LONGITUDE < 96.91428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76906,
+            "selection": "LONGITUDE >= 79.54285714285714 AND LONGITUDE < 99.65714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 76923,
+            "selection": "LONGITUDE >= 100.57142857142856 AND LONGITUDE < 80.45714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77006,
+            "selection": "LONGITUDE >= 102.39999999999998 AND LONGITUDE < 82.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77022,
+            "selection": "LONGITUDE >= 103.31428571428572 AND LONGITUDE < 83.20000000000002",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77039,
+            "selection": "LONGITUDE >= 105.14285714285714 AND LONGITUDE < 85.02857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77056,
+            "selection": "LONGITUDE >= 106.05714285714285 AND LONGITUDE < 85.94285714285715",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77073,
+            "selection": "LONGITUDE >= 106.97142857142856 AND LONGITUDE < 86.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77089,
+            "selection": "LONGITUDE >= 109.7142857142857 AND LONGITUDE < 89.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77106,
+            "selection": "LONGITUDE >= 111.54285714285712 AND LONGITUDE < 91.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77123,
+            "selection": "LONGITUDE >= 113.37142857142857 AND LONGITUDE < 93.25714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77140,
+            "selection": "LONGITUDE >= 115.19999999999996 AND LONGITUDE < 95.08571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77183,
+            "selection": "LONGITUDE >= 116.11428571428567 AND LONGITUDE < 95.99999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77223,
+            "selection": "LONGITUDE >= 117.02857142857144 AND LONGITUDE < 96.91428571428574",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77239,
+            "selection": "LONGITUDE >= 117.94285714285715 AND LONGITUDE < 97.82857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77290,
+            "selection": "LONGITUDE >= 118.85714285714286 AND LONGITUDE < 98.74285714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77385,
+            "selection": "LONGITUDE >= 119.7714285714286 AND LONGITUDE < 99.6571428571429",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77455,
+            "selection": "LONGITUDE >= 100.57142857142858 AND LONGITUDE < 120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77490,
+            "selection": "LONGITUDE >= 101.4857142857143 AND LONGITUDE < 121.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77523,
+            "selection": "LONGITUDE >= 102.4 AND LONGITUDE < 122.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77556,
+            "selection": "LONGITUDE >= 103.31428571428572 AND LONGITUDE < 123.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77607,
+            "selection": "LONGITUDE >= 104.22857142857146 AND LONGITUDE < 124.34285714285716",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77623,
+            "selection": "LONGITUDE >= 105.14285714285714 AND LONGITUDE < 125.25714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77639,
+            "selection": "LONGITUDE >= 106.05714285714285 AND LONGITUDE < 126.17142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77690,
+            "selection": "LONGITUDE >= 106.97142857142856 AND LONGITUDE < 127.08571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77706,
+            "selection": "LONGITUDE >= 107.88571428571427 AND LONGITUDE < 127.99999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77724,
+            "selection": "LONGITUDE >= 108.80000000000001 AND LONGITUDE < 128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77741,
+            "selection": "LONGITUDE >= 109.7142857142857 AND LONGITUDE < 129.8285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77774,
+            "selection": "LONGITUDE >= 110.6285714285714 AND LONGITUDE < 130.7428571428571",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77807,
+            "selection": "LONGITUDE >= 111.54285714285712 AND LONGITUDE < 131.65714285714282",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77840,
+            "selection": "LONGITUDE >= 112.45714285714288 AND LONGITUDE < 132.57142857142858",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77856,
+            "selection": "LONGITUDE >= 113.3714285714286 AND LONGITUDE < 133.4857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77873,
+            "selection": "LONGITUDE >= 114.2857142857143 AND LONGITUDE < 134.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77889,
+            "selection": "LONGITUDE >= 115.20000000000005 AND LONGITUDE < 135.31428571428575",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77907,
+            "selection": "LONGITUDE >= 116.11428571428573 AND LONGITUDE < 136.22857142857143",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77924,
+            "selection": "LONGITUDE >= 117.02857142857144 AND LONGITUDE < 137.14285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77940,
+            "selection": "LONGITUDE >= 118.85714285714286 AND LONGITUDE < 138.97142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77958,
+            "selection": "LONGITUDE >= 120.68571428571428 AND LONGITUDE < 140.79999999999998",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77974,
+            "selection": "LONGITUDE >= 122.5142857142857 AND LONGITUDE < 142.6285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 77990,
+            "selection": "LONGITUDE >= 125.25714285714284 AND LONGITUDE < 145.37142857142854",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78007,
+            "selection": "LONGITUDE >= 127.08571428571426 AND LONGITUDE < 147.19999999999996",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78023,
+            "selection": "LONGITUDE >= 128.91428571428574 AND LONGITUDE < 149.02857142857144",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78040,
+            "selection": "LONGITUDE >= 131.65714285714287 AND LONGITUDE < 151.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78057,
+            "selection": "LONGITUDE >= 133.4857142857143 AND LONGITUDE < 153.6",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78074,
+            "selection": "LONGITUDE >= 135.31428571428572 AND LONGITUDE < 155.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78185,
+            "selection": "LONGITUDE >= 136.22857142857143 AND LONGITUDE < 156.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78224,
+            "selection": "LONGITUDE >= 137.14285714285714 AND LONGITUDE < 157.25714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78258,
+            "selection": "LONGITUDE >= 138.05714285714285 AND LONGITUDE < 158.17142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78274,
+            "selection": "LONGITUDE >= 138.97142857142856 AND LONGITUDE < 159.08571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78308,
+            "selection": "LONGITUDE >= 139.88571428571427 AND LONGITUDE < 159.99999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78323,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78358,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78431,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78624,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78659,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78847,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78875,
+            "selection": "LONGITUDE >= 139.8857142857143 AND LONGITUDE < 160",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78891,
+            "selection": "LONGITUDE >= 139.88571428571427 AND LONGITUDE < 159.99999999999997",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78907,
+            "selection": "LONGITUDE >= 138.05714285714285 AND LONGITUDE < 158.17142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78924,
+            "selection": "LONGITUDE >= 136.22857142857143 AND LONGITUDE < 156.34285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78941,
+            "selection": "LONGITUDE >= 134.4 AND LONGITUDE < 154.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78958,
+            "selection": "LONGITUDE >= 131.65714285714287 AND LONGITUDE < 151.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78975,
+            "selection": "LONGITUDE >= 126.17142857142855 AND LONGITUDE < 146.28571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 78991,
+            "selection": "LONGITUDE >= 121.6 AND LONGITUDE < 141.7142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79007,
+            "selection": "LONGITUDE >= 114.2857142857143 AND LONGITUDE < 134.4",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79025,
+            "selection": "LONGITUDE >= 108.80000000000001 AND LONGITUDE < 128.9142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79041,
+            "selection": "LONGITUDE >= 105.14285714285714 AND LONGITUDE < 125.25714285714284",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79057,
+            "selection": "LONGITUDE >= 103.31428571428572 AND LONGITUDE < 123.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79075,
+            "selection": "LONGITUDE >= 100.57142857142858 AND LONGITUDE < 120.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79091,
+            "selection": "LONGITUDE >= 117.94285714285715 AND LONGITUDE < 97.82857142857145",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79108,
+            "selection": "LONGITUDE >= 114.28571428571425 AND LONGITUDE < 94.17142857142855",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79124,
+            "selection": "LONGITUDE >= 106.97142857142856 AND LONGITUDE < 86.85714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79141,
+            "selection": "LONGITUDE >= 74.97142857142856 AND LONGITUDE < 95.08571428571426",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79158,
+            "selection": "LONGITUDE >= 57.60000000000002 AND LONGITUDE < 77.71428571428572",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79174,
+            "selection": "LONGITUDE >= 34.74285714285713 AND LONGITUDE < 54.85714285714283",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79191,
+            "selection": "LONGITUDE >= 26.514285714285705 AND LONGITUDE < 6.400000000000006",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79210,
+            "selection": "LONGITUDE >= -29.257142857142853 AND LONGITUDE < -9.142857142857153",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79224,
+            "selection": "LONGITUDE >= -22.857142857142875 AND LONGITUDE < -42.971428571428575",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79242,
+            "selection": "LONGITUDE >= -30.171428571428578 AND LONGITUDE < -50.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79258,
+            "selection": "LONGITUDE >= -32.914285714285725 AND LONGITUDE < -53.028571428571425",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79274,
+            "selection": "LONGITUDE >= -35.65714285714287 AND LONGITUDE < -55.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79292,
+            "selection": "LONGITUDE >= -36.571428571428584 AND LONGITUDE < -56.68571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79308,
+            "selection": "LONGITUDE >= -37.485714285714295 AND LONGITUDE < -57.599999999999994",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79360,
+            "selection": "LONGITUDE >= -38.400000000000006 AND LONGITUDE < -58.514285714285705",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79410,
+            "selection": "LONGITUDE >= -39.314285714285724 AND LONGITUDE < -59.42857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79425,
+            "selection": "LONGITUDE >= -42.057142857142864 AND LONGITUDE < -62.171428571428564",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79441,
+            "selection": "LONGITUDE >= -45.71428571428572 AND LONGITUDE < -65.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79459,
+            "selection": "LONGITUDE >= -50.28571428571429 AND LONGITUDE < -70.39999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79475,
+            "selection": "LONGITUDE >= -53.94285714285715 AND LONGITUDE < -74.05714285714285",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79491,
+            "selection": "LONGITUDE >= -58.51428571428572 AND LONGITUDE < -78.62857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79509,
+            "selection": "LONGITUDE >= -60.342857142857156 AND LONGITUDE < -80.45714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79526,
+            "selection": "LONGITUDE >= -62.17142857142858 AND LONGITUDE < -82.28571428571428",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79542,
+            "selection": "LONGITUDE >= -63.08571428571429 AND LONGITUDE < -83.19999999999999",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79558,
+            "selection": "LONGITUDE >= -64.91428571428573 AND LONGITUDE < -85.02857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79575,
+            "selection": "LONGITUDE >= -67.65714285714287 AND LONGITUDE < -87.77142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79591,
+            "selection": "LONGITUDE >= -70.4 AND LONGITUDE < -90.5142857142857",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79608,
+            "selection": "LONGITUDE >= -72.22857142857144 AND LONGITUDE < -92.34285714285714",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79625,
+            "selection": "LONGITUDE >= -74.05714285714286 AND LONGITUDE < -94.17142857142856",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79659,
+            "selection": "LONGITUDE >= -74.97142857142858 AND LONGITUDE < -95.08571428571427",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79743,
+            "selection": "LONGITUDE >= -75.8857142857143 AND LONGITUDE < -96",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79758,
+            "selection": "LONGITUDE >= -77.71428571428572 AND LONGITUDE < -97.82857142857142",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 79775,
+            "selection": "LONGITUDE >= -78.62857142857143 AND LONGITUDE < -98.74285714285713",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 81584,
+            "selection": "LONGITUDE >= -79.54285714285716 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 81632,
+            "selection": "LONGITUDE >= -100.57142857142857 AND LONGITUDE < -80.45714285714287",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "LONGITUDE",
+            "time": 82383,
+            "selection": "LONGITUDE >= -79.54285714285716 AND LONGITUDE < -99.65714285714286",
+            "metadata": {
+                "brush_id": 1
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94345,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 3.9771428571428573",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94374,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.011428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94390,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.011428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94408,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.08",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94423,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.114285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94441,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.114285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94458,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.148571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94475,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.148571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94492,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.182857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94507,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.182857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94525,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.251428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94540,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.285714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94558,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.285714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94574,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.354285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94591,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.388571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94607,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.4228571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94624,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.4228571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94641,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.457142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94658,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.491428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94676,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.5600000000000005",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94691,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.628571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94707,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.731428571428571",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94724,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.8342857142857145",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94742,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.868571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94758,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.937142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94774,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 4.9714285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94791,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.04",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94808,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.142857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94825,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.211428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94841,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.2457142857142856",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94858,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.28",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94875,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.314285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94891,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.3828571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94907,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.3828571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94925,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.451428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94942,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.485714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94957,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.554285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94974,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.622857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 94991,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.6571428571428575",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95007,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.725714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95024,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.7942857142857145",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95042,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.862857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95058,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.9314285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95074,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.965714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95092,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 5.965714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95108,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95124,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.034285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95142,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.0685714285714285",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95158,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.102857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95175,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.137142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95191,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.137142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95208,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.137142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95226,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.205714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95241,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.274285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95258,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.308571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95274,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.308571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95291,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.308571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95309,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95325,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.377142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95342,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.445714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95359,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.48",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95376,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.48",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95392,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.514285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95409,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.548571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95425,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95441,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95458,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95475,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95492,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95569,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95609,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95632,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.685714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95660,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.685714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95675,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.720000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95692,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.7542857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95708,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.7542857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95727,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.7542857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95744,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.788571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95758,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.822857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95775,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.822857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95793,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.857142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95808,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.8914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95826,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.8914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95843,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.8914285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95860,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95893,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95913,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95968,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95976,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.96",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 95993,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.96",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 96044,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.96",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 96313,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.994285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 96353,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.994285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 99913,
+            "selection": "WIND >= 3.9428571428571435 AND WIND < 6.960000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 99946,
+            "selection": "WIND >= 3.874285714285715 AND WIND < 6.891428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 99963,
+            "selection": "WIND >= 3.8400000000000003 AND WIND < 6.857142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 99980,
+            "selection": "WIND >= 3.8057142857142865 AND WIND < 6.822857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100002,
+            "selection": "WIND >= 3.771428571428572 AND WIND < 6.788571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100035,
+            "selection": "WIND >= 3.737142857142858 AND WIND < 6.754285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100052,
+            "selection": "WIND >= 3.7028571428571433 AND WIND < 6.720000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100069,
+            "selection": "WIND >= 3.6685714285714295 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100105,
+            "selection": "WIND >= 3.634285714285715 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100136,
+            "selection": "WIND >= 3.6 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100152,
+            "selection": "WIND >= 3.5657142857142863 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100169,
+            "selection": "WIND >= 3.5314285714285716 AND WIND < 6.548571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100220,
+            "selection": "WIND >= 3.4971428571428578 AND WIND < 6.514285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100270,
+            "selection": "WIND >= 3.462857142857143 AND WIND < 6.48",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100303,
+            "selection": "WIND >= 3.4285714285714293 AND WIND < 6.445714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100319,
+            "selection": "WIND >= 3.3942857142857146 AND WIND < 6.411428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100353,
+            "selection": "WIND >= 3.3600000000000008 AND WIND < 6.377142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100386,
+            "selection": "WIND >= 3.325714285714286 AND WIND < 6.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100402,
+            "selection": "WIND >= 3.2914285714285723 AND WIND < 6.30857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100464,
+            "selection": "WIND >= 3.2571428571428576 AND WIND < 6.274285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100504,
+            "selection": "WIND >= 3.2228571428571438 AND WIND < 6.240000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100537,
+            "selection": "WIND >= 3.188571428571429 AND WIND < 6.205714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100570,
+            "selection": "WIND >= 3.1542857142857144 AND WIND < 6.171428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100665,
+            "selection": "WIND >= 3.188571428571429 AND WIND < 6.205714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100686,
+            "selection": "WIND >= 3.2228571428571438 AND WIND < 6.240000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100703,
+            "selection": "WIND >= 3.2914285714285723 AND WIND < 6.30857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100720,
+            "selection": "WIND >= 3.325714285714286 AND WIND < 6.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100737,
+            "selection": "WIND >= 3.3600000000000008 AND WIND < 6.377142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100804,
+            "selection": "WIND >= 3.3942857142857146 AND WIND < 6.411428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100836,
+            "selection": "WIND >= 3.4285714285714293 AND WIND < 6.445714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100871,
+            "selection": "WIND >= 3.462857142857143 AND WIND < 6.48",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100886,
+            "selection": "WIND >= 3.4971428571428578 AND WIND < 6.514285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100903,
+            "selection": "WIND >= 3.5657142857142863 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100920,
+            "selection": "WIND >= 3.634285714285715 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100937,
+            "selection": "WIND >= 3.6685714285714295 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100953,
+            "selection": "WIND >= 3.737142857142858 AND WIND < 6.754285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100969,
+            "selection": "WIND >= 3.771428571428572 AND WIND < 6.788571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 100987,
+            "selection": "WIND >= 3.8057142857142865 AND WIND < 6.822857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101003,
+            "selection": "WIND >= 3.8400000000000003 AND WIND < 6.857142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101065,
+            "selection": "WIND >= 3.874285714285715 AND WIND < 6.891428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101233,
+            "selection": "WIND >= 3.8400000000000003 AND WIND < 6.857142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101287,
+            "selection": "WIND >= 3.8057142857142865 AND WIND < 6.822857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101321,
+            "selection": "WIND >= 3.771428571428572 AND WIND < 6.788571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101360,
+            "selection": "WIND >= 3.737142857142858 AND WIND < 6.754285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101405,
+            "selection": "WIND >= 3.7028571428571433 AND WIND < 6.720000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101454,
+            "selection": "WIND >= 3.6685714285714295 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101471,
+            "selection": "WIND >= 3.634285714285715 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101584,
+            "selection": "WIND >= 3.6 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 101736,
+            "selection": "WIND >= 3.5657142857142863 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 102184,
+            "selection": "WIND >= 3.5314285714285716 AND WIND < 6.548571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 102239,
+            "selection": "WIND >= 3.4971428571428578 AND WIND < 6.514285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 102272,
+            "selection": "WIND >= 3.462857142857143 AND WIND < 6.48",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 103464,
+            "selection": "WIND >= 3.4971428571428578 AND WIND < 6.514285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 103704,
+            "selection": "WIND >= 3.5314285714285716 AND WIND < 6.548571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 103793,
+            "selection": "WIND >= 3.5657142857142863 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 103857,
+            "selection": "WIND >= 3.6 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 103952,
+            "selection": "WIND >= 3.634285714285715 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 104025,
+            "selection": "WIND >= 3.6685714285714295 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 104160,
+            "selection": "WIND >= 3.634285714285715 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 104207,
+            "selection": "WIND >= 3.6 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 104239,
+            "selection": "WIND >= 3.5657142857142863 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 104344,
+            "selection": "WIND >= 3.5314285714285716 AND WIND < 6.548571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105090,
+            "selection": "WIND >= 3.5657142857142863 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105125,
+            "selection": "WIND >= 3.6 AND WIND < 6.617142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105216,
+            "selection": "WIND >= 3.634285714285715 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105275,
+            "selection": "WIND >= 3.6685714285714295 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105352,
+            "selection": "WIND >= 3.7028571428571433 AND WIND < 6.720000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105392,
+            "selection": "WIND >= 3.737142857142858 AND WIND < 6.754285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105425,
+            "selection": "WIND >= 3.771428571428572 AND WIND < 6.788571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105475,
+            "selection": "WIND >= 3.8057142857142865 AND WIND < 6.822857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105491,
+            "selection": "WIND >= 3.8400000000000003 AND WIND < 6.857142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105541,
+            "selection": "WIND >= 3.874285714285715 AND WIND < 6.891428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105575,
+            "selection": "WIND >= 3.908571428571429 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105625,
+            "selection": "WIND >= 3.9428571428571435 AND WIND < 6.960000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 105664,
+            "selection": "WIND >= 3.9771428571428573 AND WIND < 6.994285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 106336,
+            "selection": "WIND >= 4.0114285714285725 AND WIND < 7.028571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111164,
+            "selection": "WIND >= 4.011428571428572 AND WIND < 7.028571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111197,
+            "selection": "WIND >= 3.942857142857143 AND WIND < 6.960000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111213,
+            "selection": "WIND >= 3.9085714285714284 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111230,
+            "selection": "WIND >= 3.8742857142857146 AND WIND < 6.891428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111253,
+            "selection": "WIND >= 3.805714285714286 AND WIND < 6.822857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111269,
+            "selection": "WIND >= 3.7714285714285714 AND WIND < 6.788571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111286,
+            "selection": "WIND >= 3.668571428571429 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111302,
+            "selection": "WIND >= 3.6000000000000005 AND WIND < 6.617142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111319,
+            "selection": "WIND >= 3.4971428571428573 AND WIND < 6.514285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111336,
+            "selection": "WIND >= 3.3257142857142856 AND WIND < 6.342857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111352,
+            "selection": "WIND >= 3.1885714285714286 AND WIND < 6.205714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111369,
+            "selection": "WIND >= 3.0514285714285716 AND WIND < 6.068571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111385,
+            "selection": "WIND >= 2.9142857142857146 AND WIND < 5.931428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111402,
+            "selection": "WIND >= 2.7771428571428576 AND WIND < 5.794285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111419,
+            "selection": "WIND >= 2.6742857142857144 AND WIND < 5.691428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111436,
+            "selection": "WIND >= 2.605714285714286 AND WIND < 5.622857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111452,
+            "selection": "WIND >= 2.5714285714285716 AND WIND < 5.588571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111469,
+            "selection": "WIND >= 2.5371428571428574 AND WIND < 5.554285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111486,
+            "selection": "WIND >= 2.502857142857143 AND WIND < 5.520000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111502,
+            "selection": "WIND >= 2.468571428571429 AND WIND < 5.485714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111519,
+            "selection": "WIND >= 2.3657142857142857 AND WIND < 5.3828571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111536,
+            "selection": "WIND >= 2.297142857142857 AND WIND < 5.314285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111552,
+            "selection": "WIND >= 2.262857142857143 AND WIND < 5.280000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111569,
+            "selection": "WIND >= 2.1942857142857144 AND WIND < 5.211428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111586,
+            "selection": "WIND >= 2.16 AND WIND < 5.177142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111603,
+            "selection": "WIND >= 2.125714285714286 AND WIND < 5.142857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111619,
+            "selection": "WIND >= 2.0914285714285716 AND WIND < 5.108571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111645,
+            "selection": "WIND >= 2.057142857142857 AND WIND < 5.074285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111670,
+            "selection": "WIND >= 1.9885714285714284 AND WIND < 5.005714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111686,
+            "selection": "WIND >= 1.92 AND WIND < 4.937142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111702,
+            "selection": "WIND >= 1.8514285714285714 AND WIND < 4.868571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111720,
+            "selection": "WIND >= 1.782857142857143 AND WIND < 4.800000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111736,
+            "selection": "WIND >= 1.7485714285714287 AND WIND < 4.765714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111770,
+            "selection": "WIND >= 1.7142857142857144 AND WIND < 4.731428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111786,
+            "selection": "WIND >= 1.645714285714286 AND WIND < 4.662857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111820,
+            "selection": "WIND >= 1.6114285714285717 AND WIND < 4.62857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111854,
+            "selection": "WIND >= 1.577142857142857 AND WIND < 4.594285714285714",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111937,
+            "selection": "WIND >= 1.5428571428571427 AND WIND < 4.5600000000000005",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 111987,
+            "selection": "WIND >= 1.5085714285714285 AND WIND < 4.525714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112020,
+            "selection": "WIND >= 1.4742857142857142 AND WIND < 4.491428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112072,
+            "selection": "WIND >= 1.44 AND WIND < 4.457142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112086,
+            "selection": "WIND >= 1.4057142857142857 AND WIND < 4.4228571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112138,
+            "selection": "WIND >= 1.3714285714285714 AND WIND < 4.38857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112155,
+            "selection": "WIND >= 1.3371428571428572 AND WIND < 4.354285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112170,
+            "selection": "WIND >= 1.302857142857143 AND WIND < 4.32",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112186,
+            "selection": "WIND >= 1.2685714285714287 AND WIND < 4.2857142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112203,
+            "selection": "WIND >= 1.2342857142857144 AND WIND < 4.251428571428573",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112220,
+            "selection": "WIND >= 1.2000000000000002 AND WIND < 4.217142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112253,
+            "selection": "WIND >= 1.165714285714286 AND WIND < 4.182857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112287,
+            "selection": "WIND >= 1.1314285714285712 AND WIND < 4.1485714285714295",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112303,
+            "selection": "WIND >= 1.097142857142857 AND WIND < 4.114285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112320,
+            "selection": "WIND >= 1.0628571428571427 AND WIND < 4.08",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112336,
+            "selection": "WIND >= 1.0285714285714285 AND WIND < 4.045714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112353,
+            "selection": "WIND >= 0.9942857142857142 AND WIND < 4.0114285714285725",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112369,
+            "selection": "WIND >= 0.96 AND WIND < 3.9771428571428578",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112404,
+            "selection": "WIND >= 0.9257142857142857 AND WIND < 3.9428571428571435",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112420,
+            "selection": "WIND >= 0.8914285714285715 AND WIND < 3.9085714285714293",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112453,
+            "selection": "WIND >= 0.8571428571428572 AND WIND < 3.874285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112471,
+            "selection": "WIND >= 0.822857142857143 AND WIND < 3.8400000000000007",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112487,
+            "selection": "WIND >= 0.7885714285714287 AND WIND < 3.8057142857142865",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112503,
+            "selection": "WIND >= 0.7542857142857144 AND WIND < 3.7714285714285722",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112520,
+            "selection": "WIND >= 0.6857142857142859 AND WIND < 3.7028571428571437",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112537,
+            "selection": "WIND >= 0.6171428571428574 AND WIND < 3.6342857142857152",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112553,
+            "selection": "WIND >= 0.5828571428571427 AND WIND < 3.6000000000000005",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112570,
+            "selection": "WIND >= 0.5485714285714285 AND WIND < 3.5657142857142863",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112604,
+            "selection": "WIND >= 0.5142857142857142 AND WIND < 3.531428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112688,
+            "selection": "WIND >= 0.48 AND WIND < 3.4971428571428578",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112738,
+            "selection": "WIND >= 0.4114285714285715 AND WIND < 3.4285714285714293",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112754,
+            "selection": "WIND >= 0.3771428571428572 AND WIND < 3.394285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112770,
+            "selection": "WIND >= 0.3428571428571425 AND WIND < 3.3600000000000003",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112787,
+            "selection": "WIND >= 0.274285714285714 AND WIND < 3.291428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112803,
+            "selection": "WIND >= 0.17142857142857126 AND WIND < 3.188571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112821,
+            "selection": "WIND >= 0.03428571428571425 AND WIND < 3.051428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112837,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112854,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112871,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112887,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112904,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112921,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112937,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112972,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 112987,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113005,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113020,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113038,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113054,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113070,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113128,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113155,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 113189,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114305,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114323,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114339,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114356,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114373,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114406,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114423,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114439,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114456,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114472,
+            "selection": "WIND >= 0 AND WIND < 3.017142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114490,
+            "selection": "WIND >= 0.17142857142857126 AND WIND < 3.188571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114505,
+            "selection": "WIND >= 0.3428571428571425 AND WIND < 3.3600000000000003",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114522,
+            "selection": "WIND >= 0.6171428571428574 AND WIND < 3.6342857142857152",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114539,
+            "selection": "WIND >= 0.9942857142857142 AND WIND < 4.0114285714285725",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114556,
+            "selection": "WIND >= 1.44 AND WIND < 4.457142857142857",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114572,
+            "selection": "WIND >= 1.8857142857142857 AND WIND < 4.902857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114589,
+            "selection": "WIND >= 2.3314285714285714 AND WIND < 5.348571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114606,
+            "selection": "WIND >= 2.605714285714286 AND WIND < 5.622857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114622,
+            "selection": "WIND >= 2.845714285714286 AND WIND < 5.862857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114639,
+            "selection": "WIND >= 2.982857142857143 AND WIND < 6.000000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114656,
+            "selection": "WIND >= 3.12 AND WIND < 6.137142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114673,
+            "selection": "WIND >= 3.1885714285714286 AND WIND < 6.205714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114689,
+            "selection": "WIND >= 3.291428571428572 AND WIND < 6.30857142857143",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114705,
+            "selection": "WIND >= 3.3600000000000003 AND WIND < 6.377142857142858",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114723,
+            "selection": "WIND >= 3.394285714285714 AND WIND < 6.411428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114756,
+            "selection": "WIND >= 3.428571428571429 AND WIND < 6.445714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114790,
+            "selection": "WIND >= 3.4628571428571426 AND WIND < 6.48",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114806,
+            "selection": "WIND >= 3.4971428571428573 AND WIND < 6.514285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114823,
+            "selection": "WIND >= 3.531428571428571 AND WIND < 6.548571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114839,
+            "selection": "WIND >= 3.565714285714286 AND WIND < 6.582857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114857,
+            "selection": "WIND >= 3.6342857142857143 AND WIND < 6.651428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 114873,
+            "selection": "WIND >= 3.668571428571429 AND WIND < 6.685714285714287",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115157,
+            "selection": "WIND >= 3.702857142857143 AND WIND < 6.720000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115306,
+            "selection": "WIND >= 3.7371428571428575 AND WIND < 6.754285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115323,
+            "selection": "WIND >= 3.805714285714286 AND WIND < 6.822857142857144",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115339,
+            "selection": "WIND >= 3.8742857142857146 AND WIND < 6.891428571428572",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115357,
+            "selection": "WIND >= 3.9085714285714284 AND WIND < 6.925714285714286",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115401,
+            "selection": "WIND >= 3.942857142857143 AND WIND < 6.960000000000001",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115440,
+            "selection": "WIND >= 3.977142857142857 AND WIND < 6.994285714285715",
+            "metadata": {
+                "brush_id": 2
+            }
+        },
+        {
+            "name": "WIND",
+            "time": 115456,
+            "selection": "WIND >= 4.011428571428572 AND WIND < 7.028571428571429",
+            "metadata": {
+                "brush_id": 2
+            }
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+{
+  "dbfarm-location":"/path/to/monetdb_dbfarm",
+  "password":"XA*yiTx_8Hko",
+  "host":"localhost",
+  "port":50000
+}
