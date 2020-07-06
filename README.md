@@ -1,12 +1,13 @@
-This repository contains the code needed to run the Crossfilter Benchmark. All materials associated with the Crossfilter Benchmark project, including data, Docker environment, and detailed instructions are available on our (OSF repository page)[https://osf.io/9xerb/].
+# Crossfilter Benchmark
+This repository contains the code needed to run the Crossfilter Benchmark. All materials associated with the Crossfilter Benchmark project, including datasets, Docker environment, and detailed instructions are available on our [OSF repository page](https://osf.io/9xerb/).
 
-More details on how to run IDEBench itself are available on the (IDEBench GitHub wiki)[https://github.com/IDEBench/IDEBench-public/wiki].
+More details on how to run IDEBench itself are available on the [IDEBench GitHub wiki](https://github.com/IDEBench/IDEBench-public/wiki).
 
 ## License (from the original IDEBench project)
 MIT
 
 ## Cite
-Users of the crossfilter benchmark are requested to use the following BibTeX reference for our SIGMOD 2020 paper:
+Users of the Crossfilter Benchmark are requested to use the following BibTeX reference for our SIGMOD 2020 paper:
 ```
 @inproceedings{battle2020database,
   author = {Battle, Leilani and Eichmann, Philipp and Angelini, Marco and Catarci, Tiziana and Santucci, Giuseppe and Zheng, Yukun and Binnig, Carsten and Fekete, Jean-Daniel and Moritz, Dominik},
