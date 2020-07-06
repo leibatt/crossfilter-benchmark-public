@@ -19,11 +19,11 @@ Users of the Crossfilter Benchmark are requested to use the following BibTeX ref
   url = {https://doi.org/10.1145/3318464.3389732},
   doi = {10.1145/3318464.3389732},
   booktitle = {Proceedings of the 2020 ACM SIGMOD International Conference on Management of Data},
-  pages = {1571–1587},
+  pages = {1571--1587},
   numpages = {17},
   keywords = {visualization performance benchmarks, interactive data exploration},
   location = {Portland, OR, USA},
-  series = {SIGMOD ’20}
+  series = {SIGMOD '20}
 }
 ```
 
