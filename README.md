@@ -1,5 +1,5 @@
 # Crossfilter Benchmark
-This repository contains the code needed to run the Crossfilter Benchmark. All materials associated with the Crossfilter Benchmark project, including datasets, Docker environment, and detailed instructions are available on our [OSF repository page](https://osf.io/9xerb/).
+This repository contains the code needed to run the Crossfilter Benchmark. Details on all materials associated with the Crossfilter Benchmark project, including our [datasets](https://osf.io/9xerb/files/), [Docker environment](https://cloud.docker.com/repository/docker/crossfilterbenchmark/crossfilter-benchmark), and [detailed instructions](https://osf.io/9xerb/wiki/home/) are available through our [OSF repository](https://osf.io/9xerb/).
 
 More details on how to run IDEBench itself are available on the [IDEBench GitHub wiki](https://github.com/IDEBench/IDEBench-public/wiki).
 
