@@ -22,15 +22,19 @@ class Evaluator:
         try:
             with open(workflow_path, "r") as json_data:
                 result_json = json.load(json_data)
-        except:
+        except Exception as e:
             print("couldn't load file %s" % (workflow_path))
+            print(e)
             return
 
         args = result_json["args"]
-        groundtruth = None
+        groundtruth = gt_folder_path = gt_path = None
 
-        gt_folder_path = os.path.join(self.options.gt_folder, args["driver_name"], args["settings_dataset"], args["settings_size"])
-        gt_path = os.path.join(gt_folder_path, args["settings_workflow"] + ".json")
+        try:
+          gt_folder_path = os.path.join(self.options.gt_folder, args["driver_name"], args["settings_dataset"], args["settings_size"])
+          gt_path = os.path.join(gt_folder_path, args["settings_workflow"] + ".json")
+        except:
+          pass
 
         if gt_path:
             with open(gt_path, "r") as json_data:
